@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     private float x, y;
 
     public Rigidbody rb;
-    public float fuerzaDeSalto = 150f;
+    public float fuerzaDeSalto = 200f;
     public bool puedoSaltar;
 
     // Start is called before the first frame update

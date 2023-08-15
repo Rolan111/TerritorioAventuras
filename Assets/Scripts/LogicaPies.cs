@@ -15,7 +15,7 @@ public class LogicaPies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log("El estado es: "+ playerMove.puedoSaltar);
     }
 
     private void OnTriggerStay(Collider other)
