@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Monedas
+  - Residuos
+  - Residuos/Organicos
+  - Residuos/Envases
+  - Residuos/PapelYCarton
   layers:
   - Default
   - TransparentFX
