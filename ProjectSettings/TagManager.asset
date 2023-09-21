@@ -9,6 +9,8 @@ TagManager:
   - Residuos/Organicos
   - Residuos/Envases
   - Residuos/PapelYCarton
+  - ItemDraggerParent
+  - DisparadorPuzzle
   layers:
   - Default
   - TransparentFX

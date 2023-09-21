@@ -6,6 +6,10 @@ public class DetectorColisionesPlayer : MonoBehaviour
 {
     //[SerializeField] public float cantidadPuntos;
     [SerializeField] private LogicaPuntajes[] logicaPuntajes;
+
+    public ControlDeActivacion desactivarCanvas;//Para desactivar objetos en base a eventos
+    public ControlDeActivacion activarCanvas2; 
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Monedas"))
@@ -31,6 +35,12 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Debug.Log("El jugador ha chocado con un RESIDUO Papel y Cartón.");
             logicaPuntajes[3].ContadorPuntajes(1);
             Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("DisparadorPuzzle"))
+        {
+            Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
+            desactivarCanvas.DesactivarObjeto();
+            activarCanvas2.ActivarObjeto();
         }
     }
 }

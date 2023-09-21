@@ -6,6 +6,8 @@ using Unity.VisualScripting;
 
 public class DetectorColisiones : MonoBehaviour
 {
+    // Puede NO SER NECESARIO para la mayoria de los casos ya que el detector de colisiones lo tiene el JUGADOR
+
     //[SerializeField] public float cantidadPuntos;
     //[SerializeField] private LogicaPuntajes logicaPuntajes;
     private void OnTriggerEnter(Collider other)
