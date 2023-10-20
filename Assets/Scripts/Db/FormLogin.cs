@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using MySql.Data.MySqlClient;
 using TMPro;
+using UnityEngine.EventSystems;
 using System.Net;
 using System;
 using System.IO;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+    
 public class LoginForm : MonoBehaviour
 {
     public bool conectedWithAPI = true;
@@ -49,6 +52,7 @@ public class LoginForm : MonoBehaviour
         else
         {
             result.text = "";
+            cambioDeEscena();
         }
     }
 
@@ -65,7 +69,7 @@ public class LoginForm : MonoBehaviour
     }
 
     public bool loginAPI() {
-        string formaturl = String.Format("http://localhost:8080/usuarios/findByUsuarioAndContrasena?usuario={0}&contrasena={1}", user.text, password.text);
+        string formaturl = String.Format("http://localhost:8080/user/findByUserAndPassword?user={0}&password={1}", user.text, password.text);
         Debug.Log(formaturl);
         var request = (HttpWebRequest) WebRequest.CreateHttp(formaturl);
 
@@ -75,6 +79,13 @@ public class LoginForm : MonoBehaviour
 
         Debug.Log(jsonResponse);
         return jsonResponse != "";
+        
+    }
+
+    public void cambioDeEscena()
+    {
+        Debug.Log("Estamos dentro del METODO DE CAMBIAR ESCENA");
+        SceneManager.LoadScene("2 MenuPrincipal");
     }
 
     private bool validateData()

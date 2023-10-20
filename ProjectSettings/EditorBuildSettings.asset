@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuPrincipal.unity
+    path: Assets/Scenes/2 MenuPrincipal.unity
     guid: 4d21c4bad768a9c42ac0505ffada23ac
   - enabled: 1
-    path: Assets/Scenes/Mundo Agua.unity
+    path: Assets/Scenes/3 Mundo Agua.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/NivelCompleto.unity
