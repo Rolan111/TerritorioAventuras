@@ -14,4 +14,15 @@ public class MenuPrinCambioEscena : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReloadScene()
+    {
+        // Obtiene el índice de la escena actual
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        // Carga la escena actual, lo que reinicia la escena
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+
 }

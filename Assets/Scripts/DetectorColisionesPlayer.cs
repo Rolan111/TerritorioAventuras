@@ -18,9 +18,9 @@ public class DetectorColisionesPlayer : MonoBehaviour
             logicaPuntajes[0].ContadorPuntajes(1);
             Destroy(other.gameObject);
         }
-        else if (other.CompareTag("Residuos/Organicos"))
+        else if (other.CompareTag("Residuos/Aluminio"))
         {
-            Debug.Log("El jugador ha chocado con un RESIDUO Organico.");
+            Debug.Log("El jugador ha chocado con un RESIDUO Aluminio.");
             logicaPuntajes[1].ContadorPuntajes(1);
             Destroy(other.gameObject);
         }

@@ -11,6 +11,10 @@ TagManager:
   - Residuos/PapelYCarton
   - ItemDraggerParent
   - DisparadorPuzzle
+  - Amarillo
+  - Rojo
+  - Azul
+  - Residuos/Aluminio
   layers:
   - Default
   - TransparentFX
