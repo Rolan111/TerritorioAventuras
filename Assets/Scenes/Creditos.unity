@@ -397,8 +397,9 @@ GameObject:
   - component: {fileID: 727818268}
   - component: {fileID: 727818267}
   - component: {fileID: 727818266}
+  - component: {fileID: 727818269}
   m_Layer: 5
-  m_Name: btnAtras
+  m_Name: btn_Atras
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -468,7 +469,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1871931435}
+      - m_Target: {fileID: 4144315043586030096, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
         m_TargetAssemblyTypeName: MenuPrinCambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 5
@@ -518,6 +519,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727818264}
   m_CullTransparentMesh: 1
+--- !u!114 &727818269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727818264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d2abf2d8ba31c4393c9eb8f5e896be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido1: {fileID: 8300000, guid: 489190512c5acba4cbbade0bab310b8b, type: 3}
 --- !u!1 &773241410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,50 +1106,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825485903}
   m_CullTransparentMesh: 1
---- !u!1 &1871931434
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1871931436}
-  - component: {fileID: 1871931435}
-  m_Layer: 0
-  m_Name: Controlador
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1871931435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871931434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c914494fe7f10be47a2e89e2d434d451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1871931436
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871931434}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150.83528, y: 69.03876, z: 33.822205}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1144,4 +1114,3 @@ SceneRoots:
   - {fileID: 1197840572}
   - {fileID: 44962452}
   - {fileID: 45001950}
-  - {fileID: 1871931436}

@@ -229,8 +229,9 @@ GameObject:
   - component: {fileID: 604917158}
   - component: {fileID: 604917157}
   - component: {fileID: 604917156}
+  - component: {fileID: 604917159}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button_Creditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +301,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1189403980}
+      - m_Target: {fileID: 4144315043586030096, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
         m_TargetAssemblyTypeName: MenuPrinCambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 5
@@ -350,6 +351,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604917154}
   m_CullTransparentMesh: 1
+--- !u!114 &604917159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604917154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d2abf2d8ba31c4393c9eb8f5e896be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido1: {fileID: 8300000, guid: 489190512c5acba4cbbade0bab310b8b, type: 3}
 --- !u!1 &626027380
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +444,7 @@ GameObject:
   - component: {fileID: 641923039}
   - component: {fileID: 641923038}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: txt_MenuPrincipal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -832,8 +846,9 @@ GameObject:
   - component: {fileID: 858187060}
   - component: {fileID: 858187059}
   - component: {fileID: 858187058}
+  - component: {fileID: 858187061}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Button_Salir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -903,9 +918,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1189403980}
+      - m_Target: {fileID: 4144315043586030096, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
         m_TargetAssemblyTypeName: MenuPrinCambioEscena, Assembly-CSharp
-        m_MethodName: FuncionCerrarJuego
+        m_MethodName: ReproducirSonido
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -953,50 +968,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858187056}
   m_CullTransparentMesh: 1
---- !u!1 &1189403978
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1189403979}
-  - component: {fileID: 1189403980}
-  m_Layer: 0
-  m_Name: Controlador
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1189403979
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189403978}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 150.83528, y: 69.03876, z: 33.822205}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1189403980
+--- !u!114 &858187061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189403978}
+  m_GameObject: {fileID: 858187056}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c914494fe7f10be47a2e89e2d434d451, type: 3}
+  m_Script: {fileID: 11500000, guid: d7d2abf2d8ba31c4393c9eb8f5e896be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sonido1: {fileID: 8300000, guid: 489190512c5acba4cbbade0bab310b8b, type: 3}
 --- !u!1 &1409706233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1162,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &1655488920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 150.83528
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 69.03876
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 33.822205
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2363091633363428971, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
+      propertyPath: m_Name
+      value: ControladorTableroYSonidos
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
 --- !u!1 &1779075332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,8 +1365,9 @@ GameObject:
   - component: {fileID: 1845620244}
   - component: {fileID: 1845620243}
   - component: {fileID: 1845620242}
+  - component: {fileID: 1845620245}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button_IniciarJuego
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1395,7 +1437,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1189403980}
+      - m_Target: {fileID: 4144315043586030096, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
         m_TargetAssemblyTypeName: MenuPrinCambioEscena, Assembly-CSharp
         m_MethodName: CambiarEscena
         m_Mode: 5
@@ -1445,6 +1487,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845620240}
   m_CullTransparentMesh: 1
+--- !u!114 &1845620245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845620240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7d2abf2d8ba31c4393c9eb8f5e896be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonido1: {fileID: 8300000, guid: 489190512c5acba4cbbade0bab310b8b, type: 3}
 --- !u!1 &2093375409
 GameObject:
   m_ObjectHideFlags: 0
@@ -1545,4 +1600,4 @@ SceneRoots:
   - {fileID: 204382399}
   - {fileID: 1515181315}
   - {fileID: 626027383}
-  - {fileID: 1189403979}
+  - {fileID: 1655488920}
