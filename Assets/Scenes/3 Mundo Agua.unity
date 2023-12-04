@@ -194,6 +194,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &85508837
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85508830}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &116310514
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,6 +568,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       insertIndex: -1
       addedObject: {fileID: 190789297}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 190789302}
   m_SourcePrefab: {fileID: 100100000, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
 --- !u!1 &190789295 stripped
 GameObject:
@@ -624,6 +643,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &190789302
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190789295}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &227812033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1522,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1504118561}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1504118566}
   m_SourcePrefab: {fileID: 100100000, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
 --- !u!1 &588359208
 GameObject:
@@ -1501,6 +1539,7 @@ GameObject:
   - component: {fileID: 588359212}
   - component: {fileID: 588359211}
   - component: {fileID: 588359210}
+  - component: {fileID: 588359214}
   m_Layer: 0
   m_Name: Aluminio (1)
   m_TagString: Residuos/Aluminio
@@ -1535,7 +1574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
 --- !u!136 &588359211
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1609,6 +1648,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 588359208}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &588359214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588359208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &613691628
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2411,7 @@ GameObject:
   - component: {fileID: 690177860}
   - component: {fileID: 690177859}
   - component: {fileID: 690177858}
+  - component: {fileID: 690177862}
   m_Layer: 0
   m_Name: Envases (1)
   m_TagString: Residuos/Envases
@@ -2392,7 +2446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
 --- !u!136 &690177859
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2466,6 +2520,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690177856}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &690177862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690177856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &725342608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3108,6 +3176,7 @@ GameObject:
   - component: {fileID: 874130504}
   - component: {fileID: 874130503}
   - component: {fileID: 874130506}
+  - component: {fileID: 874130507}
   m_Layer: 0
   m_Name: Papel y carton
   m_TagString: Residuos/PapelYCarton
@@ -3215,7 +3284,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
+--- !u!114 &874130507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874130501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &917046511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3312,7 @@ GameObject:
   - component: {fileID: 917046514}
   - component: {fileID: 917046513}
   - component: {fileID: 917046516}
+  - component: {fileID: 917046517}
   m_Layer: 0
   m_Name: Aluminio
   m_TagString: Residuos/Aluminio
@@ -3336,7 +3420,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
+--- !u!114 &917046517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917046511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,7 +3540,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5fc4b4b8dba839f4cbaf9a1256732e88, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3742,7 +3840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3773,6 +3871,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1824070058}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1824070067}
   m_SourcePrefab: {fileID: 100100000, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
 --- !u!1 &1016592578
 GameObject:
@@ -4656,6 +4757,7 @@ GameObject:
   - component: {fileID: 1246706873}
   - component: {fileID: 1246706872}
   - component: {fileID: 1246706871}
+  - component: {fileID: 1246706875}
   m_Layer: 0
   m_Name: Papel y carton (1)
   m_TagString: Residuos/PapelYCarton
@@ -4690,7 +4792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
 --- !u!136 &1246706872
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4764,6 +4866,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246706869}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1246706875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246706869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &1313335091
 GameObject:
   m_ObjectHideFlags: 0
@@ -5112,6 +5228,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &1504118566
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504118559}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &1624179613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5338,6 +5470,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
       insertIndex: -1
       addedObject: {fileID: 85508832}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 85508837}
   m_SourcePrefab: {fileID: 100100000, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
 --- !u!1 &1629813648
 GameObject:
@@ -6066,6 +6201,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!111 &1824070067
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824070056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 5c0c60caf63a36548ad0f19b7bf02279, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1858330122
 GameObject:
   m_ObjectHideFlags: 0
@@ -6079,6 +6230,7 @@ GameObject:
   - component: {fileID: 1858330125}
   - component: {fileID: 1858330124}
   - component: {fileID: 1858330127}
+  - component: {fileID: 1858330128}
   m_Layer: 0
   m_Name: Envases
   m_TagString: Residuos/Envases
@@ -6186,7 +6338,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb567fd043042342b93091519afa758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sonidoMonedas: {fileID: 0}
+  sonidoMonedas: {fileID: 8300000, guid: f0d30a3d124b584499a65661ffd3b3be, type: 3}
+--- !u!114 &1858330128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858330122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555b5b2bdb514e345bfd63fb65952cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 2
+  amplitud: 0.5
 --- !u!1 &1926831459
 GameObject:
   m_ObjectHideFlags: 0
