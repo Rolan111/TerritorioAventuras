@@ -1,17 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using MySql.Data.MySqlClient;
-using Unity.VisualScripting;
-//using UnityEditor.MemoryProfiler;
 using System;
 
-public static class Connection
-{
+public class ConnectionLocal{
 
-    private static MySqlConnection db;
+    private MySqlConnection db;
 
-    public static MySqlConnection connection()
+    public MySqlConnection connection()
     {
         string server = "localhost";
         string database = "territorioaventurasdb";
