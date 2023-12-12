@@ -8,6 +8,7 @@ public class LoginForm : MonoBehaviour
     public TMP_InputField password;
     public TMP_Text result;
 
+    public GameObject formLogin = null;
     public GameObject formRegister = null;
 
     public void login()
@@ -38,7 +39,7 @@ public class LoginForm : MonoBehaviour
 
         if (userData == "" && passwordData == "")
         {
-            result.text = "Ingrese el Usuario y Contrase�a";
+            result.text = "Ingrese el Usuario y Contraseña";
             isValid = false;
         }
         else
@@ -60,7 +61,7 @@ public class LoginForm : MonoBehaviour
 
     public void showFormRegister()
     {
-        gameObject.SetActive(false);
+        formLogin.SetActive(false);
         formRegister.SetActive(true);
     }
 }
