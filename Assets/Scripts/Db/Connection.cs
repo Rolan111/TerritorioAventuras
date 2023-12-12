@@ -1,27 +1,56 @@
 using System.Net;
 using System.IO;
 using UnityEngine;
-using UnityEditor;
-using UnityEngine.Networking;
+using System.Text;
+using System.Collections.Specialized;
+using System.Collections.Generic;
+using System.Web;
+using Newtonsoft.Json;
 
 public static class Connection {
 
     public static readonly string base_url = "http://localhost:8080/";
 
-    public static T HttPost<T>(string completeUrl, T data)
+    public static T HttPost<T>(string completeUrl, T dto)
     {
-        return Http<T>(completeUrl, data, "POST");
+        return Http<T>(completeUrl, JsonUtility.ToJson(dto), "POST");
     }
 
     public static T HttpGet<T>(string completeUrl)
     {
-        return Http<T>(completeUrl, default, "GET");
+        return Http<T>(completeUrl, "", "GET");
     }
 
-    private static T Http<T>(string completeUrl, T data, string method)
+    public static string buildUrl<T>(T dto)
+    {
+        NameValueCollection queryString = HttpUtility.ParseQueryString(string.Empty);
+
+        var element = JsonConvert.DeserializeObject<Dictionary<string, string>>(JsonUtility.ToJson(dto));
+        foreach (var item in element)
+        {
+            var value = item.Value.ToString();
+
+            if (!value.Equals("") || !value.Equals("0"))
+            {
+                queryString.Add(item.Key, value);
+            }
+        }
+        return "?" + queryString.ToString();
+    }
+
+    private static T Http<T>(string completeUrl, string dataJson, string method)
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(completeUrl);
         request.Method = method;
+
+        if (method == "POST")
+        {
+            byte[] data = Encoding.ASCII.GetBytes(dataJson);
+
+            Stream requestStream = request.GetRequestStream();
+            requestStream.Write(data, 0, data.Length);
+            requestStream.Close();
+        }
 
         HttpWebResponse response = (HttpWebResponse)request.GetResponse();
         StreamReader reader = new StreamReader(response.GetResponseStream());
@@ -34,25 +63,6 @@ public static class Connection {
         else
         {
             return JsonUtility.FromJson<T>(jsonResponse);
-        }
-    }
-
-    private static T zxczxczxczxc<T>()
-    {
-        WWWForm wWWForm = new WWWForm();
-        wWWForm.AddField("", "");
-
-        UnityWebRequest request = UnityWebRequest.Post("", wWWForm);
-
-        request.SendWebRequest();
-
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            return JsonUtility.FromJson<T>(request.downloadHandler.text);
-        }
-        else
-        {
-            return default;
         }
     }
 }

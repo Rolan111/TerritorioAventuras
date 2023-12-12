@@ -3706,7 +3706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141955395}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc8bd1dcef061141addabcbaabe631e, type: 3}
+  m_Script: {fileID: 11500000, guid: 76371ce63433a4648b552a88e844515c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   user: {fileID: 1295629713}
@@ -5032,7 +5032,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2020934859}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FormRegister, Assembly-CSharp
         m_MethodName: showFormLogin
         m_Mode: 1
@@ -6824,7 +6824,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020934853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d41ec97da4e15747b20c5776041381e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f3fde3c8d433c846b7163b20d2b79b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   result: {fileID: 2039121185}

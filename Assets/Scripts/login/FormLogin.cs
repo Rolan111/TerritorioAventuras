@@ -18,7 +18,11 @@ public class LoginForm : MonoBehaviour
             return;
         }
 
-        var isLogin = Connection.User.login(user.text, password.text);
+        UserDto userDto = new UserDto();
+        userDto.user = user.text;
+        userDto.password = password.text;
+
+        var isLogin = UserApi.login(userDto);
         if (!isLogin)
         {
             result.text = "Usuario o Contraseña Erronea";

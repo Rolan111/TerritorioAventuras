@@ -1,30 +1,27 @@
-﻿using System;
-using static UnityEditor.ShaderData;
-
-public static class User{
+﻿public static class UserApi{
 
     private static readonly string url = Connection.base_url + "user/";
 
     private static UserDto user;
 
-    public static bool login(string user, string pass)
+    public static bool login(UserDto userDto)
     {
-        string completeUrl = String.Format(url + "findByUserAndPassword?user={0}&password={1}", user, pass);
+        string data = Connection.buildUrl(userDto);
 
-        UserDto response = Connection.HttPost<UserDto>(completeUrl);
+        UserDto response = Connection.HttpGet<UserDto>(url + "login" + data);
 
         if (response != null)
         {
-            User.user = response;
+            UserApi.user = response;
         }
 
         return response != null;
     }
 
-    public static bool register(UserDto user)
+    public static bool save(UserDto userDto)
     {
-        string completeUrl = String.Format(url + "save");
-
+        UserDto response = Connection.HttPost<UserDto>(url, userDto);
+        return response != null;
     }
 
     public static UserDto getUser()

@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System;
-
-public class UserDto {
+﻿public class UserDto : BaseEntity {
 
     public string name;
 

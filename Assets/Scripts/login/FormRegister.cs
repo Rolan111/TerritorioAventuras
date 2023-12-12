@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class FormRegister : MonoBehaviour
 {
-
     public TMP_Text result;
 
     public GameObject formLogin = null;
@@ -15,13 +14,14 @@ public class FormRegister : MonoBehaviour
 
     public void registrar()
     {
-        Debug.Log("asdasdasdasdsa");
+        UserDto userDto = new UserDto();
+        userDto.school = "";
+
+        UserApi.save(userDto); 
     }
 
     public void showFormLogin()
     {
-
-        Debug.Log("asd");
         formLogin.SetActive(true);
         formRegister.SetActive(false);
     }
