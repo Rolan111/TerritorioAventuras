@@ -8,11 +8,13 @@ public static class ConnectionAPI {
 
     public static class User {
 
-        private static readonly string url = base_url + "User/";
+        private static readonly string url = base_url + "user/";
 
         public static bool login(string user, string pass)
         {
             string completeUrl = String.Format(url + "findByUserAndPassword?user={0}&password={1}", user, pass);
+
+           
             string response = ConnectionAPI.HttpQuery(completeUrl);
             return response != "";
         }

@@ -19,9 +19,9 @@ public class LoginForm : MonoBehaviour
         }
 
         var isLogin = ConnectionAPI.User.login(user.text, password.text);
-        if (isLogin)
+        if (!isLogin)
         {
-            result.text = "Usuario o Contrase�a Erronea";
+            result.text = "Usuario o Contraseña Erronea";
         }
         else
         {
@@ -51,7 +51,7 @@ public class LoginForm : MonoBehaviour
             }
             if (passwordData == "")
             {
-                result.text = "Ingrese la Contrase�a";
+                result.text = "Ingrese la Contraseña";
                 isValid = false;
             }
         }
