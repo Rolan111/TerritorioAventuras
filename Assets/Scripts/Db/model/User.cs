@@ -1,4 +1,4 @@
-﻿public class UserDto : BaseEntity {
+﻿public class UserDto {
 
     public string name;
 

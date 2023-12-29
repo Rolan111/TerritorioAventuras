@@ -1,7 +1,7 @@
 using UnityEngine;
 using MySql.Data.MySqlClient;
 
-public class LoginFormLocal : MonoBehaviour
+public class UserApiLocal : MonoBehaviour
 {
 	MySqlConnection db;
     ConnectionLocal connectionLocal;
