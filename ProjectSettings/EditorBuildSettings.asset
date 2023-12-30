@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/3 Mundo Agua.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/4 Mundo 2.unity
+    guid: 1534515622b35cc48a0dc11e78cee24b
+  - enabled: 1
     path: Assets/Scenes/NivelCompleto.unity
     guid: 8df29dcfc0c615842a32051de0304e8b
   - enabled: 1
