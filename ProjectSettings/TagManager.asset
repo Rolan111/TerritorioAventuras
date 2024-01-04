@@ -15,6 +15,7 @@ TagManager:
   - Rojo
   - Azul
   - Residuos/Aluminio
+  - PortalRojo
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DetectorColisionesPlayer : MonoBehaviour
 {
@@ -42,6 +43,11 @@ public class DetectorColisionesPlayer : MonoBehaviour
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
             Time.timeScale = 0f; //Pausar juego
+        }
+        else if (other.CompareTag("PortalRojo"))
+        {
+            Debug.Log("El jugador ha chocado con el PORTAL ROJO.");
+            SceneManager.LoadScene("5 MundoFolclor");
         }
     }
 }
