@@ -40,9 +40,18 @@ public class MenuPrinCambioEscena : MonoBehaviour
     {
         audioSource.PlayOneShot(sonido);
     }
+
     public void CambiarEscena(string nombreEscena)
     {
         SceneManager.LoadScene(nombreEscena);
+    }
+
+    public void CambiarEscena2()
+    {
+        int receivedVariableUltimaEscena = PlayerPrefs.GetInt("VariableUltimaEscena");
+        Debug.Log("La última variable recibida es: "+receivedVariableUltimaEscena);
+        int siguienteEscena = receivedVariableUltimaEscena + 1;
+        SceneManager.LoadScene(siguienteEscena);
     }
 
     public void FuncionCerrarJuego()

@@ -68,8 +68,11 @@ public class DropSlot : MonoBehaviour, IDropHandler
 
             if (contador == 3)
             {
+                Time.timeScale = 1f;
                 Debug.Log("El contenedor esta LLENO en 3");
                 contador = 0;
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex);
                 SceneManager.LoadScene("NivelCompleto");
             }
             
