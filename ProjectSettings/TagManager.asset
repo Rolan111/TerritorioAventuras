@@ -16,6 +16,8 @@ TagManager:
   - Azul
   - Residuos/Aluminio
   - PortalRojo
+  - CinemachineTarget
+  - PortalCambio
   layers:
   - Default
   - TransparentFX

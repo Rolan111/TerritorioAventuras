@@ -44,10 +44,14 @@ public class DetectorColisionesPlayer : MonoBehaviour
             activarCanvas2.ActivarObjeto();
             Time.timeScale = 0f; //Pausar juego
         }
-        else if (other.CompareTag("PortalRojo"))
+        else if (other.CompareTag("PortalCambio"))
         {
-            Debug.Log("El jugador ha chocado con el PORTAL ROJO.");
-            SceneManager.LoadScene("5 MundoFolclor");
+            Debug.Log("El jugador ha chocado con el PORTAL DE CAMBIO0.");
+            //captura ESCENA ACTUAL
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex);
+            //SceneManager.LoadScene("5 MundoFolclor");
+            SceneManager.LoadScene("NivelCompleto");
         }
     }
 }
