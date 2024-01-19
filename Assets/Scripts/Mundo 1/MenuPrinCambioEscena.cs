@@ -78,6 +78,8 @@ public class MenuPrinCambioEscena : MonoBehaviour
         gameStateDto.idUser = 1;
         gameStateDto.idLevelChallengeDescription = 1;
 
+
+
         GameStateApi.save(gameStateDto);
     }
 

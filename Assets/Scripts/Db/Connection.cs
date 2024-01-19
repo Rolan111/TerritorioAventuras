@@ -45,6 +45,7 @@ public static class Connection {
         request.Method = method;
 
         Debug.Log(completeUrl);
+        Debug.Log(dataJson);
 
         if (method == "POST")
         {
