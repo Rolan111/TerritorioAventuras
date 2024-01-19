@@ -1,4 +1,4 @@
-﻿public class LevelChallengeDescriptionDto 
+﻿public class LevelChallengeDescriptionDto:BaseDto
 {
 
     public string nameLevel;

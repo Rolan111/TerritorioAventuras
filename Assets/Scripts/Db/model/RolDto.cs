@@ -1,4 +1,4 @@
-﻿public class RolDto 
+﻿public class RolDto:BaseDto
 {
 
     public string rol;

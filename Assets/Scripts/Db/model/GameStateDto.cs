@@ -1,4 +1,4 @@
-﻿public class GameStateDto
+﻿public class GameStateDto:BaseDto
 {
 
     public int idUser;

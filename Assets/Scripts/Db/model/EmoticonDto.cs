@@ -1,4 +1,4 @@
-﻿public class EmoticonDto
+﻿public class EmoticonDto:BaseDto
 {
 
     public string emoticon;

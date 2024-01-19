@@ -1,4 +1,4 @@
-﻿public class UserDto {
+﻿public class UserDto:BaseDto {
 
     public string name;
 

@@ -1,4 +1,4 @@
-﻿public class LevelChallengeAttemptsDto
+﻿public class LevelChallengeAttemptsDto:BaseDto
 {
 
     public int idChallengeDescription;

@@ -1,4 +1,4 @@
-﻿public class AvatarDto
+﻿public class AvatarDto:BaseDto
 {
 
     public string avatar;

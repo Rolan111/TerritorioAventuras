@@ -1,4 +1,4 @@
-﻿public class GenderDto
+﻿public class GenderDto:BaseDto
 {
 
     public string gender;

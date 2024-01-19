@@ -68,5 +68,18 @@ public class MenuPrinCambioEscena : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
+  
+
+    public void GurdarGame_State()
+    {
+        GameStateDto gameStateDto = new GameStateDto();
+        //llenamos lo que tenga en la base de datos
+        gameStateDto.idAvatar = 2;
+        gameStateDto.idUser = 1;
+        gameStateDto.idLevelChallengeDescription = 1;
+
+        GameStateApi.save(gameStateDto);
+    }
+
 
 }

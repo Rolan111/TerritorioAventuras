@@ -6,6 +6,7 @@ using System.Collections.Specialized;
 using System.Collections.Generic;
 using System.Web;
 using Newtonsoft.Json;
+using System;
 
 public static class Connection {
 
@@ -42,6 +43,8 @@ public static class Connection {
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(completeUrl);
         request.Method = method;
+
+        Debug.Log(completeUrl);
 
         if (method == "POST")
         {
