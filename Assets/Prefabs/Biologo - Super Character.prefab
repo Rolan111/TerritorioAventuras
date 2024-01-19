@@ -199,15 +199,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: feb577778a3ef0045a5515b0e79baa2e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 80
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: feb577778a3ef0045a5515b0e79baa2e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 80
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: feb577778a3ef0045a5515b0e79baa2e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 80
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: feb577778a3ef0045a5515b0e79baa2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,11 +306,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.97
       objectReference: {fileID: 0}
     - target: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -13.2
       objectReference: {fileID: 0}
     - target: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -342,7 +342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4011650199783796442, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       propertyPath: m_Name
-      value: Character.001 Variant
+      value: Biologo - Super Character
       objectReference: {fileID: 0}
     - target: {fileID: 4011650200241831709, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       propertyPath: m_IsActive
@@ -352,6 +352,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1153585620, guid: 8290bc46be1825d49932e2492480426b, type: 3}
     - {fileID: 4011650200241831709, guid: 8290bc46be1825d49932e2492480426b, type: 3}
+    - {fileID: 8108642134083527278, guid: 8290bc46be1825d49932e2492480426b, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       insertIndex: -1
@@ -359,31 +360,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6091554068209266871}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4011650199783796442, guid: 8290bc46be1825d49932e2492480426b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6870307702651651571}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8290bc46be1825d49932e2492480426b, type: 3}
---- !u!1 &6586074982380601377 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4011650199783796442, guid: 8290bc46be1825d49932e2492480426b, type: 3}
-  m_PrefabInstance: {fileID: 7839164788560031483}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6870307702651651571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6586074982380601377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4751573b5d066034ca6d09c4c0e5b8ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  logicaPuntajes: []
-  desactivarCanvas: {fileID: 0}
-  activarCanvas2: {fileID: 0}
 --- !u!4 &6586074982380601378 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4011650199783796441, guid: 8290bc46be1825d49932e2492480426b, type: 3}
