@@ -1,7 +1,7 @@
 ﻿public static class GenderApi
 {
 
-    private static readonly string url = Connection.base_url + "gender/";
+    private static readonly string url = Connection.base_url + "gender";
 
     public static bool save(GenderDto genderDto)
     {

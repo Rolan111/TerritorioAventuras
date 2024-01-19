@@ -3,11 +3,11 @@
 public static class AvatarApi
 {
 
-    private static readonly string url = Connection.base_url + "avatar/";
+    private static readonly string url = Connection.base_url + "avatar";
 
     public static bool findAll()
     {
-        List<AvatarDto> response = Connection.HttpGet<List<AvatarDto>>(url + "findAll");
+        List<AvatarDto> response = Connection.HttpGet<List<AvatarDto>>(url + "/findAll");
         return response != null;
     }
 

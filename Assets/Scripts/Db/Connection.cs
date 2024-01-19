@@ -43,9 +43,7 @@ public static class Connection {
     {
         HttpWebRequest request = (HttpWebRequest)WebRequest.Create(completeUrl);
         request.Method = method;
-
-        Debug.Log(completeUrl);
-        Debug.Log(dataJson);
+        request.ContentType = "application/json";
 
         if (method == "POST")
         {

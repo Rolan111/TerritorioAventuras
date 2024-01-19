@@ -1,7 +1,7 @@
 ﻿public static class RolApi
 {
 
-    private static readonly string url = Connection.base_url + "rol/";
+    private static readonly string url = Connection.base_url + "rol";
 
     public static bool save(RolDto rolDto)
     {

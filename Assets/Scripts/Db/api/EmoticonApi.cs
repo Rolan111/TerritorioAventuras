@@ -3,11 +3,11 @@
 public static class EmoticonApi
 {
 
-    private static readonly string url = Connection.base_url + "emoticon/";
+    private static readonly string url = Connection.base_url + "emoticon";
 
     public static bool findAll()
     {
-        List<EmoticonDto> response = Connection.HttpGet<List<EmoticonDto>>(url + "findAll");
+        List<EmoticonDto> response = Connection.HttpGet<List<EmoticonDto>>(url + "/findAll");
         return response != null;
     }
 

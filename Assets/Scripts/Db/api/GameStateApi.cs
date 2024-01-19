@@ -1,7 +1,7 @@
 ﻿public static class GameStateApi
 {
 
-    private static readonly string url = Connection.base_url + "gameState/";
+    private static readonly string url = Connection.base_url + "gameState";
 
     public static bool save(GameStateDto gameStateDto)
     {

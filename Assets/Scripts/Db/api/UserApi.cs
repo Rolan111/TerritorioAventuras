@@ -1,6 +1,6 @@
 ﻿public static class UserApi{
 
-    private static readonly string url = Connection.base_url + "user/";
+    private static readonly string url = Connection.base_url + "user";
 
     private static UserDto user;
 
@@ -8,7 +8,7 @@
     {
         string data = Connection.buildUrl(userDto);
 
-        UserDto response = Connection.HttpGet<UserDto>(url + "login" + data);
+        UserDto response = Connection.HttpGet<UserDto>(url + "/login" + data);
 
         if (response != null)
         {

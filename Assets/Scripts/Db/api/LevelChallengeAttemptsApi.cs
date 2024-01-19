@@ -1,7 +1,7 @@
 ﻿public static class LevelChallengeAttemptsApi
 {
 
-    private static readonly string url = Connection.base_url + "levelChallengeAttempts/";
+    private static readonly string url = Connection.base_url + "levelChallengeAttempts";
 
     public static bool save(LevelChallengeAttemptsDto levelChallengeAttemptsDto)
     {
