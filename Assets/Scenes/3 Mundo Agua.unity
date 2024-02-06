@@ -2053,6 +2053,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: activarCanvas2
+      value: 
+      objectReference: {fileID: 1718285410}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: desactivarCanvas
+      value: 
+      objectReference: {fileID: 116310519}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: logicaPuntajes.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: logicaPuntajes.Array.data[0]
+      value: 
+      objectReference: {fileID: 556424666}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: logicaPuntajes.Array.data[1]
+      value: 
+      objectReference: {fileID: 1222134786}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: logicaPuntajes.Array.data[2]
+      value: 
+      objectReference: {fileID: 1016592580}
+    - target: {fileID: 1149935878218748301, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
+      propertyPath: logicaPuntajes.Array.data[3]
+      value: 
+      objectReference: {fileID: 229718302}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 270.59116
@@ -2099,7 +2127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834667, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2223,7 +2251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5485ef201bfbc96469544f3a5bbef3a9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5485ef201bfbc96469544f3a5bbef3a9, type: 3}
       propertyPath: m_TagString
