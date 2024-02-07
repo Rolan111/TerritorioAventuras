@@ -18,6 +18,8 @@ TagManager:
   - PortalRojo
   - CinemachineTarget
   - PortalCambio
+  - Pinza
+  - EfectoDesaparecerPinza
   layers:
   - Default
   - TransparentFX

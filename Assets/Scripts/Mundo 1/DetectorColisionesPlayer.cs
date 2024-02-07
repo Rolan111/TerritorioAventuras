@@ -9,7 +9,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
     [SerializeField] private LogicaPuntajes[] logicaPuntajes;
 
     public ControlDeActivacion desactivarCanvas;//Para desactivar objetos en base a eventos
-    public ControlDeActivacion activarCanvas2; 
+    public ControlDeActivacion activarCanvas2;
+    public GameObject efectoPinzaActivar;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -56,5 +57,22 @@ public class DetectorColisionesPlayer : MonoBehaviour
             //SceneManager.LoadScene("5 MundoFolclor");
             SceneManager.LoadScene("NivelCompleto");
         }
+        else if (other.CompareTag("Pinza"))
+        {
+            // Destruye el objeto con el que chocamos
+            Destroy(other.gameObject);
+            //GameObject.FindGameObjectsWithTag("EfectoDesaparecerPinza");
+            efectoPinzaActivar.SetActive(true);
+            Invoke("DestruirObjeto", 1.5f);
+        }
+
+        
     }
+
+    //FUNCIONES ADICIONALES
+    void DestruirObjeto()
+    {
+        DestroyImmediate(efectoPinzaActivar);
+    }
+
 }
