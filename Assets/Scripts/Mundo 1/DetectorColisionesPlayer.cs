@@ -20,6 +20,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
             logicaPuntajes[0].ContadorPuntajes(1);
             Destroy(other.gameObject);
         }
+
+        //Residuos
         else if (other.CompareTag("Residuos/Aluminio"))
         {
             Debug.Log("El jugador ha chocado con un RESIDUO Aluminio.");
@@ -38,6 +40,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
             logicaPuntajes[3].ContadorPuntajes(1);
             Destroy(other.gameObject);
         }
+        //*****
+
         else if (other.CompareTag("DisparadorPuzzle"))
         {
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
