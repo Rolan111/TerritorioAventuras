@@ -48,7 +48,7 @@ public class DetectorColisionesBote : MonoBehaviour
         {
             Debug.Log("El jugador ha chocado con un RESIDUO Papel y Cartón.");
             logicaPuntajes[3].ContadorPuntajes(1);
-            activarResiduo[2].SetActive(true);
+       
 
             if (other.name == "PapelArrugado_01 ")
             {
