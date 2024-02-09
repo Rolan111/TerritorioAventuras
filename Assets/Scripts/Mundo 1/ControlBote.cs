@@ -22,12 +22,12 @@ public class ControlBote : MonoBehaviour
         // Rotación hacia la izquierda
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.fwd, -velocidadRotacion * Time.deltaTime);
+            transform.Rotate(Vector3.forward, -velocidadRotacion * Time.deltaTime);
         }
         // Rotación hacia la derecha
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.fwd, velocidadRotacion * Time.deltaTime);
+            transform.Rotate(Vector3.forward, velocidadRotacion * Time.deltaTime);
         }
     }
 }
