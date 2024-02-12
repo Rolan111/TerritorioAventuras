@@ -6,6 +6,7 @@ public class EntradaAlBote : MonoBehaviour
 {
 
     public GameObject mensajePanel; // Panel que contiene el mensaje de pregunta
+    public GameObject barcoTemporal; //Será desactivado después de aceptar
     public GameObject barco; // El objeto del barco que será activado después de aceptar
 
     private bool preguntaMostrada = false;
@@ -46,6 +47,7 @@ public class EntradaAlBote : MonoBehaviour
         }
 
         mensajePanel.SetActive(false);
+        barcoTemporal.SetActive(false);
         barco.SetActive(true);
         Time.timeScale = 1f; // Reanudar el juego después de aceptar
         Destroy(gameObject); // Destruir el objeto con el que colisionó el jugador

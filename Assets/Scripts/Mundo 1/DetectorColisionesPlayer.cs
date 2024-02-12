@@ -11,6 +11,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
     public ControlDeActivacion desactivarCanvas;//Para desactivar objetos en base a eventos
     public ControlDeActivacion activarCanvas2;
     public GameObject efectoPinzaActivar;
+    public GameObject pinzaSobreJugador;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -67,6 +68,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Destroy(other.gameObject);
             //GameObject.FindGameObjectsWithTag("EfectoDesaparecerPinza");
             efectoPinzaActivar.SetActive(true);
+            pinzaSobreJugador.SetActive(true);
             Invoke("DestruirObjeto", 1.5f);
         }
 
