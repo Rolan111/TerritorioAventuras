@@ -9,6 +9,7 @@ public class DetectorColisionesBote : MonoBehaviour
     [SerializeField] private LogicaPuntajes[] logicaPuntajes;
 
     public GameObject[] activarResiduo;
+    [SerializeField] private GameObject actDescCanvas2;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -72,6 +73,18 @@ public class DetectorColisionesBote : MonoBehaviour
 
             Destroy(other.gameObject);
 
+        }
+
+        else if (other.CompareTag("DisparadorPuzzle"))
+        {
+            Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
+            //desactivarCanvas.DesactivarObjeto();
+            actDescCanvas2.SetActive(true);
+            Time.timeScale = 0f; //Pausar juego
+
+            //Liberamos el ratón
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
 
         //*****

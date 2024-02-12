@@ -44,6 +44,7 @@ public class DisparadorDeVideo : MonoBehaviour
     {
         videoReproduciendo = true;
         personaje.GetComponent<SUPERCharacterAIO>().enabled = false; // Llama a un método en el script de movimiento del personaje para pausar su movimiento
+        personaje.GetComponent<AudioSource>().enabled = false;
         videoPlayer.Play();
     }
 
@@ -54,5 +55,6 @@ public class DisparadorDeVideo : MonoBehaviour
         Destroy(gameObject);
         Destroy(videoPlayer);
         personaje.GetComponent<SUPERCharacterAIO>().enabled = true; // Llama a un método en el script de movimiento del personaje para reanudar su movimiento
+        personaje.GetComponent<AudioSource>().enabled = true;
     }
 }

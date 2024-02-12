@@ -49,10 +49,12 @@ public class DetectorColisionesPlayer : MonoBehaviour
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
             Time.timeScale = 0f; //Pausar juego
+
             //Liberamos el ratón
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
+
         else if (other.CompareTag("PortalCambio"))
         {
             Debug.Log("El jugador ha chocado con el PORTAL DE CAMBIO0.");
