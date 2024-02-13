@@ -10,18 +10,18 @@ public class DetectorColisionesBote : MonoBehaviour
 
     public GameObject[] activarResiduo;
     [SerializeField] private GameObject actDescCanvas2;
+    public GameObject jugadorParaPausar;
+
+    public AudioSource audioSource;
+    public AudioClip audioColisionBasuras;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Monedas"))
-        {
-            Debug.Log("El jugador ha chocado con una MONEDA.");
-            logicaPuntajes[0].ContadorPuntajes(1);
-            Destroy(other.gameObject);
-        }
+
+        EjecutarSonido(audioColisionBasuras);
 
         //Residuos
-        else if (other.CompareTag("Residuos/Aluminio"))
+        if (other.CompareTag("Residuos/Aluminio"))
         {
             Debug.Log("El jugador ha chocado con un RESIDUO Aluminio.");
             logicaPuntajes[1].ContadorPuntajes(1);
@@ -80,7 +80,8 @@ public class DetectorColisionesBote : MonoBehaviour
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
             //desactivarCanvas.DesactivarObjeto();
             actDescCanvas2.SetActive(true);
-            Time.timeScale = 0f; //Pausar juego
+            //Time.timeScale = 0f; //Pausar juego
+            jugadorParaPausar.GetComponent<ControlBote>().enabled = false; //Pausar solo el movimeinto del jugador
 
             //Liberamos el ratón
             Cursor.lockState = CursorLockMode.None;
@@ -90,6 +91,11 @@ public class DetectorColisionesBote : MonoBehaviour
         //*****
 
 
+    }
+
+    public void EjecutarSonido(AudioClip sonido)
+    {
+        audioSource.PlayOneShot(sonido);
     }
 
 }

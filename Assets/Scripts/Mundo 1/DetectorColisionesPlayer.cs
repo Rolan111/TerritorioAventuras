@@ -1,3 +1,4 @@
+using SUPERCharacter;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
     public ControlDeActivacion activarCanvas2;
     public GameObject efectoPinzaActivar;
     public GameObject pinzaSobreJugador;
+    public GameObject jugadorParaPausar;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -49,6 +52,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
             Time.timeScale = 0f; //Pausar juego
+            //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar solo el movimeinto del jugador
 
             //Liberamos el ratón
             Cursor.lockState = CursorLockMode.None;
