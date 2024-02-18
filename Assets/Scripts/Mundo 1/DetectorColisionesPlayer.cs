@@ -46,7 +46,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
         }
         //*****
 
-        else if (other.CompareTag("DisparadorPuzzle"))
+        else if (other.CompareTag("DisparadorPuzzle"))//Actualmente activo en el del Bote
         {
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
             //desactivarCanvas.DesactivarObjeto();

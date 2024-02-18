@@ -16,6 +16,9 @@ public class DisparadorDeVideo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             activarDesactivarTexto.SetActive(true);
+            //Liberar ratón
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             ReproducirVideo();
             Debug.Log("El objeto chocón con el jugador.");
             
@@ -48,7 +51,7 @@ public class DisparadorDeVideo : MonoBehaviour
         videoPlayer.Play();
     }
 
-    void VideoTerminado(VideoPlayer vp)
+    public void VideoTerminado(VideoPlayer vp)
     {
         activarDesactivarTexto.SetActive(false);
         videoReproduciendo = false;
@@ -56,5 +59,8 @@ public class DisparadorDeVideo : MonoBehaviour
         Destroy(videoPlayer);
         personaje.GetComponent<SUPERCharacterAIO>().enabled = true; // Llama a un método en el script de movimiento del personaje para reanudar su movimiento
         personaje.GetComponent<AudioSource>().enabled = true;
+        //Volver a bloquear el ratón
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

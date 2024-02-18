@@ -1,15 +1,13 @@
-using SUPERCharacter;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class DetectorColisionesMensajes : MonoBehaviour
+public class DetectorColisionesPinza : MonoBehaviour
 {
-
     public GameObject activarDesactivarMensaje;
+    public GameObject barreraADesactivar;
     private bool mensajeMostrado = false;
-    public GameObject jugadorParaPausar;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,11 +15,7 @@ public class DetectorColisionesMensajes : MonoBehaviour
         //Residuos
         if (!mensajeMostrado && other.CompareTag("Player"))
         {
-            
-
-            // Impide que el personaje se desplace con fuerza
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
+            Destroy(barreraADesactivar);
             MostrarMensaje();
             mensajeMostrado = true;
         }
@@ -40,15 +34,9 @@ public class DetectorColisionesMensajes : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            Debug.Log("Se ha presionado Y desde el mensaje");
             activarDesactivarMensaje.SetActive(false);
-            //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
-
-    
 }
