@@ -38,7 +38,7 @@ public class DetectorColisionesMensajes : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (mensajeMostrado && Input.GetKeyDown(KeyCode.Y))
         {
             Debug.Log("Se ha presionado Y desde el mensaje");
             activarDesactivarMensaje.SetActive(false);
