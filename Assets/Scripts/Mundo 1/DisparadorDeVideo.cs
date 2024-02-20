@@ -11,6 +11,8 @@ public class DisparadorDeVideo : MonoBehaviour
     public GameObject personaje;
     public GameObject activarDesactivarTexto;
 
+    //private bool videoReproduciendo = false;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -27,10 +29,6 @@ public class DisparadorDeVideo : MonoBehaviour
         }
     }
 
-    
-
-    private bool videoReproduciendo = false;
-
     void Start()
     {
         videoPlayer.loopPointReached += VideoTerminado;
@@ -46,7 +44,7 @@ public class DisparadorDeVideo : MonoBehaviour
 
     void ReproducirVideo()
     {
-        videoReproduciendo = true;
+        //videoReproduciendo = true;
         personaje.GetComponent<SUPERCharacterAIO>().enabled = false; // Llama a un método en el script de movimiento del personaje para pausar su movimiento
         personaje.GetComponent<AudioSource>().enabled = false;
         videoPlayer.Play();
@@ -55,7 +53,7 @@ public class DisparadorDeVideo : MonoBehaviour
     public void VideoTerminado(VideoPlayer vp)
     {
         activarDesactivarTexto.SetActive(false);
-        videoReproduciendo = false;
+        //videoReproduciendo = false;
         Destroy(gameObject);
         Destroy(videoPlayer);
         personaje.GetComponent<SUPERCharacterAIO>().enabled = true; // Llama a un método en el script de movimiento del personaje para reanudar su movimiento

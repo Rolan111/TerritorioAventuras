@@ -15,9 +15,27 @@ public class DetectorColisionesPlayer : MonoBehaviour
     public GameObject pinzaSobreJugador;
     public GameObject jugadorParaPausar;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))//Cuando se presiona Escape, para que se pueda interactuar con el tablero
+        {
+            //Liberar ratón
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+
+        if (Input.GetMouseButtonDown(0)) //Cuando se da click dentro de la pantalla
+        {
+            // Acciones a realizar cuando se presiona el botón izquierdo del ratón
+            //bloquear ratón
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = false;
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.CompareTag("Monedas"))
         {
             Debug.Log("El jugador ha chocado con una MONEDA.");
