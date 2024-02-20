@@ -7,12 +7,21 @@ public class ControlBote : MonoBehaviour
     public float velocidad = 5f; // Velocidad de movimiento del bote
     public float velocidadRotacion = 100f; // Velocidad de rotación del bote
 
+    public AudioSource audioSource;
+    public AudioClip sonidoAcelerar;
+
     void Update()
     {
         // Movimiento hacia adelante
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.UpArrow))//se presiona
         {
             transform.Translate(Vector3.up * velocidad * Time.deltaTime);
+            audioSource.PlayOneShot(sonidoAcelerar);
+        }
+        if (Input.GetKeyUp(KeyCode.UpArrow))//se suelta
+        {
+            transform.Translate(Vector3.up * velocidad * Time.deltaTime);
+            audioSource.Stop();
         }
         // Movimiento hacia atrás
         if (Input.GetKey(KeyCode.DownArrow))

@@ -8618,7 +8618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834667, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834667, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_TagString
@@ -16714,7 +16714,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1109713000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16785,6 +16785,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 5
   velocidadRotacion: 100
+  audioSource: {fileID: 0}
+  sonidoAcelerar: {fileID: 0}
 --- !u!4 &1109713003
 Transform:
   m_ObjectHideFlags: 0
@@ -30122,7 +30124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2140403776
 Transform:
   m_ObjectHideFlags: 0
@@ -30156,6 +30158,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 5
   velocidadRotacion: 100
+  audioSource: {fileID: 2140403781}
+  sonidoAcelerar: {fileID: 8300000, guid: e13871efc46b01e408041f7465bcd663, type: 3}
 --- !u!54 &2140403778
 Rigidbody:
   m_ObjectHideFlags: 0
