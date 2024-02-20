@@ -1103,6 +1103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activarDesactivarMinijuego: {fileID: 1516806333}
   jugadorActivarDesactivar: {fileID: 1959911944}
+  activarDesactivarPortal: {fileID: 732431307}
 --- !u!1001 &186300581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2882,6 +2883,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activarDesactivarMinijuego: {fileID: 1063657413}
   jugadorActivarDesactivar: {fileID: 1959911944}
+  activarDesactivarPortal: {fileID: 0}
 --- !u!1 &592398509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4125,9 +4127,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410405341}
-        m_TargetAssemblyTypeName: RestartScript, Assembly-CSharp
-        m_MethodName: RestartLevel
+      - m_Target: {fileID: 150923708}
+        m_TargetAssemblyTypeName: DisparadorDeMinijuegos2D, Assembly-CSharp
+        m_MethodName: desactivarMinijuego2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 150923708}
+        m_TargetAssemblyTypeName: DisparadorDeMinijuegos2D, Assembly-CSharp
+        m_MethodName: activarPortalDeSalida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10503,9 +10517,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 410405341}
-        m_TargetAssemblyTypeName: RestartScript, Assembly-CSharp
-        m_MethodName: RestartLevel
+      - m_Target: {fileID: 150923708}
+        m_TargetAssemblyTypeName: DisparadorDeMinijuegos2D, Assembly-CSharp
+        m_MethodName: desactivarMinijuego2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 150923708}
+        m_TargetAssemblyTypeName: DisparadorDeMinijuegos2D, Assembly-CSharp
+        m_MethodName: activarPortalDeSalida
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10784,6 +10810,10 @@ PrefabInstance:
     - target: {fileID: 4617036660772024948, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
       propertyPath: m_Name
       value: Portal red
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617036660772024948, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4617036660772024948, guid: 52c7d057cba585641bb68312c10d7791, type: 3}
       propertyPath: m_TagString

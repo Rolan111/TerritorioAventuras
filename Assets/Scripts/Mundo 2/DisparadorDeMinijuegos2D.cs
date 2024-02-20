@@ -6,11 +6,11 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
 {
     public GameObject activarDesactivarMinijuego;
     public GameObject jugadorActivarDesactivar;
+    public GameObject activarDesactivarPortal;
 
     private void OnTriggerEnter(Collider other)
     {
 
-        //Residuos
         if (other.CompareTag("Player"))
         {
             activarDesactivarMinijuego.SetActive(true);
@@ -46,6 +46,11 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         Cursor.visible = false;
         Destroy(gameObject);
 
+    }
+
+    public void activarPortalDeSalida()
+    {
+        activarDesactivarPortal.SetActive(true);
     }
 
     //// Update is called once per frame
