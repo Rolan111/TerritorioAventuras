@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/4 Mundo 2.unity
     guid: 1534515622b35cc48a0dc11e78cee24b
   - enabled: 1
-    path: Assets/Scenes/5 MundoFolclor3.unity
+    path: "Assets/Scenes/5 MundoPac\xEDficoFolclor3.unity"
     guid: 977103a5a3cd1344d86faf205d81a017
   - enabled: 1
     path: Assets/Scenes/6 Mundo4.unity
