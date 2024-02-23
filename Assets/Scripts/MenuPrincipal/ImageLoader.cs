@@ -44,8 +44,9 @@ public class ImageLoader : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         Vector3[] corners = new Vector3[4];
         GetComponent<RectTransform>().GetWorldCorners(corners);
 
-        Vector3 buttonPos = corners[1]; // TopRight corner
-        Vector3 imagePos = new Vector3(buttonPos.x + rt.rect.width + 55, buttonPos.y-13, buttonPos.z);
+        Vector3 buttonPos = corners[2]; // TopRight corner
+        //Vector3 imagePos = new Vector3(buttonPos.x + rt.rect.width, buttonPos.y - 13, buttonPos.z); //Línea original
+        Vector3 imagePos = new Vector3(buttonPos.x, buttonPos.y-13, buttonPos.z);
         displayImage.transform.position = imagePos;
     }
 }
