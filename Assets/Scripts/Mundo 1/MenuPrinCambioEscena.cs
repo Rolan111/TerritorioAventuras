@@ -69,7 +69,7 @@ public class MenuPrinCambioEscena : MonoBehaviour
     }
 
   
-    /* Ensayo En envío de datos*/
+    /* API Ensayo En envío de datos*/
     public void GurdarGame_State()
     {
         GameStateDto gameStateDto = new GameStateDto();
