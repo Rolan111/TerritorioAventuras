@@ -876,6 +876,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6273057364513818693, guid: bcff6155a624d78448676fd7606202fc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2acf66a200d9ce6429d8eeb2f9c064d6, type: 3}
     - target: {fileID: 6586074982380601377, guid: bcff6155a624d78448676fd7606202fc, type: 3}
       propertyPath: m_Name
       value: Biologo - Super Character
@@ -3426,10 +3430,10 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1480377168}
+  - {fileID: 383118576}
   - {fileID: 1349242041}
   - {fileID: 190659020}
   - {fileID: 229528972}
   - {fileID: 1395769413}
-  - {fileID: 383118576}
   - {fileID: 275619548}
   - {fileID: 1402771849}
