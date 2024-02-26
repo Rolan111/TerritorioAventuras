@@ -15,6 +15,13 @@ public class DetectorColisionesPlayer : MonoBehaviour
     public GameObject pinzaSobreJugador;
     public GameObject jugadorParaPausar;
 
+    //Detectar Animator para detener
+    public Animator animator;
+
+    //Detectar doble click
+    public float doubleClickTimeThreshold = 0.2f; // Puedes ajustar este valor según tu necesidad
+    private float lastClickTime;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))//Cuando se presiona Escape, para que se pueda interactuar con el tablero
@@ -24,12 +31,17 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Cursor.visible = true;
         }
 
-        if (Input.GetMouseButtonDown(0)) //Cuando se da click dentro de la pantalla
+        //Detectar doble click
+        if (Input.GetMouseButtonDown(0)) // Aquí asumimos el click izquierdo del ratón, puedes cambiarlo según tu necesidad
         {
-            // Acciones a realizar cuando se presiona el botón izquierdo del ratón
-            //bloquear ratón
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = false;
+            float timeSinceLastClick = Time.time - lastClickTime;
+            if (timeSinceLastClick <= doubleClickTimeThreshold)
+            {
+                // Doble click detectado
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = false;
+            }
+            lastClickTime = Time.time;
         }
     }
 
@@ -66,11 +78,39 @@ public class DetectorColisionesPlayer : MonoBehaviour
 
         else if (other.CompareTag("DisparadorPuzzle"))//Actualmente activo en el del Bote
         {
+            
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
-            Time.timeScale = 0f; //Pausar juego
-            //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar solo el movimeinto del jugador
+            //Time.timeScale = 0f; //Pausar juego
+            // Impide que el personaje se desplace con fuerza
+
+
+            //Pausar solo el movimeinto del jugador
+
+
+            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
+            jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false;
+
+
+            //animator.enabled = false;
+            StartCoroutine(EsperarYContinuarCoroutine());
+
+            IEnumerator EsperarYContinuarCoroutine()
+            {
+
+                yield return new WaitForSeconds(2f); // Espera 3 segundos
+
+                //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
+                jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
+                yield return new WaitForSeconds(2f); // Espera 3 segundos
+                jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false;
+
+            }
+
+
+
 
             //Liberamos el ratón
             Cursor.lockState = CursorLockMode.None;
