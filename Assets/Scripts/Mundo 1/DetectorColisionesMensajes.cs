@@ -9,6 +9,8 @@ public class DetectorColisionesMensajes : MonoBehaviour
 
     public GameObject activarDesactivarMensaje;
     private bool mensajeMostrado = false;
+    public bool bloqueoTotalDePersonaje;
+    public bool desbloqueoDeRaton;
     public GameObject jugadorParaPausar;
 
     private void OnTriggerEnter(Collider other)
@@ -21,6 +23,12 @@ public class DetectorColisionesMensajes : MonoBehaviour
 
             // Impide que el personaje se desplace con fuerza
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            if (bloqueoTotalDePersonaje)
+            {
+                jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar la cámara también
+            }
+
+            if(desbloqueoDeRaton) Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
 
             MostrarMensaje();
             mensajeMostrado = true;
@@ -30,7 +38,6 @@ public class DetectorColisionesMensajes : MonoBehaviour
         {
             activarDesactivarMensaje.SetActive(true);
             //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
-            //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar solo el movimeinto del jugador
         }
 
 
@@ -45,6 +52,11 @@ public class DetectorColisionesMensajes : MonoBehaviour
             //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+            if (bloqueoTotalDePersonaje)
+            {
+                jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
+            }
+            if (desbloqueoDeRaton) Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
 
             Destroy(gameObject);
         }
