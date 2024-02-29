@@ -34,6 +34,14 @@ public class MensajeSimple : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (activarDesactivarMensaje.activeSelf && Input.GetKey(KeyCode.Y))
+        {
+            activarDesactivarMensaje.SetActive(false);
+        }
+    }
+
 
 
 }
