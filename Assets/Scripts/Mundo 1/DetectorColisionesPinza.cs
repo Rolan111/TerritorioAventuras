@@ -23,6 +23,8 @@ public class DetectorColisionesPinza : MonoBehaviour
         void MostrarMensaje()
         {
             activarDesactivarMensaje.SetActive(true);
+            activarDesactivarMensaje.GetComponent<DesactivacionYDestruccionRetardada>().Desactivar();
+            
             //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
             //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar solo el movimeinto del jugador
         }
