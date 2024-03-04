@@ -22,14 +22,6 @@ public class SwitchImagenes : MonoBehaviour
 
         if (index >= background.Length) index = 0;
 
-        Debug.Log("El index esta en: " + index);
-        Debug.Log("El tamaño background esta en: " + background.Length);
-
-        if (index == (background.Length-1))
-        {
-            Debug.Log("Esta es la ultima imagen");
-        }
-
         SetActiveBackground();
         
     }
