@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,6 +12,9 @@ namespace HeneGames.DialogueSystem
         private float coolDownTimer;
         private bool dialogueIsOn;
         private DialogueTrigger dialogueTrigger;
+        public GameObject barreraADesactivar;
+        public GameObject barrera2ADesactivar;
+
 
         public enum TriggerState
         {
@@ -239,6 +243,8 @@ namespace HeneGames.DialogueSystem
             if (dialogueTrigger != null)
             {
                 dialogueTrigger.endDialogueEvent.Invoke();
+                Destroy(barreraADesactivar);
+                Destroy(barrera2ADesactivar);
             }
 
             endDialogueEvent.Invoke();
@@ -255,6 +261,10 @@ namespace HeneGames.DialogueSystem
             //Remove trigger refence
             dialogueIsOn = false;
             dialogueTrigger = null;
+
+            
+            //barreraADesactivar.SetActive(false);
+            //barreraADesactivar.IsDestroyed()
         }
 
         private void PlaySound(AudioClip _audioClip)

@@ -69,18 +69,18 @@ public class MenuPrinCambioEscena : MonoBehaviour
     }
 
   
-    /* Ensayo En envío de datos*/
+    /* ************************************** API Ensayo En envío de datos ***************************************** */
     public void GurdarGame_State()
     {
         GameStateDto gameStateDto = new GameStateDto();
         //llenamos lo que tenga en la base de datos
         gameStateDto.idAvatar = 2;
-        gameStateDto.idUser = UserApiCloud.getUser().id;
+        gameStateDto.idUser = UserApi.getUser().id;
         gameStateDto.idLevelChallengeDescription = 1;
 
 
 
-        GameStateApiCloud.save(gameStateDto);
+        GameStateApi.save(gameStateDto);
     }
 
     public void CrearGenero()
@@ -88,7 +88,7 @@ public class MenuPrinCambioEscena : MonoBehaviour
         GenderDto genderDto = new GenderDto();
 
         genderDto.gender = "Inmobiliario";
-        GenderApiCloud.save(genderDto);
+        GenderApi.save(genderDto);
     }
 
     public void CrearAvatar()
@@ -97,7 +97,7 @@ public class MenuPrinCambioEscena : MonoBehaviour
 
         avatarDto.avatar = "Ang";
         avatarDto.idGender = 3;
-        AvatarApiCloud.save(avatarDto);
+        AvatarApi.save(avatarDto);
     }
 
 

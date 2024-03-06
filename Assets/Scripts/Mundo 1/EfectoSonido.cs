@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EfectoSonido : MonoBehaviour
 {
 
+    //private static bool inMainMenu = false;
 
     [SerializeField] private AudioClip sonido1;
 
@@ -16,8 +18,10 @@ public class EfectoSonido : MonoBehaviour
         if (button != null)
         {
             button.onClick.AddListener(ReproduciendoSonido);
-            Debug.Log("Se ha presionado de manera interactiva");
         }
+
+        
+
     }
 
     private void ReproduciendoSonido()
