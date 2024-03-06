@@ -17,7 +17,7 @@ public class FormRegister : MonoBehaviour
         UserDto userDto = new UserDto();
         userDto.school = "";
 
-        UserApi.save(userDto); 
+        UserApiCloud.save(userDto); 
     }
 
     public void showFormLogin()

@@ -75,12 +75,12 @@ public class MenuPrinCambioEscena : MonoBehaviour
         GameStateDto gameStateDto = new GameStateDto();
         //llenamos lo que tenga en la base de datos
         gameStateDto.idAvatar = 2;
-        gameStateDto.idUser = UserApi.getUser().id;
+        gameStateDto.idUser = UserApiCloud.getUser().id;
         gameStateDto.idLevelChallengeDescription = 1;
 
 
 
-        GameStateApi.save(gameStateDto);
+        GameStateApiCloud.save(gameStateDto);
     }
 
     public void CrearGenero()
@@ -88,7 +88,7 @@ public class MenuPrinCambioEscena : MonoBehaviour
         GenderDto genderDto = new GenderDto();
 
         genderDto.gender = "Inmobiliario";
-        GenderApi.save(genderDto);
+        GenderApiCloud.save(genderDto);
     }
 
     public void CrearAvatar()
@@ -97,7 +97,7 @@ public class MenuPrinCambioEscena : MonoBehaviour
 
         avatarDto.avatar = "Ang";
         avatarDto.idGender = 3;
-        AvatarApi.save(avatarDto);
+        AvatarApiCloud.save(avatarDto);
     }
 
 

@@ -1,7 +1,8 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
-    
+using System.Collections.Generic;
+
 public class LoginForm : MonoBehaviour
 {
     public TMP_InputField user;
@@ -13,6 +14,9 @@ public class LoginForm : MonoBehaviour
 
     public void login()
     {
+        List<AvatarModel> response = AvatarApiLocal.findAll();
+        Debug.Log(response);
+
         if (!validateData())
         {
             return;
@@ -22,7 +26,7 @@ public class LoginForm : MonoBehaviour
         userDto.user = user.text;
         userDto.password = password.text;
 
-        var isLogin = UserApi.login(userDto);
+        var isLogin = UserApiCloud.login(userDto);
         if (!isLogin)
         {
             result.text = "Usuario o Contraseña Erronea";
