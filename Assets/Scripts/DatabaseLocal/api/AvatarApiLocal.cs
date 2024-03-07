@@ -1,11 +1,14 @@
 using System.Collections.Generic;
 
-
 public static class AvatarApiLocal
 {
     public static bool save()
     {
-        string sql = "INSERT INTO avatar ('avatar', 'id_gender', 'register_date') VALUES ('PRUEBAS', 2, '2023-10-05 20:20:45');";
+        AvatarModel avatarModel = new AvatarModel();
+        avatarModel.avatar = "PRUEBAS";
+        avatarModel.id_gender = 2;
+
+        string sql = "INSERT INTO avatar ('avatar', 'id_gender') VALUES ('" + avatarModel.avatar + "', " + avatarModel.id_gender + ")";
         DbConnectionLocal.Write<AvatarModel>(sql);
         return true;
     }
@@ -15,4 +18,5 @@ public static class AvatarApiLocal
         string sql = "SELECT * FROM avatar";
         return DbConnectionLocal.Read<List<AvatarModel>>(sql);
     }
+
 }

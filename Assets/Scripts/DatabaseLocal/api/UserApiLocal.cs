@@ -1,19 +1,10 @@
-using UnityEngine;
-
-
-public class UserApiLocal : MonoBehaviour
+public static class UserApiLocal
 {
     
-    private void Start()
+    public static UserModel login(string user, string password)
     {
-        UserModel user = DbConnectionLocal.Read<UserModel>("SELECT * FROM user WHERE user='Juan' and password='Juan' ");
-        if(user == null)
-        {
-            Debug.Log("FALLO EL LOGIN PARA EL USUARIO");
-        }
-        else
-        {
-            Debug.Log("LOGIN CORRECTO PARA EL USUARIO");
-        }
+        string sql = "SELECT * FROM user WHERE user='" + user + "' and password='" + password + "'";
+        return DbConnectionLocal.Read<UserModel>(sql);
     }
+
 }

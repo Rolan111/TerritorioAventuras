@@ -11,12 +11,12 @@ using UnityEngine;
 public static class DbConnectionLocal
 {
     private static bool isFristLoad = true;
-    private static readonly string databaseSql = "Database/DatabaseSql.sql";
-    private static readonly string database = "URI=file:Database/DataBase.db";
+    private static readonly string databaseSql = "TerritorioAventuras_Data/sql.dll";
+    private static readonly string database = "URI=file:TerritorioAventuras_Data/sqldb.dll";
 
     public static T Write<T>(string query)
     {
-        return PreloadQuery<T>(query,false);
+        return PreloadQuery<T>(query, false);
     }
 
     public static T Read<T>(string query)
@@ -96,6 +96,9 @@ public static class DbConnectionLocal
             stringBuilder.AppendLine(inp_ln);
         }
         inp_stm.Close();
-        return stringBuilder.ToString();
+        string reader = stringBuilder.ToString();
+
+        var base64EncodedBytes = Convert.FromBase64String(reader);
+        return Encoding.UTF8.GetString(base64EncodedBytes);
     }
 }
