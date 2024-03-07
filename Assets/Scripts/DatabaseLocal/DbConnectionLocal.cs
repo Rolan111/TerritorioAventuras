@@ -11,8 +11,8 @@ using UnityEngine;
 public static class DbConnectionLocal
 {
     private static bool isFristLoad = true;
-    private static readonly string databaseSql = "Assets/Scripts/DatabaseLocal/DatabaseSql.sql";
-    private static readonly string database = "URI=file:Assets/Database/DataBase.db";
+    private static readonly string databaseSql = "Database/DatabaseSql.sql";
+    private static readonly string database = "URI=file:Database/DataBase.db";
 
     public static T Write<T>(string query)
     {
@@ -65,6 +65,7 @@ public static class DbConnectionLocal
             }
         }catch (Exception ex) {
             Debug.Log(ex.ToString());
+
         }
         return default(T);
     }
