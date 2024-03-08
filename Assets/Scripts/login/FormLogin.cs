@@ -15,8 +15,7 @@ public class LoginForm : MonoBehaviour
 
     public void login()
     {
-        AvatarApiLocal.save();
-        List<AvatarModel> response = AvatarApiLocal.findAll();
+        List<AvatarModel> response = AvatarApiLocal.FindAll();
         Debug.Log(response);
 
         if (!validateData())
@@ -27,6 +26,8 @@ public class LoginForm : MonoBehaviour
                 totales.Append(x.id_gender + " - " + x.avatar);
             });
             result.text = totales.ToString();
+
+            AvatarApiLocal.CreateExcel();
             return;
         }
 
