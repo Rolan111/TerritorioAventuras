@@ -9,6 +9,7 @@ public class EntradaAlBote : MonoBehaviour
     public GameObject barcoTemporal; //Será desactivado después de aceptar
     public GameObject barco; // El objeto del barco que será activado después de aceptar
     public GameObject jugadorActivaDesactivar;
+    //public GameObject objetosADesactivar;
 
     //Para mover el objeto
     public Transform objetoAMover;
@@ -104,6 +105,7 @@ public class EntradaAlBote : MonoBehaviour
 
         Time.timeScale = 1f; // Reanudar el juego después de aceptar
         Destroy(gameObject); // Destruir el objeto con el que colisionó el jugador
+
     }
 
 }
