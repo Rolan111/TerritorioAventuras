@@ -51,6 +51,8 @@ ExportedObj/
 *.pidb.meta
 *.pdb.meta
 *.mdb.meta
+*.meta
+.meta
 
 # Unity3D generated file on crash reports
 sysinfo.txt
@@ -70,3 +72,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/Assets/Materiales y Texturas/PNG Textures/MetalTrashCan.png.meta
+/Assets/Materiales y Texturas/PNG Textures/MetalTrashCanNormal.png.meta
+/Assets/Materiales y Texturas/PNG Textures/Rock2.png.meta
+/Assets/Materiales y Texturas/PNG Textures/Rock2Normal.png.meta
+/Assets/Materiales y Texturas/PNG Textures/Treebark.png.meta
+/Assets/Materiales y Texturas/PNG Textures/TreebarkNormal.png.meta
+/Assets/Materiales y Texturas/PNG Textures/WoodenFence.png.meta
+/Assets/Materiales y Texturas/PNG Textures/WoodenFenceNormal.png.meta
