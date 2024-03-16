@@ -8,6 +8,7 @@ public class DetectorColisionesPinza : MonoBehaviour
     public GameObject activarDesactivarMensaje;
     public GameObject barreraADesactivar;
     private bool mensajeMostrado = false;
+    public LogicaPuntajes logicaPuntajes;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,7 @@ public class DetectorColisionesPinza : MonoBehaviour
             Destroy(barreraADesactivar);
             MostrarMensaje();
             mensajeMostrado = true;
+            logicaPuntajes.ContadorPuntajes(10);
         }
 
         void MostrarMensaje()
