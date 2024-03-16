@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System.Text;
 
 public class LoginForm : MonoBehaviour
 {
@@ -14,11 +15,19 @@ public class LoginForm : MonoBehaviour
 
     public void login()
     {
-        List<AvatarModel> response = AvatarApiLocal.findAll();
+        List<AvatarModel> response = AvatarApiLocal.FindAll();
         Debug.Log(response);
 
         if (!validateData())
         {
+            StringBuilder totales = new StringBuilder();
+            response.ForEach(x =>
+            {
+                totales.Append(x.id_gender + " - " + x.avatar);
+            });
+            result.text = totales.ToString();
+
+            AvatarApiLocal.CreateExcel();
             return;
         }
 

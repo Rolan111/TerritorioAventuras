@@ -4,7 +4,7 @@
 public class GenderModel : BaseModel
 {
 
-    public string gender;
+    public string gender { get; set; }
 
 }
 

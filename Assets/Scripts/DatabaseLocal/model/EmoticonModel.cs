@@ -4,7 +4,7 @@
 public class EmoticonModel : BaseModel
 {
 
-    public string emoticon;
+    public string emoticon { get; set; }
 
 }
 
