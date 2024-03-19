@@ -3,9 +3,6 @@ using System;
 [Serializable]
 public class BaseModel
 {
-
-    public int id { get; set; } 
-
-    public string register_date { get; set; }
-
+    public int id;
+    public string register_date;
 }

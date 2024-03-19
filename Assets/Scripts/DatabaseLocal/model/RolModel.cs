@@ -4,6 +4,6 @@
 public class RolModel : BaseModel
 {
 
-    public string rol { get; set; }
+    public string rol;
 
 }

@@ -3,20 +3,19 @@
 [Serializable]
 public class UserModel : BaseModel {
 
-    public string name { get; set; }
+    public string name;
 
-    public string age { get; set; }
+    public string age;
 
-    public string email { get; set; }
+    public string email;
 
-    public string school { get; set; }
+    public string school;
 
-    public string user { get; set; }
+    public string user;
 
-    public string password { get; set; }
+    public string password;
 
-    public int id_gender { get; set; }
+    public int id_gender;
 
-    public int id_rol { get; set; } 
-
+    public int id_rol;
 }
