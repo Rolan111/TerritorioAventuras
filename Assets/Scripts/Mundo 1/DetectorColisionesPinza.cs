@@ -6,6 +6,7 @@ using UnityEngine;
 public class DetectorColisionesPinza : MonoBehaviour
 {
     public GameObject activarDesactivarMensaje;
+    public GameObject[] activarDesactivarObjetos;
     public GameObject barreraADesactivar;
     private bool mensajeMostrado = false;
     public LogicaPuntajes logicaPuntajes;
@@ -19,7 +20,9 @@ public class DetectorColisionesPinza : MonoBehaviour
             Destroy(barreraADesactivar);
             MostrarMensaje();
             mensajeMostrado = true;
-            logicaPuntajes.ContadorPuntajes(10);
+            //logicaPuntajes.ContadorPuntajes(10);
+            activarDesactivarObjetos[0].SetActive(true);
+            activarDesactivarObjetos[1].SetActive(true);
         }
 
         void MostrarMensaje()
