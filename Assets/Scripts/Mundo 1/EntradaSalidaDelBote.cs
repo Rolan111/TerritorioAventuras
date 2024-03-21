@@ -5,7 +5,7 @@ using UnityEngine;
 public class EntradaAlBote : MonoBehaviour
 {
 
-    public GameObject mensajePanel; // Panel que contiene el mensaje de pregunta
+    public GameObject[] mensajesPanel; // Panel que contiene el mensaje de pregunta
     public GameObject barcoTemporal; //Será desactivado después de aceptar
     public GameObject barco; // El objeto del barco que será activado después de aceptar
     public GameObject jugadorActivaDesactivar;
@@ -18,22 +18,72 @@ public class EntradaAlBote : MonoBehaviour
 
 
     private bool preguntaMostrada = false;
+    private bool preguntaMostradaFalta = false;
+    public bool entrandoAlBote = false;
 
     void OnCollisionEnter(Collision collision)
     {
         if (!preguntaMostrada && collision.gameObject.CompareTag("Player"))
         {
-            preguntaMostrada = true;
-            MostrarMensaje();
+            if (entrandoAlBote)
+            {
+                preguntaMostrada = true;
+                MostrarMensaje();
+            }
+            else
+            {
+                // Encuentra el GameObject que tiene Script1 adjunto, el script que tiene el contador
+                GameObject objetoConScript1 = GameObject.Find("Bote");
+
+                if (objetoConScript1 != null)
+                {
+                    // Obtén la referencia al script Script1 desde el GameObject
+                    DetectorColisionesBote script1 = objetoConScript1.GetComponent<DetectorColisionesBote>();
+
+                    if (script1 != null)
+                    {
+                        // Ahora puedes acceder a la variable pública miVariablePublica
+                        int valorDeLaVariablePublica = script1.contadorTotalDeResiduos;
+                        Debug.Log("Valor de miVariablePublica en Script1: " + valorDeLaVariablePublica);
+                        if (valorDeLaVariablePublica<7)
+                        {
+                            preguntaMostradaFalta = true;
+                            MostrarMensajeValorRestante();
+                        }
+                        else
+                        {
+                            preguntaMostrada = true;
+                            MostrarMensaje();
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogError("Script1 no encontrado en el objeto " + objetoConScript1.name);
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Objeto con nombre NombreDelObjetoConScript1 no encontrado.");
+                }
+            }
+            
+
         }
         
     }
 
+    void MostrarMensajeValorRestante()
+    {
+        mensajesPanel[0].SetActive(true);
+        //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
+    }
+
     void MostrarMensaje()
     {
-        mensajePanel.SetActive(true);
+        mensajesPanel[1].SetActive(true);
         Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
     }
+
 
     void Update()
     {
@@ -41,6 +91,15 @@ public class EntradaAlBote : MonoBehaviour
         {
             Aceptar();
         }
+        if (preguntaMostradaFalta && Input.GetKeyDown(KeyCode.Y))
+        {
+            Aceptar2();
+        }
+    }
+
+    void Aceptar2()
+    {
+        mensajesPanel[0].SetActive(false);
     }
 
     void Aceptar()
@@ -80,8 +139,8 @@ public class EntradaAlBote : MonoBehaviour
         {
             objetoAMover.position = nuevaPosicion;
         }
-        
-        mensajePanel.SetActive(false);
+
+        mensajesPanel[1].SetActive(false);
 
         //Barco Temporal
         if (barcoTemporal.activeSelf)

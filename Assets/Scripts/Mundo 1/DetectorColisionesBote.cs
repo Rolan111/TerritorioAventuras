@@ -14,6 +14,7 @@ public class DetectorColisionesBote : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip audioColisionBasuras;
+    public int contadorTotalDeResiduos=0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,10 +27,14 @@ public class DetectorColisionesBote : MonoBehaviour
             Debug.Log("El jugador ha chocado con un RESIDUO Aluminio.");
             logicaPuntajes[1].ContadorPuntajes(1);
             Destroy(other.gameObject);
-            activarResiduo[0].SetActive(true);
+            activarResiduo[0].SetActive(true); //activación del residuo dentro del bote
+            contadorTotalDeResiduos += 1;
+            Debug.Log("El contador de residuos va en: " + contadorTotalDeResiduos);
         }
         else if (other.CompareTag("Residuos/Envases"))
         {
+            contadorTotalDeResiduos += 1;
+            Debug.Log("El contador de residuos va en: " + contadorTotalDeResiduos);
             Debug.Log("El jugador ha chocado con un RESIDUO Envases.");
             logicaPuntajes[2].ContadorPuntajes(1);
 
@@ -47,6 +52,8 @@ public class DetectorColisionesBote : MonoBehaviour
         }
         else if (other.CompareTag("Residuos/PapelYCarton"))
         {
+            contadorTotalDeResiduos += 1;
+            Debug.Log("El contador de residuos va en: " + contadorTotalDeResiduos);
             Debug.Log("El jugador ha chocado con un RESIDUO Papel y Cartón.");
             logicaPuntajes[3].ContadorPuntajes(1);
        
@@ -71,6 +78,7 @@ public class DetectorColisionesBote : MonoBehaviour
                 activarResiduo[6].SetActive(true);
             }
 
+            
             Destroy(other.gameObject);
 
         }
