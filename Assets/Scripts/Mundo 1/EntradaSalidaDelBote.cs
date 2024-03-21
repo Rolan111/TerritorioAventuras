@@ -25,7 +25,7 @@ public class EntradaAlBote : MonoBehaviour
     {
         if (!preguntaMostrada && collision.gameObject.CompareTag("Player"))
         {
-            if (entrandoAlBote)
+            if (entrandoAlBote)//Si apenas entra al bote por primera Vez
             {
                 preguntaMostrada = true;
                 MostrarMensaje();
@@ -133,6 +133,7 @@ public class EntradaAlBote : MonoBehaviour
         {
             isPersonajeMovido = true;
             jugadorActivaDesactivar.SetActive(true);
+            mensajesPanel[2].SetActive(true);
         }
 
         if (!isPersonajeMovido)
