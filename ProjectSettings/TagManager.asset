@@ -23,6 +23,8 @@ TagManager:
   - Ingredient
   - Bowl
   - BotonTableroControl
+  - Residuos/Aprovechables
+  - Residuos/NoAprovechables
   layers:
   - Default
   - TransparentFX

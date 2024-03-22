@@ -66,7 +66,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
             //}
 
 
-            if (contador == 3)
+            if (contador == 7) //Cambiar dependiendo de la cantidad de residuos
             {
                 Time.timeScale = 1f;
                 Debug.Log("El contenedor esta LLENO en 3");
