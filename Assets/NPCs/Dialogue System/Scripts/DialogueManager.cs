@@ -12,9 +12,11 @@ namespace HeneGames.DialogueSystem
         private float coolDownTimer;
         private bool dialogueIsOn;
         private DialogueTrigger dialogueTrigger;
+
+        public bool conBarreras=false;
         public GameObject barreraADesactivar;
         public GameObject barrera2ADesactivar;
-
+        public GameObject jugadorParaPausar;
 
         public enum TriggerState
         {
@@ -66,6 +68,9 @@ namespace HeneGames.DialogueSystem
         //Start dialogue by trigger
         private void OnTriggerEnter(Collider other)
         {
+            // Impide que el personaje se desplace con fuerza
+            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
             if (triggerState == TriggerState.Collision && !dialogueIsOn)
             {
                 //Try to find the "DialogueTrigger" component in the crashing collider
@@ -239,12 +244,22 @@ namespace HeneGames.DialogueSystem
 
         public void StopDialogue()
         {
+            Debug.Log("Se ha terminado de ejecutar el DIALOG");
+
+            //Se retoma el movimiento del personaje
+            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+
             //Stop dialogue event
             if (dialogueTrigger != null)
             {
                 dialogueTrigger.endDialogueEvent.Invoke();
-                Destroy(barreraADesactivar);
-                Destroy(barrera2ADesactivar);
+                if (conBarreras)
+                {
+                    Destroy(barreraADesactivar);
+                    Destroy(barrera2ADesactivar);
+                }
+                
             }
 
             endDialogueEvent.Invoke();

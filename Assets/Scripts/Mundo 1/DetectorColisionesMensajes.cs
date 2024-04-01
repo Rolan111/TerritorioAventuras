@@ -28,6 +28,7 @@ public class DetectorColisionesMensajes : MonoBehaviour
                 jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar la cámara también
             }
 
+            //Examinar si también se quiere desbloquear el raton
             if(desbloqueoDeRaton) Cursor.lockState = CursorLockMode.None; Cursor.visible = true;
 
             MostrarMensaje();
@@ -50,8 +51,11 @@ public class DetectorColisionesMensajes : MonoBehaviour
             Debug.Log("Se ha presionado Y desde el mensaje");
             activarDesactivarMensaje.SetActive(false);
             //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
+
+            //Se retoma el movimiento del personaje
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+
             if (bloqueoTotalDePersonaje)
             {
                 jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
