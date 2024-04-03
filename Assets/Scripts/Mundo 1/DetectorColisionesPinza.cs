@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -5,6 +6,7 @@ using UnityEngine;
 
 public class DetectorColisionesPinza : MonoBehaviour
 {
+    public bool conMensaje=false;
     public GameObject activarDesactivarMensaje;
     public GameObject[] activarDesactivarObjetos;
     public GameObject barreraADesactivar;
@@ -27,8 +29,12 @@ public class DetectorColisionesPinza : MonoBehaviour
 
         void MostrarMensaje()
         {
-            activarDesactivarMensaje.SetActive(true);
-            activarDesactivarMensaje.GetComponent<DesactivacionYDestruccionRetardada>().Desactivar();
+            if (conMensaje)
+            {
+                activarDesactivarMensaje.SetActive(true);
+                activarDesactivarMensaje.GetComponent<DialogueManager>().StartDialogue();
+                activarDesactivarMensaje.GetComponent<DesactivacionYDestruccionRetardada>().Desactivar();
+            }
             
             //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
             //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false; //Pausar solo el movimeinto del jugador

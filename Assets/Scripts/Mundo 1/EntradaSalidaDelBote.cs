@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -80,15 +81,28 @@ public class EntradaAlBote : MonoBehaviour
 
     void MostrarMensaje()
     {
+        //entrandoAlBote = false;//Para que detecte que el jugador ya ha estado dentro del bote
         mensajesPanel[1].SetActive(true);
-        Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
+        if (entrandoAlBote) //Solo cuando se entra al bote por primera vez
+        {
+            mensajesPanel[1].GetComponent<DialogueManager>().StartDialogue();
+        }
+        
+        //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
+        //Pausar jugador
+        jugadorActivaDesactivar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
     }
 
 
     void Update()
     {
-        if (preguntaMostrada && Input.GetKeyDown(KeyCode.Y))
+        if (preguntaMostrada && Input.GetKeyDown(KeyCode.Tab))
         {
+            if (entrandoAlBote)
+            {
+                mensajesPanel[1].GetComponent<DialogueManager>().StopDialogue();
+            }
+            
             Aceptar();
         }
         if (preguntaMostradaFalta && Input.GetKeyDown(KeyCode.Y))
@@ -133,6 +147,9 @@ public class EntradaAlBote : MonoBehaviour
         {
             isPersonajeMovido = true;
             jugadorActivaDesactivar.SetActive(true);
+            //Se retoma el movimiento del personaje
+            jugadorActivaDesactivar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            jugadorActivaDesactivar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
             mensajesPanel[2].SetActive(true);
         }
 

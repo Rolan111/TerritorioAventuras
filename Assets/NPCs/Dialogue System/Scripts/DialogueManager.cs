@@ -14,6 +14,7 @@ namespace HeneGames.DialogueSystem
         private DialogueTrigger dialogueTrigger;
 
         public bool conBarreras=false;
+        public bool pausarJugador=false;
         public GameObject barreraADesactivar;
         public GameObject barrera2ADesactivar;
         public GameObject jugadorParaPausar;
@@ -69,7 +70,11 @@ namespace HeneGames.DialogueSystem
         private void OnTriggerEnter(Collider other)
         {
             // Impide que el personaje se desplace con fuerza
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            if (pausarJugador)
+            {
+                jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            }
+            
 
             if (triggerState == TriggerState.Collision && !dialogueIsOn)
             {
@@ -89,6 +94,7 @@ namespace HeneGames.DialogueSystem
                 }
             }
         }
+
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
@@ -244,11 +250,15 @@ namespace HeneGames.DialogueSystem
 
         public void StopDialogue()
         {
-            Debug.Log("Se ha terminado de ejecutar el DIALOG");
+            //Debug.Log("Se ha terminado de ejecutar el DIALOG");
 
             //Se retoma el movimiento del personaje
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-            jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+            if (pausarJugador)
+            {
+                jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
+            }
+            
 
             //Stop dialogue event
             if (dialogueTrigger != null)
