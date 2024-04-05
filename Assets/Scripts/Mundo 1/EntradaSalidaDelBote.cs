@@ -54,6 +54,7 @@ public class EntradaAlBote : MonoBehaviour
                         else
                         {
                             preguntaMostrada = true;
+                            //mensajesPanel[1].GetComponent<DialogueManager>().StartDialogue();
                             MostrarMensaje();
                         }
                     }
@@ -81,13 +82,15 @@ public class EntradaAlBote : MonoBehaviour
 
     void MostrarMensaje()
     {
-        //entrandoAlBote = false;//Para que detecte que el jugador ya ha estado dentro del bote
         mensajesPanel[1].SetActive(true);
-        if (entrandoAlBote) //Solo cuando se entra al bote por primera vez
-        {
-            mensajesPanel[1].GetComponent<DialogueManager>().StartDialogue();
-        }
-        
+
+        //if (entrandoAlBote) //Solo cuando se entra al bote por primera vez
+        //{
+        //    mensajesPanel[1].GetComponent<DialogueManager>().StartDialogue();
+        //}
+
+        mensajesPanel[1].GetComponent<DialogueManager>().StartDialogue();
+
         //Time.timeScale = 0f; // Pausar el juego mientras se muestra el mensaje
         //Pausar jugador
         jugadorActivaDesactivar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
@@ -102,7 +105,8 @@ public class EntradaAlBote : MonoBehaviour
             {
                 mensajesPanel[1].GetComponent<DialogueManager>().StopDialogue();
             }
-            
+            mensajesPanel[1].GetComponent<DialogueManager>().StopDialogue();
+
             Aceptar();
         }
         if (preguntaMostradaFalta && Input.GetKeyDown(KeyCode.Y))
@@ -118,26 +122,6 @@ public class EntradaAlBote : MonoBehaviour
 
     void Aceptar()
     {
-        //Desactivamos el jugador
-        // Encuentra todos los objetos con la etiqueta deseada
-        
-        //GameObject[] objetosADesactivar = GameObject.FindGameObjectsWithTag("Player");
-        
-        //// Itera sobre cada objeto encontrado y los desactiva
-        //foreach (GameObject objeto in objetosADesactivar)
-        //{
-        //    if (objeto.activeSelf)
-        //    {
-        //        objeto.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        objeto.SetActive(true);
-        //        isPersonajeMovido = true;
-        //    }
-
-        //}
-
         //Jugador
         if (jugadorActivaDesactivar.activeSelf)
         {
