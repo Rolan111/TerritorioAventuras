@@ -34,17 +34,17 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         
     }
 
-    public void desactivarMinijuego2()
+    public void desactivarMinijuego2(bool siGano)
     {
 
-        //activarDesactivarMinijuego.SetActive(false);
-        Destroy(activarDesactivarMinijuego);
+        activarDesactivarMinijuego.SetActive(false);
+        //Destroy(activarDesactivarMinijuego);
         jugadorActivarDesactivar.SetActive(true);
 
         //Volver a bloquear el ratón
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        Destroy(gameObject);
+        if (siGano) { Destroy(gameObject); }
 
     }
 

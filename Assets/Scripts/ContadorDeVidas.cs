@@ -24,7 +24,7 @@ public class ContadorDeVidas : MonoBehaviour
         int numVar = Int32.Parse(contadorVidastextMeshProUGUI.text);
         if (numVar==0)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             mensajeDeJuegoTerminado.SetActive(true);
         }
         else
@@ -37,7 +37,7 @@ public class ContadorDeVidas : MonoBehaviour
 
     public void Reintentar()
     {
-        Time.timeScale = 1;
+        //Time.timeScale = 1;
         SceneManager.LoadScene("EtniasLluvia");
     }
 }
