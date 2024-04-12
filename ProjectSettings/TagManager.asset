@@ -25,6 +25,7 @@ TagManager:
   - BotonTableroControl
   - Residuos/Aprovechables
   - Residuos/NoAprovechables
+  - TagParaEliminarClones
   layers:
   - Default
   - TransparentFX

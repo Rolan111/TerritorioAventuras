@@ -26,6 +26,7 @@ public class ContadorDeVidas : MonoBehaviour
         {
             //Time.timeScale = 0;
             mensajeDeJuegoTerminado.SetActive(true);
+            RainController.DestroyAllRainConSuScript();//destruye todos los clones de las hojas
         }
         else
         {
@@ -33,6 +34,11 @@ public class ContadorDeVidas : MonoBehaviour
             contadorVidastextMeshProUGUI.SetText(numVar.ToString());
         }
         
+    }
+
+    public void LlenarVida()
+    {
+        contadorVidastextMeshProUGUI.SetText("5");
     }
 
     public void Reintentar()
