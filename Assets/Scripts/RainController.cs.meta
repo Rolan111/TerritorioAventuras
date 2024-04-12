@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b29c518b82859e64a92ef7a1b69d8418
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - rainPrefab: {fileID: 9151776337946185827, guid: a73cfe2212d2daa4ba227f1929ee1cd5, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
