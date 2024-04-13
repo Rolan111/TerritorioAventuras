@@ -6,8 +6,8 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
 {
     public GameObject controladorActivarDesactivarMinijuego;
     public GameObject jugadorActivarDesactivar;
-    public GameObject activarDesactivarPortal;
     public GameObject activarDesactivarNPC2;
+    public GameObject activarDesactivarPortal;
 
     public int minijuegoAActivar;
 

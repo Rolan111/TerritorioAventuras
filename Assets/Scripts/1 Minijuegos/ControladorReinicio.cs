@@ -20,13 +20,13 @@ public class ControladorReinicio : MonoBehaviour
         GameObject.Find("ControladorPrefabsMinijuegos").GetComponent<ControladorPrefabsMinijuegos>().RecargarPrefab();
     }
 
-    public void juegoGanadoSalir()
+    public void juegoGanadoSalir()//para el minijuego1
     {
         GameObject.Find("DisparadorMinijuego1").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
         GameObject.Find("DisparadorMinijuego1").GetComponent<DisparadorDeMinijuegos2D>().ActivarNPC2();
     }
 
-    public void juegoGanadoSalir2()
+    public void juegoGanadoSalir2()//para el minijuego2
     {
         GameObject.Find("DisparadorMinijuego2").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
     }
