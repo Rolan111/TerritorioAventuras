@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ControladorPrefabsMinijuegos : MonoBehaviour
 {
-    public GameObject miPrefab;
+    public GameObject prefabMinijuego1;
+    public GameObject prefabMinijuego2;
     private GameObject instanciaPrefab;
-
+    private int instanciaARecargar;
     //void Start()
     //{
     //    // Llamamos a nuestro método SpawnPrefab() para instanciarlo al inicio
@@ -23,10 +24,20 @@ public class ControladorPrefabsMinijuegos : MonoBehaviour
     //    }
     //}
 
-    public void SpawnPrefab()
+    public void SpawnPrefab(int minijuegoAActivar)
     {
+        instanciaARecargar = minijuegoAActivar;
         // Instanciamos el prefab en la posición inicial (0, 0, 0) y sin rotación
-        instanciaPrefab = Instantiate(miPrefab, Vector3.zero, Quaternion.identity);
+        if (minijuegoAActivar==1)
+        {
+            instanciaPrefab = Instantiate(prefabMinijuego1, Vector3.zero, Quaternion.identity);
+            //instanciaARecargar = instanciaPrefab;
+        }
+        else
+        {
+            instanciaPrefab = Instantiate(prefabMinijuego2, Vector3.zero, Quaternion.identity);
+        }
+
     }
 
     public void DestroyPrefab()
@@ -51,8 +62,12 @@ public class ControladorPrefabsMinijuegos : MonoBehaviour
 
     IEnumerator SpawnRain() //luego se reinstancia
     {
-        yield return new WaitForSeconds(1f);
-        SpawnPrefab();
+        yield return new WaitForSeconds(0.5f);
+        if (true)
+        {
+            
+        }
+        SpawnPrefab(instanciaARecargar);
     }
 
 

@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class DisparadorDeMinijuegos2D : MonoBehaviour
 {
-    public GameObject activarDesactivarMinijuego;
+    public GameObject controladorActivarDesactivarMinijuego;
     public GameObject jugadorActivarDesactivar;
     public GameObject activarDesactivarPortal;
+    public int minijuegoAActivar;
 
     private void OnTriggerEnter(Collider other)
     {
 
         if (other.CompareTag("Player"))
         {
-            activarDesactivarMinijuego.SetActive(true);
-            activarDesactivarMinijuego.GetComponent<ControladorPrefabsMinijuegos>().SpawnPrefab();
+            controladorActivarDesactivarMinijuego.SetActive(true);
+            controladorActivarDesactivarMinijuego.GetComponent<ControladorPrefabsMinijuegos>().SpawnPrefab(minijuegoAActivar);
             jugadorActivarDesactivar.SetActive(false);
             //Liberar ratón
             Cursor.lockState = CursorLockMode.None;
@@ -38,7 +39,7 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
     public void desactivarMinijuego2()
     {
 
-        activarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
+        controladorActivarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
 
         //Destroy(activarDesactivarMinijuego);
 
