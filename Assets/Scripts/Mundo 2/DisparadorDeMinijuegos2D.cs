@@ -14,6 +14,7 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             activarDesactivarMinijuego.SetActive(true);
+            activarDesactivarMinijuego.GetComponent<ControladorPrefabsMinijuegos>().SpawnPrefab();
             jugadorActivarDesactivar.SetActive(false);
             //Liberar ratón
             Cursor.lockState = CursorLockMode.None;
@@ -34,18 +35,29 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         
     }
 
-    public void desactivarMinijuego2(bool siGano)
+    public void desactivarMinijuego2()
     {
 
-        activarDesactivarMinijuego.SetActive(false);
+        activarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
+
         //Destroy(activarDesactivarMinijuego);
+
+
+        //Método para ELIMINAR todos los clones en base al nombre de un tag, tambi'en se puede en base al nombre de un script
+        GameObject[] rainLeaves = GameObject.FindGameObjectsWithTag("TagParaEliminarClones");
+        foreach (GameObject rainLeaf in rainLeaves)
+        {
+            Destroy(rainLeaf);
+        }
+        
+
         jugadorActivarDesactivar.SetActive(true);
 
         //Volver a bloquear el ratón
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        if (siGano) { Destroy(gameObject); }
-
+       
+        Destroy(gameObject);
     }
 
     public void activarPortalDeSalida()

@@ -26,6 +26,8 @@ TagManager:
   - Residuos/Aprovechables
   - Residuos/NoAprovechables
   - TagParaEliminarClones
+  - ControladorPrefabsMinijuegos
+  - DisparadorMinijuego2
   layers:
   - Default
   - TransparentFX

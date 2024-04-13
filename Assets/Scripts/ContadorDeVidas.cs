@@ -26,7 +26,7 @@ public class ContadorDeVidas : MonoBehaviour
         {
             //Time.timeScale = 0;
             mensajeDeJuegoTerminado.SetActive(true);
-            RainController.DestroyAllRainConSuScript();//destruye todos los clones de las hojas
+            //RainController.DestroyAllRainConSuScript();//destruye todos los clones de las hojas
         }
         else
         {

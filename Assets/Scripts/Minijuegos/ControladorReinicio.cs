@@ -2,19 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControladorReinicio : MonoBehaviour
 {
 
-    //Este metódo solo sirve para eliminar los clones (Se verifica desde otro script)
-    //NO HACE NADA MAS XD XD XD
+    //public Button miBoton; // Esta es la referencia al botón en el inspector
 
-
-    //GameObject panelADesactivar;
-    //public TextMeshPro reinicioDeVida;
-
-    //public void LlenarVida()
+    //void Start()
     //{
-    //    reinicioDeVida.SetText("5");
+    //    // Añadir un listener al botón
+    //    miBoton.onClick.AddListener(OnClick);
     //}
+
+    public void Reiniciar()
+    {
+        GameObject.Find("ControladorPrefabsMinijuegos").GetComponent<ControladorPrefabsMinijuegos>().RecargarPrefab();
+    }
+
+    public void juegoGanadoSalir()
+    {
+        GameObject.Find("DisparadorMinijuego2").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
+    }
 }

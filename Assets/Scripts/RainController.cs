@@ -81,16 +81,6 @@ public class RainController : MonoBehaviour
         detectorDeIdioma = seleccioneIdioma;
     }
 
-    public static void DestroyAllRainConTag()
-    {
-        //Método para ELIMINAR todos los clones
-        GameObject[] rainLeaves = GameObject.FindGameObjectsWithTag("TagParaEliminarClones");
-        foreach (GameObject rainLeaf in rainLeaves)
-        {
-            Destroy(rainLeaf);
-        }
-    }
-
     public static void DestroyAllRainConSuScript()
     {
         ControladorReinicio[] rainControllers = FindObjectsOfType<ControladorReinicio>();
