@@ -39,10 +39,9 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
     public void desactivarMinijuego2()
     {
 
-        controladorActivarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
+        //controladorActivarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
 
         //Destroy(activarDesactivarMinijuego);
-
 
         //Método para ELIMINAR todos los clones en base al nombre de un tag, tambi'en se puede en base al nombre de un script
         GameObject[] rainLeaves = GameObject.FindGameObjectsWithTag("TagParaEliminarClones");
@@ -51,13 +50,14 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
             Destroy(rainLeaf);
         }
         
-
         jugadorActivarDesactivar.SetActive(true);
 
         //Volver a bloquear el ratón
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-       
+
+        if (minijuegoAActivar==2){ activarDesactivarPortal.SetActive(true); }
+
         Destroy(gameObject);
     }
 

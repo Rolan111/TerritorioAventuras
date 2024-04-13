@@ -22,6 +22,12 @@ public class ControladorReinicio : MonoBehaviour
 
     public void juegoGanadoSalir()
     {
+        GameObject.Find("DisparadorMinijuego1").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
+    }
+
+    public void juegoGanadoSalir2()
+    {
         GameObject.Find("DisparadorMinijuego2").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
     }
+
 }
