@@ -7,6 +7,8 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
     public GameObject controladorActivarDesactivarMinijuego;
     public GameObject jugadorActivarDesactivar;
     public GameObject activarDesactivarPortal;
+    public GameObject activarDesactivarNPC2;
+
     public int minijuegoAActivar;
 
     private void OnTriggerEnter(Collider other)
@@ -36,7 +38,7 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         
     }
 
-    public void desactivarMinijuego2()
+    public void desactivarMinijuego2()//EL 2 es por la segunda versión del método
     {
 
         //controladorActivarDesactivarMinijuego.SetActive(false);//se necesita este controlador para el otro minijuego
@@ -61,10 +63,16 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void activarPortalDeSalida()
+    public void ActivarPortalDeSalida()
     {
         activarDesactivarPortal.SetActive(true);
     }
+
+    public void ActivarNPC2()
+    {
+        activarDesactivarNPC2.SetActive(true);
+    }
+
 
     //// Update is called once per frame
     //void Update()

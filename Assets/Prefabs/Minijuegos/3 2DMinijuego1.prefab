@@ -1906,7 +1906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 2.02715
+  m_AspectRatio: 2.1451156
 --- !u!1 &1274635465533108481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,7 +1972,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: REINICIAR JUEGO
+  m_text: SALIR Y CONTINUAR...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d8002d40d90884e4696b40c853dadee1, type: 2}
   m_sharedMaterial: {fileID: 603678003148060706, guid: d8002d40d90884e4696b40c853dadee1, type: 2}
