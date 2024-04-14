@@ -352,8 +352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controladorActivarDesactivarMinijuego: {fileID: 5279980060116302857}
   jugadorActivarDesactivar: {fileID: 5422264}
-  activarDesactivarPortal: {fileID: 933538482}
   activarDesactivarNPC2: {fileID: 0}
+  activarDesactivarPortal: {fileID: 933538482}
   minijuegoAActivar: 2
 --- !u!1 &167056160
 GameObject:
@@ -17701,8 +17701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controladorActivarDesactivarMinijuego: {fileID: 5279980060116302857}
   jugadorActivarDesactivar: {fileID: 5422264}
-  activarDesactivarPortal: {fileID: 933538482}
   activarDesactivarNPC2: {fileID: 133634496}
+  activarDesactivarPortal: {fileID: 933538482}
   minijuegoAActivar: 1
 --- !u!1 &2102826903
 GameObject:
@@ -18071,7 +18071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabMinijuego1: {fileID: 2724271442208793660, guid: 9f66cbefb08571e4daf9982b49b0e514, type: 3}
-  prefabMinijuego2: {fileID: 3321081066595115996, guid: a36e9faa91831e740921c701a03e6e2e, type: 3}
+  prefabMinijuego2: {fileID: 3063293380152686438, guid: 616881926347fbf4799d93ab22991c7e, type: 3}
 --- !u!4 &2651515391224612063
 Transform:
   m_ObjectHideFlags: 0
