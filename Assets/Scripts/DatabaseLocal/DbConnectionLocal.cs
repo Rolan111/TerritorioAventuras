@@ -8,33 +8,36 @@ using Newtonsoft.Json;
 using System;
 using UnityEngine;
 
-public static class DbConnectionLocal
-{
-    private static bool isFristLoad = true;
-    private static readonly string databaseSql = "Assets/Scripts/DatabaseLocal/DatabaseSql.sql";
-    private static readonly string database = "URI=file:Assets/Database/DataBase.db";
+public static class DbConnectionLocal {
 
-    public static T Write<T>(string query)
+    private static readonly string baseFolder = "TerritorioAventuras_Data/";
+    private static readonly string databaseSql = baseFolder + "sql.dll";
+    private static readonly string database = "URI=file:" + baseFolder + "sqldb.dll";
+
+    private static bool isFristLoad = true;
+
+    public static bool Write(string query)
     {
-        return PreloadQuery<T>(query,false);
+        PreloadDataBase();
+        return QueryWrite(query);
     }
 
     public static T Read<T>(string query)
     {
-        return PreloadQuery<T>(query, true);
+        PreloadDataBase();
+        return QueryRead<T>(query);
     }
 
-    private static T PreloadQuery<T>(string query, bool isRead)
+    private static void PreloadDataBase()
     {
         if (isFristLoad)
         {
-            Query<T>(ReadTextFile(), false);
-            isFristLoad= false;
+            QueryWrite(ReadDatabaseFile());
+            isFristLoad = false;
         }
-        return Query<T>(query, isRead);
     }
 
-    private static T Query<T>(string query, bool isQueryRead)
+    private static T QueryRead<T>(string query)
     {
         try
         {
@@ -44,29 +47,45 @@ public static class DbConnectionLocal
                 using (var command = connection.CreateCommand())
                 {
                     command.CommandText = query;
+                    using (IDataReader reader = command.ExecuteReader())
+                    {
+                        var rows = ConvertToString(reader);
+                        var json = JsonConvert.SerializeObject(rows);
+                        var result = JsonConvert.DeserializeObject<T>(json);
 
-                    if (isQueryRead)
-                    {
-                        using (IDataReader reader = command.ExecuteReader())
-                        {
-                            var rows = ConvertToString(reader);
-                            var json = JsonConvert.SerializeObject(rows);
-                            var result = JsonConvert.DeserializeObject<T>(json);
-                            connection.Close();
-                            return result;
-                        }
-                    }
-                    else
-                    {
-                        command.ExecuteNonQuery();
                         connection.Close();
+                        return result;
                     }
                 }
             }
         }catch (Exception ex) {
             Debug.Log(ex.ToString());
+            return default(T);
         }
-        return default(T);
+    }
+
+    private static bool QueryWrite(string query)
+    {
+        try
+        {
+            using (var connection = new SqliteConnection(database))
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = query;
+                    int recordsAffected = command.ExecuteNonQuery();
+
+                    connection.Close();
+                    return recordsAffected > 0;
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.Log(ex.ToString());
+            return false;
+        }
     }
 
     private static List<Dictionary<string, object>> ConvertToString(IDataReader reader)
@@ -85,7 +104,7 @@ public static class DbConnectionLocal
         return rows;
     }
 
-    private static string ReadTextFile()
+    private static string ReadDatabaseFile()
     {
         StreamReader inp_stm = new StreamReader(databaseSql);
         StringBuilder stringBuilder = new StringBuilder();
@@ -95,6 +114,10 @@ public static class DbConnectionLocal
             stringBuilder.AppendLine(inp_ln);
         }
         inp_stm.Close();
-        return stringBuilder.ToString();
+        string reader = stringBuilder.ToString();
+
+        var base64EncodedBytes = Convert.FromBase64String(reader);
+        return Encoding.UTF8.GetString(base64EncodedBytes);
     }
+
 }
