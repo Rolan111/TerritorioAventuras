@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using System.Text;
 
 public class LoginForm : MonoBehaviour
 {
@@ -14,27 +15,18 @@ public class LoginForm : MonoBehaviour
 
     public void login()
     {
-        List<AvatarModel> response = AvatarApiLocal.findAll();
-        Debug.Log(response);
 
-        if (!validateData())
-        {
-            return;
-        }
+        validateData();
 
-        UserDto userDto = new UserDto();
-        userDto.user = user.text;
-        userDto.password = password.text;
-
-        var isLogin = UserApiCloud.login(userDto);
-        if (!isLogin)
-        {
-            result.text = "Usuario o Contraseña Erronea";
-        }
-        else
+        var isLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
+        if (isLogin == null)
         {
             result.text = "";
             SceneManager.LoadScene("2 MenuPrincipal");
+        }
+        else
+        {
+            result.text = "Usuario o Contraseña Erronea";
         }
     }
 

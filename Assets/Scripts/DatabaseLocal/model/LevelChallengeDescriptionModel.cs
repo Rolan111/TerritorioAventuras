@@ -4,12 +4,12 @@
 public class LevelChallengeDescriptionModel : BaseModel
 {
 
-    public string name_level;
+    public string name_level { get; set; }
 
-    public string name_badge;
+    public string name_badge { get; set; }
 
-    public string coins;
+    public string coins { get; set; }
 
-    public int id_emoticon;
+    public int id_emoticon { get; set; }
 
 }

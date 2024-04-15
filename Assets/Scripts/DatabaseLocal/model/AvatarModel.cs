@@ -4,9 +4,9 @@
 public class AvatarModel : BaseModel
 {
 
-    public string avatar;
+    public string avatar { get; set; }
 
-    public int id_gender;
+    public int id_gender { get; set; }
 
 }
 
