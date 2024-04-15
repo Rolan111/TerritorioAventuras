@@ -126,6 +126,7 @@ public class QuestionAnswerScript: MonoBehaviour
             if(lifesRemaining>0)
             {
                 wrongScreen.SetActive(false);
+
             }
             else
             {
@@ -137,6 +138,8 @@ public class QuestionAnswerScript: MonoBehaviour
                 
 
                 lostScreen.SetActive(true);
+                PlayLostSound();
+
                 PlayLostSound();
             }
         }

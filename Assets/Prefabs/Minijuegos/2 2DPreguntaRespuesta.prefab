@@ -826,7 +826,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: d8a88cff25d04b845a011a8a5258c2bc, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
 --- !u!1 &2747652539082799205
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,7 +2477,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 156d79c911db4f5449865bb69191479e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2868,7 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.8905941
+  m_AspectRatio: 2.360522
 --- !u!1 &7198785549061725253
 GameObject:
   m_ObjectHideFlags: 0
