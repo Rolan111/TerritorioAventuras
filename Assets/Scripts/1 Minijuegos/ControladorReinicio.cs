@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -24,11 +25,13 @@ public class ControladorReinicio : MonoBehaviour
     {
         GameObject.Find("DisparadorMinijuego1").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
         GameObject.Find("DisparadorMinijuego1").GetComponent<DisparadorDeMinijuegos2D>().ActivarNPC2();
+        GameObject.Find("MensajeFinalMinijuego1").GetComponent<DisparadorDialogueSimple>().métodoDispararDiálogo();
     }
 
     public void juegoGanadoSalir2()//para el minijuego2
     {
         GameObject.Find("DisparadorMinijuego2").GetComponent<DisparadorDeMinijuegos2D>().desactivarMinijuego2();
+        GameObject.Find("MensajeFinalMinijuego2").GetComponent<DisparadorDialogueSimple>().métodoDispararDiálogo();
     }
 
 }
