@@ -5283,7 +5283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7439787770763711359, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_text
-      value: "Ca\xF1ita"
+      value: "Mico Tit\xED"
       objectReference: {fileID: 0}
     - target: {fileID: 7439787770934901259, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_Sprite
