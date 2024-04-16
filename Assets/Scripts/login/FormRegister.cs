@@ -1,23 +1,88 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FormRegister : MonoBehaviour
 {
-    public TMP_Text result;
+    private TMP_Text result;
+    private TMP_InputField nombre, edad, email, insEducativa, usuario, contrasena, contrasenaConfirmar;
+    private TMP_Dropdown sexo;
 
     public GameObject formLogin = null;
     public GameObject formRegister = null;
 
-    public void Start()
+    private void Awake()
     {
+        nombre = GameObject.Find("Nombre").GetComponent<TMP_InputField>();
+        edad = GameObject.Find("Edad").GetComponent<TMP_InputField>();
+        sexo = GameObject.Find("Sexo").GetComponent<TMP_Dropdown>();
+        email = GameObject.Find("Email").GetComponent<TMP_InputField>();
+        insEducativa = GameObject.Find("InsEducativa").GetComponent<TMP_InputField>();
+        usuario = GameObject.Find("Usuario").GetComponent<TMP_InputField>();
+        contrasena = GameObject.Find("Contrasena").GetComponent<TMP_InputField>();
+        contrasenaConfirmar = GameObject.Find("ContrasenaConfirmar").GetComponent<TMP_InputField>();
+        result = GameObject.Find("ResultadoRegistro").GetComponent<TMP_Text>();
+    }
+
+    private bool validateData()
+    {
+        if (nombre.text == "" || edad.text == "" || sexo.value < 0 || email.text == "" || insEducativa.text == "" || usuario.text == "" || contrasena.text == "" || contrasenaConfirmar.text == "")
+        {
+            result.text = "Llenar todos los campos requeridos.";
+            return false;
+        }
+        else
+        {
+            if (contrasena.text != contrasenaConfirmar.text)
+            {
+                result.text = "Las contraseñas son diferentes.";
+                return false;
+            }
+            else
+            {
+                result.text = "";
+                return true;
+            }
+        }
     }
 
     public void registrar()
     {
-        UserDto userDto = new UserDto();
-        userDto.school = "";
+        if (validateData())
+        {
+            UserModel userDto = new UserModel();
+            userDto.name = nombre.text;
+            userDto.age = edad.text;
+            userDto.id_gender = sexo.value + 1;
+            userDto.email = email.text;
+            userDto.school = insEducativa.text;
+            userDto.user = usuario.text;
+            userDto.password = contrasena.text;
+            userDto.id_rol = 1;
 
-        UserApiCloud.save(userDto); 
+            if (UserApiLocal.Save(userDto))
+            {
+                result.text = "Registro guardado correctamente.";
+                result.color = Color.green;
+                clearForm();
+            }
+            else
+            {
+                result.text = "Error al guardar el registro.";
+                result.color = Color.red;
+            }
+        }
+    }
+
+    private void clearForm()
+    {
+        nombre.text = "";
+        edad.text = "";
+        email.text = "";
+        insEducativa.text = "";
+        usuario.text = "";
+        contrasena.text = "";
+        contrasenaConfirmar.text = "";
     }
 
     public void showFormLogin()
