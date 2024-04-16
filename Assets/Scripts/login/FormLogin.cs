@@ -22,10 +22,12 @@ public class LoginForm : MonoBehaviour
     public void login()
     {
         if(validateData()){
-            var isLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
-            if (isLogin != null)
+            var userLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
+            if (userLogin != null)
             {
+                // vaciar campo, guardar usuario de sesion y cambiar de escena
                 result.text = "";
+                UserApiLocal.UserLogin = userLogin;
                 SceneManager.LoadScene("2 MenuPrincipal");
             }
             else

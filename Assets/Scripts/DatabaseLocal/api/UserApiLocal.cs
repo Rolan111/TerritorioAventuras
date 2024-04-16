@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 public static class UserApiLocal
 {
+    public static UserModel UserLogin;
 
     public static bool Save(UserModel userModel)
     {
