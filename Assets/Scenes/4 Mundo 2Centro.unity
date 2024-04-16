@@ -1095,7 +1095,7 @@ GameObject:
   - component: {fileID: 466294750}
   - component: {fileID: 466294749}
   m_Layer: 0
-  m_Name: BarreraMinijuego2
+  m_Name: BarreraProtectoraMinijuego2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2077,7 +2077,7 @@ GameObject:
   - component: {fileID: 761982614}
   - component: {fileID: 761982613}
   m_Layer: 0
-  m_Name: BarreraMinijuego1
+  m_Name: BarreraProtectoraMinijuego1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2551,18 +2551,6 @@ MonoBehaviour:
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
     sentence: "\xA1Ve al cilndro!"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
-    sentence: Segundo Mensaje
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
-    sentence: tercer mensaje
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
