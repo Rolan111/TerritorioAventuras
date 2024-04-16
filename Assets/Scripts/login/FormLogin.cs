@@ -6,27 +6,32 @@ using System.Text;
 
 public class LoginForm : MonoBehaviour
 {
-    public TMP_InputField user;
-    public TMP_InputField password;
-    public TMP_Text result;
+    private TMP_InputField user, password;
+    private TMP_Text result;
 
     public GameObject formLogin = null;
     public GameObject formRegister = null;
 
+    private void Awake()
+    {
+        user = GameObject.Find("User").GetComponent<TMP_InputField>();
+        password = GameObject.Find("Password").GetComponent<TMP_InputField>();
+        result = GameObject.Find("Resultado").GetComponent<TMP_Text>();
+    }
+
     public void login()
     {
-
-        validateData();
-
-        var isLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
-        if (isLogin == null)
-        {
-            result.text = "";
-            SceneManager.LoadScene("2 MenuPrincipal");
-        }
-        else
-        {
-            result.text = "Usuario o Contraseña Erronea";
+        if(validateData()){
+            var isLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
+            if (isLogin != null)
+            {
+                result.text = "";
+                SceneManager.LoadScene("2 MenuPrincipal");
+            }
+            else
+            {
+                result.text = "Usuario o Contraseña Erronea";
+            }
         }
     }
 

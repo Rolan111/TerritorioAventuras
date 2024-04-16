@@ -25,7 +25,13 @@ public static class DbConnectionLocal {
     public static T Read<T>(string query)
     {
         PreloadDataBase();
-        return QueryRead<T>(query);
+        return QueryRead<T>(query, true);
+    }
+
+    public static T Find<T>(string query)
+    {
+        PreloadDataBase();
+        return QueryRead<T>(query, false);
     }
 
     private static void PreloadDataBase()
@@ -37,7 +43,7 @@ public static class DbConnectionLocal {
         }
     }
 
-    private static T QueryRead<T>(string query)
+    private static T QueryRead<T>(string query, bool isList)
     {
         try
         {
@@ -49,7 +55,15 @@ public static class DbConnectionLocal {
                     command.CommandText = query;
                     using (IDataReader reader = command.ExecuteReader())
                     {
-                        var rows = ConvertToString(reader);
+                        var rows = new object();
+                        if (isList)
+                        {
+                            rows = ConvertListToString(reader);
+                        }
+                        else
+                        {
+                            rows = ConvertOneToString(reader);
+                        }
                         var json = JsonConvert.SerializeObject(rows);
                         var result = JsonConvert.DeserializeObject<T>(json);
 
@@ -88,7 +102,7 @@ public static class DbConnectionLocal {
         }
     }
 
-    private static List<Dictionary<string, object>> ConvertToString(IDataReader reader)
+    private static List<Dictionary<string, object>> ConvertListToString(IDataReader reader)
     {
         var columns = new List<string>();
         var rows = new List<Dictionary<string, object>>();
@@ -100,6 +114,22 @@ public static class DbConnectionLocal {
         while (reader.Read())
         {
             rows.Add(columns.ToDictionary(column => column, column => reader[column]));
+        }
+        return rows;
+    }
+
+    private static Dictionary<string, object> ConvertOneToString(IDataReader reader)
+    {
+        var columns = new List<string>();
+        var rows = new Dictionary<string, object>();
+
+        for (var i = 0; i < reader.FieldCount; i++)
+        {
+            columns.Add(reader.GetName(i));
+        }
+        while (reader.Read())
+        {
+            columns.ToDictionary(column => column, column => reader[column]);
         }
         return rows;
     }
