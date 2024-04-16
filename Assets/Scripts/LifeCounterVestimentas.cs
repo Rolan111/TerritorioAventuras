@@ -1,51 +1,59 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class LifeCounter : MonoBehaviour
+public class LifeCounterVestimentas : MonoBehaviour
 {
     public TMP_Text lifesText;
 
     static public int Lifes;
-    
-    static private int IngredientCounter;
-    static private int IngredientsMax;
 
-    static public LifeCounter instance;
+    static private int CardsCounter;
+    static private int CardsMax;
+
+    static public LifeCounterVestimentas instance;
+
     void Start()
     {
         Lifes = 3;
-        IngredientsMax = 7;
-        IngredientCounter = 0;
+        CardsMax = 3;
+        CardsCounter = 0;
 
         instance = this;
     }
 
     private void Update()
     {
-        lifesText.text="Vidas restantes: "+Lifes.ToString();
+        lifesText.text = "Vidas restantes: " + Lifes.ToString();
 
     }
 
-    public int LostLife()
+    public void LostLife()
     {
-        
+
         Lifes--;
         if (Lifes == 1)
         {
             StartCoroutine(TwinkleText());
         }
 
+    }
+
+    public int GetLifesRemaining()
+    {
         return Lifes;
     }
 
-    static public bool AddIngredient()
+    public void Match()
     {
-        IngredientCounter++;
+        CardsCounter += 1;
+    }
 
-        return IngredientCounter >= IngredientsMax;
+    public bool CheckWin()
+    {
+        Debug.Log(CardsCounter);
+        return CardsCounter >= CardsMax;
     }
 
     private IEnumerator TwinkleText()
@@ -57,14 +65,9 @@ public class LifeCounter : MonoBehaviour
         }
 
     }
-    
+
     public void StartBlinkText()
     {
         StartCoroutine(TwinkleText());
-    }
-
-    internal int GetLifesRemaining()
-    {
-        throw new NotImplementedException();
     }
 }
