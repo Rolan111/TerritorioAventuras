@@ -35,7 +35,7 @@ namespace HeneGames.DialogueSystem
 
         [Header("Dialogue")]
         [SerializeField] private TriggerState triggerState;
-        [SerializeField] private List<NPC_Centence> sentences = new List<NPC_Centence>();
+        [SerializeField] public List<NPC_Centence> sentences = new List<NPC_Centence>();
 
         private void Update()
         {
@@ -323,6 +323,12 @@ namespace HeneGames.DialogueSystem
 
                 DialogueUI.instance.ShowSentence(_dialogueCharacter, sentences[currentSentence].sentence);
             }
+        }
+
+        //Obtener el número de preguntas que hay dentro del objeto
+        public int GetNumberOfQuestions()
+        {
+            return sentences.Count;
         }
     }
 

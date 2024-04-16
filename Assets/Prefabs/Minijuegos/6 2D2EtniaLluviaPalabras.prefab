@@ -1159,7 +1159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6833775856914187451}
   m_Layer: 0
-  m_Name: 4 2D2EtniaLluviaPalabras
+  m_Name: 6 2D2EtniaLluviaPalabras
   m_TagString: TagParaEliminarClones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
