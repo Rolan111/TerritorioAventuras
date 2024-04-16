@@ -1387,9 +1387,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e11aa6a8c018c6f4b853effd628d9adf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.81
+  m_Volume: 0.705
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1568,14 +1568,14 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Bienvenido a la misi\xF3n 1. La clave ser\xE1 escuchar atentamente
       lo que te voy a decir, para poder preparar un ceviche."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "El ceviche del Pac\xEDfico caucano tiene sus ra\xEDces en Per\xFA.
       Esta rica tradici\xF3n culinaria lleg\xF3 en 1942, cuando un marinero peruano
       decidi\xF3 quedarse a vivir e inspirado en la belleza del pacifico caucano
@@ -1585,7 +1585,7 @@ MonoBehaviour:
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Pescado reci\xE9n atrapado con jugo de lim\xF3n, cilantro fresco,
       cebolla, tomate, ma\xEDz tierno, leche de coco, algunos cambian ingredientes,
       pero podemos decir que es una explosi\xF3n de sabores frescos y un emblema
@@ -1594,7 +1594,7 @@ MonoBehaviour:
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Selecciona y arrastra los ingredientes que se nombr\xF3 en la receta
       al recipiente para que el ceviche puedas preparar. Tienes 3 intentos. \xA1Vamos,
       t\xFA puedes!\r\n"
@@ -1602,7 +1602,7 @@ MonoBehaviour:
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Estos son los ingredientes: 800 gramos de pescado; 2 tomates chontos;
       1 cebolla morada; 4 cucharadas de cilantro picado; 4 cucharadas de ma\xEDz
       tierno; 6 cucharadas de leche de coco; 1 lim\xF3n.\r\n"
@@ -2446,7 +2446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 860106699}
-  tiempoParaDesaparecer: 6
+  tiempoParaDesaparecer: 13
 --- !u!1001 &888973080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4405,7 +4405,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "La misi\xF3n 2 trata de m\xFAsica \xA1La m\xFAsica nos alegra, la
       m\xFAsica es vida! Los instrumentos debes aprender, por eso a continuaci\xF3n
       te los voy a ense\xF1ar y vamos a disfrutar.\r"
@@ -4413,7 +4413,7 @@ MonoBehaviour:
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Tu segunda misi\xF3n en este territorio es escuchar los ritmos e identificar
       el instrumento, es decir, primero vas a escuchar el sonido luego vas a seleccionar
       el instrumento que creas correcto."
@@ -4564,7 +4564,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 1
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "\xA1Ve al cilndro!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
@@ -19018,7 +19018,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabMinijuego1: {fileID: 2724271442208793660, guid: 9f66cbefb08571e4daf9982b49b0e514, type: 3}
-  prefabMinijuego2: {fileID: 3063293380152686438, guid: 616881926347fbf4799d93ab22991c7e, type: 3}
+  prefabMinijuego2: {fileID: 1950230532238304408, guid: bee83f907b245e04c9b248455d660ae6, type: 3}
 --- !u!4 &2651515391224612063
 Transform:
   m_ObjectHideFlags: 0
