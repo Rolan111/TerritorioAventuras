@@ -32,7 +32,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
 
                 //Cambiar color de imagen
 
-                if (imagen != null)
+                if (imagen != null) //Lógica opcional
                 {
                     // Cambia el color de la imagen a rojo (puedes usar cualquier otro color)
                     if (item.tag == "Rojo")

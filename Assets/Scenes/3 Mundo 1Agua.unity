@@ -2223,8 +2223,8 @@ GameObject:
   - component: {fileID: 122980020}
   - component: {fileID: 122980019}
   m_Layer: 5
-  m_Name: Item (6)
-  m_TagString: Residuos/NoAprovechables
+  m_Name: ItemBotellaPlastico
+  m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4863,8 +4863,8 @@ GameObject:
   - component: {fileID: 252313405}
   - component: {fileID: 252313404}
   m_Layer: 5
-  m_Name: Item (5)
-  m_TagString: Residuos/NoAprovechables
+  m_Name: ItemBotellaVidrio
+  m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8689,7 +8689,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -88}
-  m_SizeDelta: {x: 250, y: 50}
+  m_SizeDelta: {x: 260, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &451050777
 MonoBehaviour:
@@ -9758,7 +9758,7 @@ GameObject:
   - component: {fileID: 527918569}
   - component: {fileID: 527918568}
   m_Layer: 5
-  m_Name: Item
+  m_Name: ItemLataGaseosa
   m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21479,7 +21479,7 @@ GameObject:
   - component: {fileID: 826068367}
   - component: {fileID: 826068366}
   m_Layer: 5
-  m_Name: Item (1)
+  m_Name: ItemPapelArrugado1
   m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26230,7 +26230,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 85, y: 0}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037985489
 MonoBehaviour:
@@ -26402,7 +26402,7 @@ GameObject:
   - component: {fileID: 1041607420}
   - component: {fileID: 1041607419}
   m_Layer: 5
-  m_Name: Item (2)
+  m_Name: "ItemBotellaPl\xE1stica"
   m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27731,6 +27731,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 1977732417}
+  tiempoParaDesaparecer: 0
 --- !u!1 &1091424309
 GameObject:
   m_ObjectHideFlags: 0
@@ -32563,7 +32564,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -82, y: 0}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319476415
 MonoBehaviour:
@@ -36700,8 +36701,8 @@ GameObject:
   - component: {fileID: 1529040368}
   - component: {fileID: 1529040367}
   m_Layer: 5
-  m_Name: Item (3)
-  m_TagString: Residuos/Organicos
+  m_Name: ItemPapelArrugado2
+  m_TagString: Residuos/Aprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40423,8 +40424,8 @@ GameObject:
   - component: {fileID: 1723121003}
   - component: {fileID: 1723121002}
   m_Layer: 5
-  m_Name: Item (4)
-  m_TagString: Residuos/Organicos
+  m_Name: ItemVasoDesechable
+  m_TagString: Residuos/NoAprovechables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47201,7 +47202,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 6, y: 0}
-  m_SizeDelta: {x: 40, y: 40}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1792642135
 MonoBehaviour:
@@ -53382,6 +53383,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 36473560}
+  tiempoParaDesaparecer: 0
 --- !u!4 &2080935681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 481686, guid: b10237067370545479ead9bdac817d9c, type: 3}
