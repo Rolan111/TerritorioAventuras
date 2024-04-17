@@ -461,7 +461,7 @@ Transform:
   m_GameObject: {fileID: 56414446}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02649816, y: -0.026666721, z: -10.500205}
+  m_LocalPosition: {x: 1.23, y: -0.026666721, z: 3.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -659,6 +659,94 @@ Transform:
   - {fileID: 1028935023}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &208869625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208869626}
+  - component: {fileID: 208869628}
+  - component: {fileID: 208869627}
+  m_Layer: 0
+  m_Name: MensajeFinalMinijuego2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &208869626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208869625}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 888563524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &208869627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208869625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0720db5135989de4baa5801ccf9b423d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjetoConDialogue: {fileID: 208869625}
+  tiempoParaDesaparecer: 4
+--- !u!114 &208869628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208869625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: "\xA1Felicitaciones! Has logrado terminar el reto matem\xE1tico."
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: Ahora ve hacia el portal para finalizar la aventura.
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &229528972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,18 +813,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.211908
       objectReference: {fileID: 0}
@@ -775,10 +851,6 @@ PrefabInstance:
     - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5516487406859467972, guid: 45e0f06c750176947862c10346226439, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5607819269926399345, guid: 45e0f06c750176947862c10346226439, type: 3}
       propertyPath: m_Name
@@ -834,7 +906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4870204933709518, guid: d2cd02263a1e8084abf81f1324b929be, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.020545
+      value: 3.85
       objectReference: {fileID: 0}
     - target: {fileID: 4870204933709518, guid: d2cd02263a1e8084abf81f1324b929be, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1637,7 +1709,7 @@ Transform:
   m_GameObject: {fileID: 752736089}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.2, y: 2.49, z: -19.04}
+  m_LocalPosition: {x: 14.65, y: 2.67, z: 5.55}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1659,7 +1731,7 @@ MonoBehaviour:
   pausarJugador: 1
   barreraADesactivar: {fileID: 752736089}
   barrera2ADesactivar: {fileID: 0}
-  jugadorParaPausar: {fileID: 0}
+  jugadorParaPausar: {fileID: 1850185802}
   audioSource: {fileID: 0}
   startDialogueEvent:
     m_PersistentCalls:
@@ -1672,10 +1744,9 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "Como primera misi\xF3n tendr\xE1s 3 im\xE1genes con su respectiva
-      vestimenta. Si quieres ganar, la adecuada uni\xF3n de la etnia y la vestimenta
-      tendr\xE1s que lograr."
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: "En esta misi\xF3n debes de invertir inteligentemente tu dinero para
+      poder sobrevivir en el fr\xEDo."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -1992,11 +2063,11 @@ Transform:
   m_GameObject: {fileID: 834090140}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.96, y: 2.56, z: 31.84}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -0.005707741, y: 0.21847026, z: -0.020747185}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1147093079}
+  m_Father: {fileID: 1168526886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &834090142
 MonoBehaviour:
@@ -2014,7 +2085,7 @@ MonoBehaviour:
   pausarJugador: 1
   barreraADesactivar: {fileID: 834090140}
   barrera2ADesactivar: {fileID: 0}
-  jugadorParaPausar: {fileID: 0}
+  jugadorParaPausar: {fileID: 1850185802}
   audioSource: {fileID: 0}
   startDialogueEvent:
     m_PersistentCalls:
@@ -2027,17 +2098,16 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "Bienvenido a la misi\xF3n 2 de este nivel, donde las expresiones de
-      cada etnia vas a aprender.."
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: "En la misi\xF3n 2 te enfrentar\xE1s a conocimientos y desaf\xEDos
+      de problemas matem\xE1ticos, que te servir\xE1n para identificar operaciones
+      b\xE1sicas del mundo matem\xE1tico (suma, resta, multiplicaci\xF3n y divisi\xF3n)"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "Primero, seleccionar\xE1s el idioma nativo que quieres aprender, ahora
-      seleccionar\xE1s la traducci\xF3n correcta para cada expresi\xF3n. \xA1Vamos,
-      t\xFA puedes!\r"
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: "Seg\xFAn tus conocimientos, selecciona la respuesta correcta."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -2113,6 +2183,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834090140}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &888563523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 888563524}
+  m_Layer: 0
+  m_Name: Mensajes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &888563524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888563523}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03104522, y: -12.709229, z: 17.255283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1363556623}
+  - {fileID: 208869626}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &899880726
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2497,7 +2600,6 @@ Transform:
   m_Children:
   - {fileID: 1506710277}
   - {fileID: 752736090}
-  - {fileID: 834090141}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168526885
@@ -2530,10 +2632,11 @@ Transform:
   m_GameObject: {fileID: 1168526885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.39, y: -0.026666721, z: -4.96}
+  m_LocalPosition: {x: -8.07, y: -0.026666721, z: -3.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 834090141}
   m_Father: {fileID: 1402771849}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1168526887
@@ -3095,6 +3198,89 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 27.320002, y: 18.413, z: 6.0520005}
+--- !u!1 &1363556622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363556623}
+  - component: {fileID: 1363556625}
+  - component: {fileID: 1363556624}
+  m_Layer: 0
+  m_Name: MensajeFinalMinijuego1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1363556623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363556622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 888563524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363556624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363556622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0720db5135989de4baa5801ccf9b423d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjetoConDialogue: {fileID: 1363556622}
+  tiempoParaDesaparecer: 4
+--- !u!114 &1363556625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363556622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
+    sentence: "\xA1Felicitaciones! Has logrado comprar los elementos adecuados para
+      soportar el fr\xEDo. "
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1395769407
 GameObject:
   m_ObjectHideFlags: 0
@@ -4934,6 +5120,7 @@ SceneRoots:
   - {fileID: 275619548}
   - {fileID: 1402771849}
   - {fileID: 1147093079}
+  - {fileID: 888563524}
   - {fileID: 1981618462}
   - {fileID: 765745171}
   - {fileID: 1858286264}
