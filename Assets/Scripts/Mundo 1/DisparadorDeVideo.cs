@@ -8,7 +8,7 @@ public class DisparadorDeVideo : MonoBehaviour
 {
 
     public VideoPlayer videoPlayer;
-    public GameObject personaje;
+    public GameObject personajeAPausar;
     public GameObject activarDesactivarTexto;
 
     //private bool videoReproduciendo = false;
@@ -45,8 +45,8 @@ public class DisparadorDeVideo : MonoBehaviour
     void ReproducirVideo()
     {
         //videoReproduciendo = true;
-        personaje.GetComponent<SUPERCharacterAIO>().enabled = false; // Llama a un método en el script de movimiento del personaje para pausar su movimiento
-        personaje.GetComponent<AudioSource>().enabled = false;
+        personajeAPausar.GetComponent<SUPERCharacterAIO>().enabled = false; // Llama a un método en el script de movimiento del personaje para pausar su movimiento
+        personajeAPausar.GetComponent<AudioSource>().enabled = false;
         videoPlayer.Play();
     }
 
@@ -56,8 +56,8 @@ public class DisparadorDeVideo : MonoBehaviour
         //videoReproduciendo = false;
         Destroy(gameObject);
         Destroy(videoPlayer);
-        personaje.GetComponent<SUPERCharacterAIO>().enabled = true; // Llama a un método en el script de movimiento del personaje para reanudar su movimiento
-        personaje.GetComponent<AudioSource>().enabled = true;
+        personajeAPausar.GetComponent<SUPERCharacterAIO>().enabled = true; // Llama a un método en el script de movimiento del personaje para reanudar su movimiento
+        personajeAPausar.GetComponent<AudioSource>().enabled = true;
         
         //Volver a bloquear el ratón
         Cursor.lockState = CursorLockMode.Locked;
