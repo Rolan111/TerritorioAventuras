@@ -28,7 +28,7 @@ public class LoginForm : MonoBehaviour
                 // vaciar campo, guardar usuario de sesion y cambiar de escena
                 result.text = "";
                 UserApiLocal.UserLogin = userLogin;
-                SceneManager.LoadScene("2 MenuPrincipal");
+                SceneManager.LoadScene("1.5 VideoIntroducción");
             }
             else
             {
