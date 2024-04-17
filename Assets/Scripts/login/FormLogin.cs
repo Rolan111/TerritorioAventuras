@@ -23,7 +23,7 @@ public class LoginForm : MonoBehaviour
     {
         if(validateData()){
             var userLogin = UserApiLocal.FindByUserAndPassword(user.text, password.text);
-            if (userLogin != null)
+            if (userLogin.id != 0)
             {
                 // vaciar campo, guardar usuario de sesion y cambiar de escena
                 result.text = "";

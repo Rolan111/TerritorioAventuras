@@ -129,7 +129,7 @@ public static class DbConnectionLocal {
         }
         while (reader.Read())
         {
-            columns.ToDictionary(column => column, column => reader[column]);
+            rows = columns.ToDictionary(column => column, column => reader[column]);
         }
         return rows;
     }
