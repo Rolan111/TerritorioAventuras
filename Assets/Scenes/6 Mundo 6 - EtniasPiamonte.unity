@@ -388,7 +388,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 1
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Ve al cilndro!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
@@ -2972,7 +2972,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 1
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Ve al cilndro!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
@@ -6547,7 +6547,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 1
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Ve al cilndro!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
@@ -17324,7 +17324,7 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 1
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+  - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Ve al cilndro!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
