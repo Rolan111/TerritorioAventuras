@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Ordena los planetas correctamente
+  m_text: Lee y resuelve correctamente
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d8002d40d90884e4696b40c853dadee1, type: 2}
   m_sharedMaterial: {fileID: 603678003148060706, guid: d8002d40d90884e4696b40c853dadee1, type: 2}
@@ -2868,7 +2868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.8891125
+  m_AspectRatio: 1.7641691
 --- !u!1 &7198785549061725253
 GameObject:
   m_ObjectHideFlags: 0
