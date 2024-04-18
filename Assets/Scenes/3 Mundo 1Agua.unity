@@ -9233,7 +9233,7 @@ GameObject:
   - component: {fileID: 483198823}
   - component: {fileID: 483198822}
   m_Layer: 0
-  m_Name: "CuboDispVideoClasificaci\xF3n"
+  m_Name: "BarreraDispVideoClasificaci\xF3n"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17007,6 +17007,7 @@ Transform:
   - {fileID: 126545000}
   - {fileID: 264856903}
   - {fileID: 836401672}
+  - {fileID: 706210229}
   - {fileID: 822306574}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19320,6 +19321,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706085082}
   m_CullTransparentMesh: 1
+--- !u!1001 &706210228
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 617557990}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.99472046
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.49306822
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.628304
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_Name
+      value: CanecasDisparadorPuzzle1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_TagString
+      value: DisparadorPuzzle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 706210231}
+  m_SourcePrefab: {fileID: 100100000, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+--- !u!4 &706210229 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+  m_PrefabInstance: {fileID: 706210228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &706210230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+  m_PrefabInstance: {fileID: 706210228}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &706210231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706210230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.9628873, y: 3.256452, z: 2.1045532}
+  m_Center: {x: 0, y: 1.5516388, z: 0.018409729}
 --- !u!1 &710948241
 GameObject:
   m_ObjectHideFlags: 0
@@ -22054,7 +22150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &836401672
 Transform:
   m_ObjectHideFlags: 0
@@ -22915,7 +23011,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 189587748}
+      - m_Target: {fileID: 483198823}
         m_TargetAssemblyTypeName: DisparadorDeVideo, Assembly-CSharp
         m_MethodName: VideoTerminado
         m_Mode: 2
@@ -54524,7 +54620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2087010200
 RectTransform:
   m_ObjectHideFlags: 0
