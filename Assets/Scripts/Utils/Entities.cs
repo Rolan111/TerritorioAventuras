@@ -51,10 +51,10 @@ public class Entities : MonoBehaviour
 
             new(question: "3. Era un día soleado y el grupo de quinto de primaria decidió subir la montaña del morro de Tulcán para disfrutar de la vista de la ciudad de Popayán. El grupo observó a 14 aves volando majestuosamente y se dieron cuenta que 8 eran cóndores. Entonces, <b>¿Cuántas de las aves no eran cóndores?</b>", answers: new()
             {
-                new Answer(answer: "10 cóndores", isCorrect: false),
-                new Answer(answer: "5 cóndores", isCorrect: false),
-                new Answer(answer: "6 cóndores", isCorrect: true),
-                new Answer(answer: "3 cóndores", isCorrect: false),
+                new Answer(answer: "10 Aves", isCorrect: false),
+                new Answer(answer: "5 Aves", isCorrect: false),
+                new Answer(answer: "6 Aves", isCorrect: true),
+                new Answer(answer: "3 Aves", isCorrect: false),
             }),
 
             new(question: "4. Ya al explorar el volcán Puracé, los niños encontraron en total 24 rocas blancas, sin embargo, de ellas 9 eran pequeñas, <b>¿Cuantas rocas entre las medianas y grandes quedaron al quitar las pequeñas?</b>", answers: new()
