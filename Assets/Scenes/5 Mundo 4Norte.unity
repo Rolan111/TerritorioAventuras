@@ -431,7 +431,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53444462}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 68.96652, y: 13.538515, z: 36.685158}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -440,7 +440,7 @@ Transform:
   - {fileID: 2093542906}
   - {fileID: 1205289291}
   - {fileID: 766042417}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &56326134
 PrefabInstance:
@@ -1258,16 +1258,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.93
+      value: 71.94
       objectReference: {fileID: 0}
     - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.85
+      value: 23.15
       objectReference: {fileID: 0}
     - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 14.248992
+      value: -5.78
       objectReference: {fileID: 0}
     - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1297,9 +1309,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4659087304275547816, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4752457369876416285, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_Name
-      value: Portal yellow
+      value: Portal Salida yellow
       objectReference: {fileID: 0}
     - target: {fileID: 4752457369876416285, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_IsActive
@@ -1373,10 +1389,11 @@ Transform:
   m_GameObject: {fileID: 205364008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5424418, y: -0.46666664, z: 5.4058027}
+  m_LocalPosition: {x: 51.9, y: 13.81, z: 47.9}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 346469675}
   m_Father: {fileID: 2000843165}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205364010
@@ -1392,7 +1409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorActivarDesactivarMinijuego: {fileID: 558251477}
-  jugadorActivarDesactivar: {fileID: 0}
+  jugadorActivarDesactivar: {fileID: 541060695}
   activarDesactivarNPC2: {fileID: 1838347363}
   activarDesactivarPortal: {fileID: 198472572}
   minijuegoAActivar: 1
@@ -2163,6 +2180,74 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4943765590059028, guid: e7489574cca6d4645a7019414b8288e8, type: 3}
   m_PrefabInstance: {fileID: 329412879}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &335639767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 335639770}
+  - component: {fileID: 335639769}
+  - component: {fileID: 335639768}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &335639768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335639767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &335639769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335639767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &335639770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335639767}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &336330887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2266,11 +2351,11 @@ Transform:
   m_GameObject: {fileID: 346469674}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.58, y: 3.53, z: 6.44}
+  m_LocalPosition: {x: -0.33330774, y: 0.5477053, z: -0.0058135986}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1532481710}
+  m_Father: {fileID: 205364009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &346469676
 MonoBehaviour:
@@ -2288,7 +2373,7 @@ MonoBehaviour:
   pausarJugador: 1
   barreraADesactivar: {fileID: 346469674}
   barrera2ADesactivar: {fileID: 0}
-  jugadorParaPausar: {fileID: 0}
+  jugadorParaPausar: {fileID: 541060695}
   audioSource: {fileID: 0}
   startDialogueEvent:
     m_PersistentCalls:
@@ -2301,44 +2386,27 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Bienvenido a la misi\xF3n 1. La clave ser\xE1 escuchar atentamente
-      lo que te voy a decir, para poder preparar un ceviche."
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "Bienvenidos a la misi\xF3n 1, a nuestros deportistas vas a conocer."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "El ceviche del Pac\xEDfico caucano tiene sus ra\xEDces en Per\xFA.
-      Esta rica tradici\xF3n culinaria lleg\xF3 en 1942, cuando un marinero peruano
-      decidi\xF3 quedarse a vivir e inspirado en la belleza del pacifico caucano
-      fusionar los ingredientes frescos y, con la sabrosura de la regi\xF3n, dio
-      origen a esta delicia del mar. Desde aquel entonces los lugare\xF1os combinan:"
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "En el hermoso departamento del Cauca, el deporte no solo es una actividad
+      f\xEDsica \xA1Es una parte esencial de nuestra identidad y bienestar! Participar
+      en deportes no solo fortalece nuestros cuerpos, sino que tambi\xE9n crea un
+      sentido de comunidad y amistad. A trav\xE9s del deporte, construimos un Cauca
+      fuerte y unido, donde cada esfuerzo, cada salto y cada juego forman parte de
+      la vibrante historia de nuestra tierra."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Pescado reci\xE9n atrapado con jugo de lim\xF3n, cilantro fresco,
-      cebolla, tomate, ma\xEDz tierno, leche de coco, algunos cambian ingredientes,
-      pero podemos decir que es una explosi\xF3n de sabores frescos y un emblema
-      del Cauca.\r\n"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Selecciona y arrastra los ingredientes que se nombr\xF3 en la receta
-      al recipiente para que el ceviche puedas preparar. Tienes 3 intentos. \xA1Vamos,
-      t\xFA puedes!\r\n"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Estos son los ingredientes: 800 gramos de pescado; 2 tomates chontos;
-      1 cebolla morada; 4 cucharadas de cilantro picado; 4 cucharadas de ma\xEDz
-      tierno; 6 cucharadas de leche de coco; 1 lim\xF3n.\r\n"
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "Si quieres la primera misi\xF3n superar, las im\xE1genes a los nombres
+      correctos debes asociar. \xA1Sigue jugando, explorando y haciendo de cada movimiento
+      una celebraci\xF3n de la grandeza caucana!\r"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -3527,12 +3595,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530290606}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -25, y: 21.6, z: -66.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &541060694
 PrefabInstance:
@@ -3777,7 +3845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac44b90775e13e6489ba4207a84c1843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabMinijuego1: {fileID: 2724271442208793660, guid: 9f66cbefb08571e4daf9982b49b0e514, type: 3}
+  prefabMinijuego1: {fileID: 3063293380152686438, guid: 616881926347fbf4799d93ab22991c7e, type: 3}
   prefabMinijuego2: {fileID: 1950230532238304408, guid: bee83f907b245e04c9b248455d660ae6, type: 3}
 --- !u!1001 &596709211
 PrefabInstance:
@@ -5796,7 +5864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956939991}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 68.96652, y: 13.538515, z: 36.685158}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5830,7 +5898,7 @@ Transform:
   - {fileID: 2008524187}
   - {fileID: 1242176791}
   - {fileID: 403448818}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &960648466
 GameObject:
@@ -6326,14 +6394,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066566349}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 38.8, y: 0, z: 38.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 867978180}
   - {fileID: 599391491}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1071544980
 PrefabInstance:
@@ -7780,7 +7848,7 @@ Transform:
   m_GameObject: {fileID: 1287391035}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5280304, y: 0.5477053, z: -0.11210954}
+  m_LocalPosition: {x: 0.01, y: 0.86, z: -0.11210954}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -7802,7 +7870,7 @@ MonoBehaviour:
   pausarJugador: 1
   barreraADesactivar: {fileID: 1287391035}
   barrera2ADesactivar: {fileID: 0}
-  jugadorParaPausar: {fileID: 0}
+  jugadorParaPausar: {fileID: 541060695}
   audioSource: {fileID: 0}
   startDialogueEvent:
     m_PersistentCalls:
@@ -7815,18 +7883,10 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "La misi\xF3n 2 trata de m\xFAsica \xA1La m\xFAsica nos alegra, la
-      m\xFAsica es vida! Los instrumentos debes aprender, por eso a continuaci\xF3n
-      te los voy a ense\xF1ar y vamos a disfrutar.\r"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Tu segunda misi\xF3n en este territorio es escuchar los ritmos e identificar
-      el instrumento, es decir, primero vas a escuchar el sonido luego vas a seleccionar
-      el instrumento que creas correcto."
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "Bienvenido a la misi\xF3n 2, en esta misi\xF3n deber\xE1s conectar
+      im\xE1genes representativas con narrativas de un p\xE1rrafo, como memorias
+      hist\xF3ricas de los sitios m\xE1s representativos del Cauca.\r\n"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -8958,7 +9018,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 60483032}
-  - {fileID: 346469675}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1552581095
@@ -9783,7 +9842,7 @@ Transform:
   - {fileID: 598942081}
   - {fileID: 1442393401}
   - {fileID: 648900221}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1720039324
 PrefabInstance:
@@ -9871,7 +9930,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740991176}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -225.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9881,7 +9940,7 @@ Transform:
   - {fileID: 295016716}
   - {fileID: 596709212}
   - {fileID: 387298199}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744453667
 GameObject:
@@ -9959,11 +10018,9 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "En esta aventura, has demostrado ser un explorador gastron\xF3mico.
-      Tu talento ha sido la observaci\xF3n y la comprensi\xF3n, has ubicado de manera
-      correcta los ingredientes del ceviche. Sigue explorando y descubre m\xE1s delicias
-      de nuestro Cauca.\r\n"
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "Con destreza y pasi\xF3n, lograste la uni\xF3n de nombres e im\xE1genes,
+      \xA1Eres un campe\xF3n!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -10166,7 +10223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767446351}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10177,7 +10234,7 @@ Transform:
   - {fileID: 1002130130}
   - {fileID: 411145742}
   - {fileID: 1409503695}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1772787827
 PrefabInstance:
@@ -10405,7 +10462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830574650}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10416,7 +10473,7 @@ Transform:
   - {fileID: 1600624451}
   - {fileID: 1146700453}
   - {fileID: 491241009}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1996649886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1835754029
 PrefabInstance:
@@ -10548,7 +10605,7 @@ Transform:
   m_GameObject: {fileID: 1838347363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.17, y: -0.46666664, z: -2.39}
+  m_LocalPosition: {x: 32.8, y: 14.65, z: 15.8}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10568,8 +10625,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controladorActivarDesactivarMinijuego: {fileID: 558251477}
-  jugadorActivarDesactivar: {fileID: 0}
-  activarDesactivarNPC2: {fileID: 0}
+  jugadorActivarDesactivar: {fileID: 541060695}
+  activarDesactivarNPC2: {fileID: 1838347363}
   activarDesactivarPortal: {fileID: 198472572}
   minijuegoAActivar: 2
 --- !u!114 &1838347366
@@ -10681,6 +10738,12 @@ PrefabInstance:
       propertyPath: barreraADesactivar
       value: 
       objectReference: {fileID: 60483031}
+    - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "Hola, soy una ca\xF1ita de az\xFAcar, ser\xE9 la amiga que te llevar\xE1
+        a explorar la importancia del lenguaje, la literatura, la diversidad e inclusi\xF3n
+        multicultural que tenemos en nuestro Cauca, Disfruta de esta aventura."
+      objectReference: {fileID: 0}
     - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -11013,15 +11076,10 @@ MonoBehaviour:
       m_Calls: []
   triggerState: 0
   sentences:
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "\xA1Felicitaciones! Has logrado reconocer los sonidos de cada instrumento.
-      \xA1Muy bien!\r\n"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Ahora dir\xEDgete hacia el portal para pasar al siguiente territorio."
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: "\xA1Felicitaciones!. Has logrado reconocer muy bien las narrativas
+      de cada lugar representativo del Cauca. Ahora, conoces mucho m\xE1s de nuestra
+      riqueza cultural."
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -11121,6 +11179,107 @@ Transform:
   - {fileID: 1878483332}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1902485028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902485032}
+  - component: {fileID: 1902485031}
+  - component: {fileID: 1902485030}
+  - component: {fileID: 1902485029}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1902485029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902485028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1902485030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902485028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1902485031
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902485028}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1902485032
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902485028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1906885621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11513,6 +11672,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4931211907768612, guid: e88b7bb02ae149940a5a0cddf34fe370, type: 3}
   m_PrefabInstance: {fileID: 1964942915}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1996649885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996649886}
+  m_Layer: 0
+  m_Name: "Ambientaci\xF3n y Terreno"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996649886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996649885}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1767446352}
+  - {fileID: 1830574651}
+  - {fileID: 1740991177}
+  - {fileID: 1703863884}
+  - {fileID: 1066566350}
+  - {fileID: 53444463}
+  - {fileID: 956939992}
+  - {fileID: 530290609}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2000843164
 GameObject:
   m_ObjectHideFlags: 0
@@ -11860,16 +12058,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 867313194}
   - {fileID: 541060694}
-  - {fileID: 1767446352}
-  - {fileID: 1830574651}
-  - {fileID: 1740991177}
-  - {fileID: 1703863884}
-  - {fileID: 1066566350}
-  - {fileID: 53444463}
-  - {fileID: 956939992}
-  - {fileID: 530290609}
+  - {fileID: 198472571}
+  - {fileID: 1996649886}
   - {fileID: 1532481710}
   - {fileID: 2000843165}
   - {fileID: 1893266586}
   - {fileID: 1552581096}
-  - {fileID: 198472571}
+  - {fileID: 1902485032}
+  - {fileID: 335639770}

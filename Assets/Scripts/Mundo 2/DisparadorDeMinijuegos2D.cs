@@ -26,7 +26,7 @@ public class DisparadorDeMinijuegos2D : MonoBehaviour
 
     }
 
-    public void desactivarMinijuego(GameObject minijuego,GameObject jugador)
+    public void desactivarMinijuego(GameObject minijuego,GameObject jugador)//No se ha usado
     {
 
         minijuego.SetActive(false);
