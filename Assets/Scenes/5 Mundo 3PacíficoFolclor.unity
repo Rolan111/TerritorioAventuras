@@ -752,9 +752,21 @@ PrefabInstance:
         Pac\xEDfico, donde de folclor y gastronom\xEDa puedes aprender. "
       objectReference: {fileID: 0}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: sentences.Array.data[1].sentence
+      value: 'Si la aventura quieres iniciar,  por el observatorio tienes que comenzar. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: sentences.Array.data[1].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f54e3028270db5d418a737f0037af35a, type: 3}
+    - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
       objectReference: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+    - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: sentences.Array.data[1].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
     - target: {fileID: 5218247924319842102, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -773,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5218247924319842102, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.37
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 5218247924319842102, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -824,6 +836,11 @@ PrefabInstance:
       addedObject: {fileID: 1379393461}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+--- !u!82 &356681965 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1970604931211035833, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+  m_PrefabInstance: {fileID: 356681964}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &396005119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4100,12 +4117,124 @@ Transform:
   - {fileID: 206508768}
   - {fileID: 2084024447}
   - {fileID: 133634497}
+  - {fileID: 1305202664}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1304613168 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9a7464faa7da0e5419f2a2a8debaefbe, type: 3}
   m_PrefabInstance: {fileID: 1856008893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1305202663
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1170413653}
+    m_Modifications:
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 356681965}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: jugadorParaPausar
+      value: 
+      objectReference: {fileID: 5422264}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: barreraADesactivar
+      value: 
+      objectReference: {fileID: 669149403}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "Hola soy una cantora del Pac\xEDfico y te doy la bienvenida al territorio
+        Pac\xEDfico, donde de folclor y gastronom\xEDa puedes aprender. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+    - target: {fileID: 3219540194042145399, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1281b2aa7a09076409a127823d85e73a, type: 2}
+    - target: {fileID: 4012398097238248354, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_Name
+      value: letrero_Asistente_VirtualDecorado
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.031999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: -0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50691986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50691956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4929833
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.492983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -88.403
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+--- !u!4 &1305202664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+  m_PrefabInstance: {fileID: 1305202663}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1353711799
 Mesh:

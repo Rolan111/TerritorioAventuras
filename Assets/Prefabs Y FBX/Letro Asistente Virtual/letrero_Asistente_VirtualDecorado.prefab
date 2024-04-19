@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5a4a6d54b0bec65458651895b121cc25, type: 2}
     - target: {fileID: 919132149155446097, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
       propertyPath: m_Name
-      value: letrero_Asistente_Virtual
+      value: letrero_Asistente_VirtualDecorado
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
