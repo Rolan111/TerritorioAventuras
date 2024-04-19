@@ -27,7 +27,7 @@ public class ControladorPrefabsMinijuegos : MonoBehaviour
     public void SpawnPrefab(int minijuegoAActivar)
     {
         instanciaARecargar = minijuegoAActivar;
-        Vector3 newPosition = new Vector3(0f, 60f, 0f);//posición personalizada
+        Vector3 newPosition = new Vector3(0f, 85f, 0f);//posición personalizada
         // Instanciamos el prefab en la posición inicial (0, 0, 0) y sin rotación
         if (minijuegoAActivar==1)
         {

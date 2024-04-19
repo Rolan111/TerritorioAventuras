@@ -69,7 +69,7 @@ public class ObjectMatchingGame : MonoBehaviour
                     BoxCollider2D infoCardCollider = objectMatchForm.GetBoxCollider2D();
 
                     Vector2 topLeftWorld = infoCardCollider.transform.TransformPoint(infoCardCollider.bounds.min);
-                    Vector2 topRightWorld = infoCardCollider.transform.TransformPoint(new Vector2(infoCardCollider.bounds.max.x, infoCardCollider.bounds.min.y));
+                    Vector2 topRightWorld = infoCardCollider.transform.TransformPoint(new Vector2(infoCardCollider.bounds.max.x+100, infoCardCollider.bounds.min.y-130));
 
                     Vector2 topCenter = (topLeftWorld + topRightWorld) / 2f;
                     topCenter.y += infoCardCollider.bounds.extents.y;
