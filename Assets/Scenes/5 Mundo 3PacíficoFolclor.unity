@@ -2704,7 +2704,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -4694,7 +4694,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:

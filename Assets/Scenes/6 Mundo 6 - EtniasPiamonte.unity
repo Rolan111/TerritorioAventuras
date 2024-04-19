@@ -389,7 +389,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -5243,7 +5243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5218247924319842102, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: -4.08
       objectReference: {fileID: 0}
     - target: {fileID: 5218247924319842102, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5298,6 +5298,11 @@ PrefabInstance:
       addedObject: {fileID: 2005068402}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+--- !u!82 &638066734 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1970604931211035833, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+  m_PrefabInstance: {fileID: 638066733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &645583403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6548,7 +6553,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -10803,6 +10808,102 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6201417577865796235, guid: 936441e8ad7465e409c2285b778dfd8f, type: 3}
   m_PrefabInstance: {fileID: 1305130846}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1307963276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1898676210}
+    m_Modifications:
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 638066734}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: jugadorParaPausar
+      value: 
+      objectReference: {fileID: 145752462}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: barreraADesactivar
+      value: 
+      objectReference: {fileID: 936946360}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "Hola soy un mico Tit\xED y soy tu gu\xEDa en este territorio. En el
+        Cauca tenemos m\xFAltiples etnias, todas valiosas y representativas. En esta
+        actividad, te invito a conocer sobre 3 de ellas: Misak, Nasa y Yanakuna."
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+    - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: sentences.Array.data[0].dialogueCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
+    - target: {fileID: 3219540194042145399, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 794dfd96165f12445b2778a31464559c, type: 2}
+    - target: {fileID: 4012398097238248354, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_Name
+      value: letrero_Asistente_VirtualDecorado
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.557
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.055
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50691986
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50691956
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4929833
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.492983
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -88.403
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+--- !u!4 &1307963277 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4387973210938183960, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
+  m_PrefabInstance: {fileID: 1307963276}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1332064351
 PrefabInstance:
@@ -15059,6 +15160,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 523138464}
+  - {fileID: 1307963277}
   - {fileID: 147134868}
   - {fileID: 1876976268}
   m_Father: {fileID: 0}
@@ -17325,7 +17427,7 @@ MonoBehaviour:
   triggerState: 1
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
-    sentence: "\xA1Ve al cilndro!"
+    sentence: "\xA1Ve hacia el asistente!"
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
