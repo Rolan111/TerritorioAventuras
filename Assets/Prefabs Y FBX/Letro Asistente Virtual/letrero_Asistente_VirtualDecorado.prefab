@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4282799131666937587
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.024999999
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.039999995
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.130884
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 41.81534
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -130.18001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50691986
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.50691956
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4929833
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.492983
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -88.403
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5a4a6d54b0bec65458651895b121cc25, type: 2}
+    - target: {fileID: 919132149155446097, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      propertyPath: m_Name
+      value: letrero_Asistente_Virtual
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1044124370245269126}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1744663951846405277}
+  m_SourcePrefab: {fileID: 100100000, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+--- !u!1 &4012398097238248354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ffc4ebcf68e1cd746bd53a22ed21b5cd, type: 3}
+  m_PrefabInstance: {fileID: 4282799131666937587}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1044124370245269126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012398097238248354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 1
+  pausarJugador: 1
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 1
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+    sentence: "Hola, soy Francisco Jos\xE9 de Caldas, soy el primer cient\xEDfico
+      colombiano. En el siguiente link podr\xE1s conocer sobre mi vida y conocer
+      porque soy llamado \u201CEl sabio Caldas\u201D  \n\n(https://www.youtube.com/watch?v=ECAS3JcS8n4)"
+    sentenceSound: {fileID: 8300000, guid: a02155682fffa2d43801d309a558be42, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueCharacter: {fileID: 11400000, guid: a8c3677cc2001784fbd9ecfcdfcca87f, type: 2}
+    sentence: 'Si la aventura quieres iniciar,  por el observatorio tienes que comenzar. '
+    sentenceSound: {fileID: 8300000, guid: f54e3028270db5d418a737f0037af35a, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+--- !u!65 &1744663951846405277
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4012398097238248354}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.524637, y: 59.99999, z: 6.0638113}
+  m_Center: {x: -0.17912158, y: -0.010677345, z: -3.0357475}
