@@ -242,7 +242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &133634497
 Transform:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ Transform:
   m_GameObject: {fileID: 133634496}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.04, y: -0.46666664, z: 30.31}
+  m_LocalPosition: {x: 31.04, y: -0.88, z: 30.31}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1053,6 +1053,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CapsuleVirtualAsistant
       objectReference: {fileID: 0}
+    - target: {fileID: 2526817666959756314, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: conBarreras
       value: 1
@@ -1078,6 +1082,10 @@ PrefabInstance:
       propertyPath: sentences.Array.data[1].sentence
       value: 'Si la aventura quieres iniciar,  por el observatorio tienes que comenzar. '
       objectReference: {fileID: 0}
+    - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9d522c64625cc3842811277d98240b8a, type: 3}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: sentences.Array.data[1].sentenceSound
       value: 
@@ -2446,13 +2454,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e11aa6a8c018c6f4b853effd628d9adf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.705
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 47
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -2627,7 +2635,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 731410036}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 5422264}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 356681965}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2642,7 +2650,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "Bienvenido a la misi\xF3n 1. La clave ser\xE1 escuchar atentamente
       lo que te voy a decir, para poder preparar un ceviche."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 4b22415131c65fc498429408abfe4c04, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2652,7 +2660,7 @@ MonoBehaviour:
       decidi\xF3 quedarse a vivir e inspirado en la belleza del pacifico caucano
       fusionar los ingredientes frescos y, con la sabrosura de la regi\xF3n, dio
       origen a esta delicia del mar. Desde aquel entonces los lugare\xF1os combinan:"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 825958a68954c7d4384588625d42659d, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2661,15 +2669,7 @@ MonoBehaviour:
       cebolla, tomate, ma\xEDz tierno, leche de coco, algunos cambian ingredientes,
       pero podemos decir que es una explosi\xF3n de sabores frescos y un emblema
       del Cauca.\r\n"
-    sentenceSound: {fileID: 0}
-    sentenceEvent:
-      m_PersistentCalls:
-        m_Calls: []
-  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
-    sentence: "Selecciona y arrastra los ingredientes que se nombr\xF3 en la receta
-      al recipiente para que el ceviche puedas preparar. Tienes 3 intentos. \xA1Vamos,
-      t\xFA puedes!\r\n"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: aea839dd8a559d04ea5da3106f12e8e6, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2677,7 +2677,15 @@ MonoBehaviour:
     sentence: "Estos son los ingredientes: 800 gramos de pescado; 2 tomates chontos;
       1 cebolla morada; 4 cucharadas de cilantro picado; 4 cucharadas de ma\xEDz
       tierno; 6 cucharadas de leche de coco; 1 lim\xF3n.\r\n"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 7cffb6c509917e14c929d9eb03a41584, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
+    sentence: "Selecciona y arrastra los ingredientes que se nombr\xF3 en la receta
+      al recipiente para que el ceviche puedas preparar. Tienes 3 intentos. \xA1Vamos,
+      t\xFA puedes!\r\n"
+    sentenceSound: {fileID: 8300000, guid: c808cebb6a62ee04dbf60d034fe37cd4, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3693,7 +3701,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 356681965}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3710,7 +3718,7 @@ MonoBehaviour:
       Tu talento ha sido la observaci\xF3n y la comprensi\xF3n, has ubicado de manera
       correcta los ingredientes del ceviche. Sigue explorando y descubre m\xE1s delicias
       de nuestro Cauca.\r\n"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 9bfbdbd03333242429dae20559a2ec59, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3727,7 +3735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 860106699}
-  tiempoParaDesaparecer: 13
+  tiempoParaDesaparecer: 21
 --- !u!1001 &876845611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4859,7 +4867,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 356681965}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4874,7 +4882,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: c874199908df4874797b36f29c488b5d, type: 2}
     sentence: "\xA1Felicitaciones! Has logrado reconocer los sonidos de cada instrumento.
       \xA1Muy bien!\r\n"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: bf9a81f5712493e4e9cb3d28a808481c, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -4897,7 +4905,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 1108380251}
-  tiempoParaDesaparecer: 5
+  tiempoParaDesaparecer: 7
 --- !u!1 &1123111491
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,7 +5912,7 @@ PrefabInstance:
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: 9d522c64625cc3842811277d98240b8a, type: 3}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -6428,7 +6436,7 @@ Transform:
   m_GameObject: {fileID: 1558314875}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5280304, y: 0.5477053, z: -0.11210954}
+  m_LocalPosition: {x: 0.03, y: 0.5477053, z: 0.04}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6451,7 +6459,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 1558314875}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 5422264}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 356681965}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -6467,7 +6475,7 @@ MonoBehaviour:
     sentence: "La misi\xF3n 2 trata de m\xFAsica \xA1La m\xFAsica nos alegra, la
       m\xFAsica es vida! Los instrumentos debes aprender, por eso a continuaci\xF3n
       te los voy a ense\xF1ar y vamos a disfrutar.\r"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: a3816678ea365ce48ad795976656fc0a, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -6475,7 +6483,7 @@ MonoBehaviour:
     sentence: "Tu segunda misi\xF3n en este territorio es escuchar los ritmos e identificar
       el instrumento, es decir, primero vas a escuchar el sonido luego vas a seleccionar
       el instrumento que creas correcto."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: e408888ecf3758e4090228d664140314, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
