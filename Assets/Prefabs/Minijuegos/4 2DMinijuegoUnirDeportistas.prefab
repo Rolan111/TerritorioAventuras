@@ -352,7 +352,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
@@ -725,7 +725,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 2.1910903
+  m_AspectRatio: 1.7598937
 --- !u!1 &1856929506465483004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
@@ -1600,6 +1600,7 @@ GameObject:
   - component: {fileID: 32484305537398311}
   - component: {fileID: 6470583631566319878}
   - component: {fileID: 6619614521237153991}
+  - component: {fileID: 1984897882802070903}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1681,6 +1682,102 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3447024342186729745}
   m_Enabled: 1
+--- !u!82 &1984897882802070903
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3447024342186729745}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fcaa136f43435ed46b74ac9bf2c28753, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3698717505251128574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2536,7 +2633,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
@@ -3222,7 +3319,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
@@ -4016,7 +4113,7 @@ MonoBehaviour:
   correctClip: {fileID: 8300000, guid: 357a978d4c1280b408511abe9ff57904, type: 3}
   wrongClip: {fileID: 8300000, guid: f23b076f85dbe66448f4dfe3e0c92420, type: 3}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: 856eac1a5aac777498ede5542f04170c, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
   winScreen: {fileID: 6950360610111415685}
   wrongCorrectImage: {fileID: 2105512116264303630}
   lostScreen: {fileID: 683328922148544610}
