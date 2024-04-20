@@ -72,7 +72,7 @@ public class ObjectMatchingGameVestimentas: MonoBehaviour
                     Vector2 topRightWorld = infoCardCollider.transform.TransformPoint(new Vector2(infoCardCollider.bounds.max.x, infoCardCollider.bounds.min.y));
 
                     Vector2 topCenter = (topLeftWorld + topRightWorld) / 2f;
-                    topCenter.y += infoCardCollider.bounds.extents.y - 1;
+                    topCenter.y += infoCardCollider.bounds.extents.y - 2;
 
                     lineRenderer.SetPosition(1, topCenter);
 
