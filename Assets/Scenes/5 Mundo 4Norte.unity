@@ -2374,7 +2374,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 346469674}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 541060695}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1980921590}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   sentences:
   - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
     sentence: "Bienvenidos a la misi\xF3n 1, a nuestros deportistas vas a conocer."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 450ce807abd3192408117e9c2bfd1133, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2399,7 +2399,7 @@ MonoBehaviour:
       sentido de comunidad y amistad. A trav\xE9s del deporte, construimos un Cauca
       fuerte y unido, donde cada esfuerzo, cada salto y cada juego forman parte de
       la vibrante historia de nuestra tierra."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 748842e77fd990745b7aa5a11bba7ea4, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -2407,7 +2407,7 @@ MonoBehaviour:
     sentence: "Si quieres la primera misi\xF3n superar, las im\xE1genes a los nombres
       correctos debes asociar. \xA1Sigue jugando, explorando y haciendo de cada movimiento
       una celebraci\xF3n de la grandeza caucana!\r"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: cdf9ad7fe2c6c304abd11c2100694423, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3717,13 +3717,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e11aa6a8c018c6f4b853effd628d9adf, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.705
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 51
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -7871,7 +7871,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 1287391035}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 541060695}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1980921590}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7887,7 +7887,7 @@ MonoBehaviour:
     sentence: "Bienvenido a la misi\xF3n 2, en esta misi\xF3n deber\xE1s conectar
       im\xE1genes representativas con narrativas de un p\xE1rrafo, como memorias
       hist\xF3ricas de los sitios m\xE1s representativos del Cauca.\r\n"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: a2ec51605eecefe4d87dbc6e95ab3a2b, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -9988,7 +9988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 1744453667}
-  tiempoParaDesaparecer: 13
+  tiempoParaDesaparecer: 7
 --- !u!114 &1744453670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10006,7 +10006,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1980921590}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -10021,7 +10021,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
     sentence: "Con destreza y pasi\xF3n, lograste la uni\xF3n de nombres e im\xE1genes,
       \xA1Eres un campe\xF3n!"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 4abcf0d991baaf948b0583c4f7017f09, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -10605,7 +10605,7 @@ Transform:
   m_GameObject: {fileID: 1838347363}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.8, y: 14.65, z: 15.8}
+  m_LocalPosition: {x: 32.8, y: 13.31, z: 15.8}
   m_LocalScale: {x: 0.6666667, y: 0.6666667, z: 0.6666667}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10744,6 +10744,10 @@ PrefabInstance:
         a explorar la importancia del lenguaje, la literatura, la diversidad e inclusi\xF3n
         multicultural que tenemos en nuestro Cauca, Disfruta de esta aventura."
       objectReference: {fileID: 0}
+    - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8341f807ae3536c4ebd8aa41c3e38a44, type: 3}
     - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -11046,7 +11050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 1878483331}
-  tiempoParaDesaparecer: 5
+  tiempoParaDesaparecer: 12
 --- !u!114 &1878483334
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11064,7 +11068,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1980921590}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -11080,6 +11084,12 @@ MonoBehaviour:
     sentence: "\xA1Felicitaciones!. Has logrado reconocer muy bien las narrativas
       de cada lugar representativo del Cauca. Ahora, conoces mucho m\xE1s de nuestra
       riqueza cultural."
+    sentenceSound: {fileID: 8300000, guid: e7c7e8c63904a474d879edfc90d6b6b1, type: 3}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueCharacter: {fileID: 11400000, guid: 65447e82fe0d50d4ea8adb2cf464c1ff, type: 2}
+    sentence: Ahora ve hacia el portal para pasar al siguiente territorio.
     sentenceSound: {fileID: 0}
     sentenceEvent:
       m_PersistentCalls:
@@ -11671,6 +11681,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4931211907768612, guid: e88b7bb02ae149940a5a0cddf34fe370, type: 3}
   m_PrefabInstance: {fileID: 1964942915}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1980921590 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3433078460310283465, guid: a413000234fbe95409d08bb5677194af, type: 3}
+  m_PrefabInstance: {fileID: 1853480056}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1996649885
 GameObject:

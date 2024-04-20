@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.8867528
+  m_AspectRatio: 2.1910903
 --- !u!1 &1856929506465483004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1167,7 @@ GameObject:
   - component: {fileID: 2602396173953115529}
   m_Layer: 0
   m_Name: 4 2DMinijuegoUnirDeportistas
-  m_TagString: Untagged
+  m_TagString: TagParaEliminarClones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3365,7 +3365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &630762149855247343
 Transform:
   m_ObjectHideFlags: 0
