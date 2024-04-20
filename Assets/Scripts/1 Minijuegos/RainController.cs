@@ -27,7 +27,7 @@ public class RainController : MonoBehaviour
         var wordManager = GameObject.Find("Diccionario").GetComponent<WordManager>();
         while (true)
         {
-            Vector3 spawnPosition = new Vector3(Random.Range(-8f, 8f), 70f, 0f); // Posición aleatoria en la parte superior de la pantalla
+            Vector3 spawnPosition = new Vector3(Random.Range(-8f, 8f), 100f, 0f); // Posición aleatoria en la parte superior de la pantalla
             var palabraConIdentificadorMisak = wordManager.GetRandomWordIdentifierMisak();
             var palabraConIdentificadorNasa = wordManager.GetRandomWordIdentifierNasa();
             var palabraConIdentificadorQuechua = wordManager.GetRandomWordIdentifierQuechua();

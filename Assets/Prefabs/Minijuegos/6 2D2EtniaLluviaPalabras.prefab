@@ -887,7 +887,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4574763184405404296}
   - component: {fileID: 5964438974933493896}
-  - component: {fileID: 6207468265669369263}
   m_Layer: 0
   m_Name: ControladorDeLluvia
   m_TagString: Untagged
@@ -926,20 +925,6 @@ MonoBehaviour:
   spawnInterval: 1.5
   fallSpeed: 1
   detectorDeIdioma: 0
---- !u!114 &6207468265669369263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333447047234275847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac44b90775e13e6489ba4207a84c1843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabMinijuego1: {fileID: 0}
-  prefabMinijuego2: {fileID: 0}
 --- !u!1 &1561885313101405535
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1200,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.3, y: 5, z: 0.5}
-  m_LocalScale: {x: 1.3, y: 0.8491626, z: 0.31507102}
+  m_LocalScale: {x: 1.0109842, y: 0.927832, z: 0.31507102}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 6833775856914187451}
@@ -1261,7 +1246,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2811d3f57a451c543845c963885e89c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9c1be6fc7c55b3c4eaaf29266b2546a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2337,7 +2322,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Salir e intentar de nuevo
+  m_text: Intentar de nuevo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4059,6 +4044,14 @@ PrefabInstance:
     - target: {fileID: 7857100453139310325, guid: 57674db9c113fee4fbf7123fd7033cc1, type: 3}
       propertyPath: m_Name
       value: PrefabHoja
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362163256573459126, guid: 57674db9c113fee4fbf7123fd7033cc1, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362163256573459126, guid: 57674db9c113fee4fbf7123fd7033cc1, type: 3}
+      propertyPath: m_FlipY
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
