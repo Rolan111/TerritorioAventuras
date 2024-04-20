@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5985623, g: 0.5432285, b: 0.78464943, a: 1}
+  m_IndirectSpecularColor: {r: 0.598459, g: 0.5431979, b: 0.7846517, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1736,7 +1736,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 752736089}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 1850185802}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1240973990}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -2941,13 +2941,17 @@ PrefabInstance:
         que creas tu necesario para combatir el fr\xEDo de la cordillera.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 3997ed849f8d52c4c8649f752e2b4a4e, type: 3}
+    - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: sentences.Array.data[1].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: 3fd6d36063ed72049877502929f2efde, type: 3}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: sentences.Array.data[2].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: a767332d512d934469e873165fa0dd2f, type: 3}
     - target: {fileID: 4517961027006835494, guid: 3b5cc137cf4134247af177c4a76f03a2, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -3253,7 +3257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 1363556622}
-  tiempoParaDesaparecer: 4
+  tiempoParaDesaparecer: 6
 --- !u!114 &1363556625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3271,7 +3275,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 1240973990}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3286,7 +3290,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: fe3fcfd198bc12040abc253256df6641, type: 2}
     sentence: "\xA1Felicitaciones! Has logrado comprar los elementos adecuados para
       soportar el fr\xEDo. "
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: c3bea52aa4d816c47b80be7ccda65b8d, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -3728,7 +3732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].sentence
-      value: "Hola soy un oso de anteojos. Bienvenido a este territorio de la subregi\xF3n
+      value: "Hola soy el oso de anteojos. Bienvenido a este territorio de la subregi\xF3n
         Sur. Aqu\xED aprender\xE1s acerca de las econom\xEDas solidarias."
       objectReference: {fileID: 0}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
@@ -3738,21 +3742,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[2].sentence
-      value: "Como primera misi\xF3n debes ir a la tienda. Ah\xED debes comprar lo
-        que creas tu necesario para combatir el fr\xEDo de la cordillera.\r\n"
+      value: "Te propongo un sue\xF1o. Como primera misi\xF3n debes ir a la tienda.
+        Ah\xED debes comprar lo que creas tu necesario para combatir el fr\xEDo de
+        la cordillera.\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: 3997ed849f8d52c4c8649f752e2b4a4e, type: 3}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[1].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: 3fd6d36063ed72049877502929f2efde, type: 3}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[2].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: a767332d512d934469e873165fa0dd2f, type: 3}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
