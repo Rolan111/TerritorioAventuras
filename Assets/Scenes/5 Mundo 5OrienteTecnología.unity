@@ -10589,6 +10589,16 @@ PrefabInstance:
       propertyPath: barreraADesactivar
       value: 
       objectReference: {fileID: 1336066699}
+    - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
+      propertyPath: sentences.Array.data[0].sentence
+      value: "Hola, soy un c\xF3ndor astronauta.  Bienvenido a este mundo de tecnolog\xEDa
+        e inform\xE1tica. Estoy aqu\xED para ayudarte, en este nivel apocal\xEDptico,
+        la clave es aprovechar las energ\xEDas renovables para sobrevivir."
+      objectReference: {fileID: 0}
+    - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
+      propertyPath: sentences.Array.data[0].sentenceSound
+      value: 
+      objectReference: {fileID: 8300000, guid: dc76c2494d6acff4c905a505bec4d3c0, type: 3}
     - target: {fileID: 944324493460253177, guid: a413000234fbe95409d08bb5677194af, type: 3}
       propertyPath: m_Name
       value: letrero_Asistente_VirtualDecorado2
