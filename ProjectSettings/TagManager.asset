@@ -29,6 +29,7 @@ TagManager:
   - ControladorPrefabsMinijuegos
   - DisparadorMinijuego2
   - Agua
+  - Engranaje
   layers:
   - Default
   - TransparentFX

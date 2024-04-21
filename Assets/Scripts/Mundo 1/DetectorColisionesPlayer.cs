@@ -48,7 +48,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-            if (other.CompareTag("Monedas"))
+        if (other.CompareTag("Monedas"))
         {
             Debug.Log("El jugador ha chocado con una MONEDA.");
             logicaPuntajes[0].ContadorPuntajes(1);
@@ -138,6 +138,12 @@ public class DetectorColisionesPlayer : MonoBehaviour
         else if (other.CompareTag("Agua"))
         {
             SceneManager.LoadScene("5 Mundo 5OrienteTecnología");
+        }
+        else if (other.CompareTag("Engranaje"))
+        {
+            logicaPuntajes[1].ContadorPuntajes(1);
+            Destroy(other.gameObject);
+
         }
 
 
