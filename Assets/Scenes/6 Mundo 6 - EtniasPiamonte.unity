@@ -5459,7 +5459,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 638066734}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5474,7 +5474,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Felicitaciones! Has logrado reconocer la vestimenta representativa
       de cada etnia. \xA1Muy bien!"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 35432c1cc6e289f4287541e2df24f265, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -6267,7 +6267,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4752457369876416285, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4752457369876416285, guid: 5ad33d58a66ab154a89c9e88255601e5, type: 3}
       propertyPath: m_TagString
@@ -8107,7 +8107,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 940257293}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 145752462}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 638066734}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -8122,7 +8122,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "Bienvenido a la misi\xF3n 2 de este nivel, donde las expresiones de
       cada etnia vas a aprender.."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 0092d833ded77e84590c41789fddd9c6, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -8130,7 +8130,7 @@ MonoBehaviour:
     sentence: "Primero, seleccionar\xE1s el idioma nativo que quieres aprender, ahora
       seleccionar\xE1s la traducci\xF3n correcta para cada expresi\xF3n. \xA1Vamos,
       t\xFA puedes!\r"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 36a4fc7a135d4ca4484216db757281f6, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -10934,7 +10934,7 @@ PrefabInstance:
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].sentenceSound
       value: 
-      objectReference: {fileID: 8300000, guid: 5bd0cb9c33e3c7e4196a46ecb0c377d3, type: 3}
+      objectReference: {fileID: 8300000, guid: bb5f81861a1e4bf40bb468cd838163da, type: 3}
     - target: {fileID: 1044124370245269126, guid: 7d04d9db435c6924db095e96823b4d8f, type: 3}
       propertyPath: sentences.Array.data[0].dialogueCharacter
       value: 
@@ -15835,7 +15835,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 1937772858}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 145752462}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 638066734}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -15851,7 +15851,7 @@ MonoBehaviour:
     sentence: "Como primera misi\xF3n tendr\xE1s 3 im\xE1genes con su respectiva
       vestimenta. Si quieres ganar, la adecuada uni\xF3n de la etnia y la vestimenta
       tendr\xE1s que lograr."
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: 7b1c44888862f634d803082e3a840998, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
@@ -16799,7 +16799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjetoConDialogue: {fileID: 2046236238}
-  tiempoParaDesaparecer: 5
+  tiempoParaDesaparecer: 6
 --- !u!114 &2046236241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16817,7 +16817,7 @@ MonoBehaviour:
   barreraADesactivar: {fileID: 0}
   barrera2ADesactivar: {fileID: 0}
   jugadorParaPausar: {fileID: 0}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 638066734}
   startDialogueEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -16832,7 +16832,7 @@ MonoBehaviour:
   - dialogueCharacter: {fileID: 11400000, guid: acee308dfcecb6e48a47bbfb83014f9a, type: 2}
     sentence: "\xA1Felicitaciones! Has logrado seleccionar la traducci\xF3n correcta
       seg\xFAn el idioma nativo. \xA1Muy bien!"
-    sentenceSound: {fileID: 0}
+    sentenceSound: {fileID: 8300000, guid: bf17b99989a46d8408f05a5d8956e67d, type: 3}
     sentenceEvent:
       m_PersistentCalls:
         m_Calls: []
