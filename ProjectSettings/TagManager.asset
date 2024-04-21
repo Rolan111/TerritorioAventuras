@@ -28,6 +28,7 @@ TagManager:
   - TagParaEliminarClones
   - ControladorPrefabsMinijuegos
   - DisparadorMinijuego2
+  - Agua
   layers:
   - Default
   - TransparentFX
