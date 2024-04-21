@@ -123,7 +123,7 @@ MonoBehaviour:
   winScreen: {fileID: 3938018833724568731}
   lostScreen: {fileID: 6897531410306120990}
   victoryClip: {fileID: 8300000, guid: 14a55710871db744abed6779044f4503, type: 3}
-  lostClip: {fileID: 8300000, guid: d8a88cff25d04b845a011a8a5258c2bc, type: 3}
+  lostClip: {fileID: 8300000, guid: f117f305b37037c47a0738dfcf3b875c, type: 3}
 --- !u!1 &432812251641475767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3280,7 +3280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 1.7286135
+  m_AspectRatio: 2.03372
 --- !u!1 &8714703523375767726
 GameObject:
   m_ObjectHideFlags: 0
