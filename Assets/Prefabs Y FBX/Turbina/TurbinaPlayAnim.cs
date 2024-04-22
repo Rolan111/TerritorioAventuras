@@ -6,7 +6,9 @@ public class TurbinaPlayAnim : MonoBehaviour
 {
 
     private Animator animator;
-
+    public static float puntos = 0;
+    public static float turbinasActivas = 0;
+    private bool hasPlayer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -14,19 +16,34 @@ public class TurbinaPlayAnim : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if(animator != null)
+        if (Input.GetKeyDown(KeyCode.F)) {
+            if (animator != null && hasPlayer) {
+                if (TurbinaPlayAnim.puntos > 0)
+                {
+                    animator.SetTrigger("Run");
+                    TurbinaPlayAnim.turbinasActivas++;
+                    TurbinaPlayAnim.puntos--;
+                }
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
         {
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                animator.SetTrigger("Run");
-            }
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                animator.SetTrigger("Stop");
-            }
+            hasPlayer = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            hasPlayer = false;
         }
     }
 }

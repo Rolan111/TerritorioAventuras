@@ -53,6 +53,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Debug.Log("El jugador ha chocado con una MONEDA.");
             logicaPuntajes[0].ContadorPuntajes(1);
             Destroy(other.gameObject);
+            TurbinaPlayAnim.puntos++;
         }
 
         //Residuos
@@ -137,6 +138,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
         }
         else if (other.CompareTag("Agua"))
         {
+            TurbinaPlayAnim.puntos = 0;
+            TurbinaPlayAnim.turbinasActivas = 0;
             SceneManager.LoadScene("5 Mundo 5OrienteTecnología");
         }
         else if (other.CompareTag("Engranaje"))
