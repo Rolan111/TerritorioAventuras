@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MicroondasScript : MonoBehaviour
+public class PcsScript : MonoBehaviour
 {
-    private bool isMicroActive = false;
     private bool hasPlayer = false;
     private Light light;
-    public static float microondasActivas = 0;
+    private bool isPCActive = false;
+    public static float pcActivas = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +19,11 @@ public class MicroondasScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (light != null && hasPlayer && TurbinaPlayAnim.turbinasActivas >= 3 && !isMicroActive)
+            if (light != null && hasPlayer && PanelPlayAnim.panelActivas >= 8 && !isPCActive)
             {
                 light.enabled = true;
-                isMicroActive = true;
-                MicroondasScript.microondasActivas++;
+                isPCActive = true;
+                PcsScript.pcActivas++;
             }
         }
     }

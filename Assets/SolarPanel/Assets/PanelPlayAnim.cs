@@ -1,15 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
-public class TurbinaPlayAnim : MonoBehaviour
+public class PanelPlayAnim : MonoBehaviour
 {
-
     private Animator animator;
-    public static float puntos = 0;
-    public static float turbinasActivas = 0;
+    public static float panelActivas = 0;
     private bool hasPlayer = false;
-    private bool isTurbinaActiva = false;
+    private bool isPanelActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,15 +18,13 @@ public class TurbinaPlayAnim : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) {
-            if (animator != null && hasPlayer && !isTurbinaActiva) {
-                if (TurbinaPlayAnim.puntos > 0)
-                {
-                    animator.SetTrigger("Run");
-                    TurbinaPlayAnim.turbinasActivas++;
-                    TurbinaPlayAnim.puntos--;
-                    isTurbinaActiva = true;
-                }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (animator != null && hasPlayer && !isPanelActive)
+            {
+                animator.SetTrigger("Run");
+                PanelPlayAnim.panelActivas++;
+                isPanelActive = true;
             }
         }
     }

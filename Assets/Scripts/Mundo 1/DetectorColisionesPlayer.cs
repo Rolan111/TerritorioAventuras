@@ -53,7 +53,6 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Debug.Log("El jugador ha chocado con una MONEDA.");
             logicaPuntajes[0].ContadorPuntajes(1);
             Destroy(other.gameObject);
-            TurbinaPlayAnim.puntos++;
         }
 
         //Residuos
@@ -79,7 +78,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
 
         else if (other.CompareTag("DisparadorPuzzle"))//Actualmente activo en el del Bote
         {
-            
+
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
@@ -140,13 +139,15 @@ public class DetectorColisionesPlayer : MonoBehaviour
         {
             TurbinaPlayAnim.puntos = 0;
             TurbinaPlayAnim.turbinasActivas = 0;
+            PanelPlayAnim.panelActivas = 0;
+            PcsScript.pcActivas = 0;
             SceneManager.LoadScene("5 Mundo 5OrienteTecnología");
         }
         else if (other.CompareTag("Engranaje"))
-        {
+        { 
             logicaPuntajes[1].ContadorPuntajes(1);
             Destroy(other.gameObject);
-
+            TurbinaPlayAnim.puntos++;
         }
 
 
