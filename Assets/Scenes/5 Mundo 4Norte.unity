@@ -10730,6 +10730,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 325d753754e71c84e8db3a1438bfee33, type: 3}
+    - target: {fileID: 450451186134975057, guid: a413000234fbe95409d08bb5677194af, type: 3}
+      propertyPath: m_text
+      value: "Ca\xF1ita"
+      objectReference: {fileID: 0}
     - target: {fileID: 742888917420493654, guid: a413000234fbe95409d08bb5677194af, type: 3}
       propertyPath: jugadorParaPausar
       value: 
