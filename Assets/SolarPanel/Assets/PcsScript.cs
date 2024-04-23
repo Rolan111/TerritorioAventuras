@@ -23,7 +23,7 @@ public class PcsScript : MonoBehaviour
             {
                 light.enabled = true;
                 isPCActive = true;
-                PcsScript.pcActivas++;
+                pcActivas++;
             }
         }
     }

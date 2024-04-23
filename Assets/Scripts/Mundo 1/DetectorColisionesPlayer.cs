@@ -139,8 +139,14 @@ public class DetectorColisionesPlayer : MonoBehaviour
         {
             TurbinaPlayAnim.puntos = 0;
             TurbinaPlayAnim.turbinasActivas = 0;
+            
+            TurbinaAguaPlayAnim.puntos = 0;
+            TurbinaAguaPlayAnim.turbinaActivas = 0;
+
             PanelPlayAnim.panelActivas = 0;
             PcsScript.pcActivas = 0;
+            LamparaScript.lamparasActivas = 0;
+
             SceneManager.LoadScene("5 Mundo 5OrienteTecnología");
         }
         else if (other.CompareTag("Engranaje"))
@@ -149,7 +155,12 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Destroy(other.gameObject);
             TurbinaPlayAnim.puntos++;
         }
-
+        else if (other.CompareTag("Maderas"))
+        {
+            logicaPuntajes[2].ContadorPuntajes(1);
+            Destroy(other.gameObject);
+            TurbinaAguaPlayAnim.puntos++;
+        }
 
     }
 

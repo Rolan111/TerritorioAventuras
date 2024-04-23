@@ -2,32 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurbinaPlayAnim : MonoBehaviour
+public class LamparaScript : MonoBehaviour
 {
-
-    private Animator animator;
-    public static float puntos = 0;
-    public static float turbinasActivas = 0;
     private bool hasPlayer = false;
-    private bool isTurbinaActiva = false;
+    private Light light;
+    private bool isLamparaActive = false;
+    public static float lamparasActivas = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        light = GetComponent<Light>();
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) {
-            if (animator != null && hasPlayer && !isTurbinaActiva) {
-                if (puntos > 0)
-                {
-                    animator.SetTrigger("Run");
-                    turbinasActivas++;
-                    puntos--;
-                    isTurbinaActiva = true;
-                }
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            TurbinaAguaPlayAnim.turbinaActivas = 3;
+
+            if (light != null && hasPlayer && TurbinaAguaPlayAnim.turbinaActivas >= 3 && !isLamparaActive)
+            {
+                light.enabled = true;
+                isLamparaActive = true;
+                lamparasActivas++;
             }
         }
     }

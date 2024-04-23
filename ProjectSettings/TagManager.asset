@@ -30,6 +30,7 @@ TagManager:
   - DisparadorMinijuego2
   - Agua
   - Engranaje
+  - Maderas
   layers:
   - Default
   - TransparentFX

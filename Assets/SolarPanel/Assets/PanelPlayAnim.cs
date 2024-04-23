@@ -23,7 +23,7 @@ public class PanelPlayAnim : MonoBehaviour
             if (animator != null && hasPlayer && !isPanelActive)
             {
                 animator.SetTrigger("Run");
-                PanelPlayAnim.panelActivas++;
+                panelActivas++;
                 isPanelActive = true;
             }
         }
