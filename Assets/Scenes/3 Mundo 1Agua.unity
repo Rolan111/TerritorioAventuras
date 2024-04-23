@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5480811, g: 0.8548065, b: 0.9214373, a: 1}
+  m_IndirectSpecularColor: {r: 0.54808134, g: 0.85480845, b: 0.92143846, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3569,6 +3569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 533794761}
   personajeAPausar: {fileID: 1841789821}
+  conTexto: 1
   activarDesactivarTexto: {fileID: 533794759}
 --- !u!65 &189587749
 BoxCollider:
@@ -5594,7 +5595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &268665065
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9369,6 +9370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 2087010201}
   personajeAPausar: {fileID: 1841789821}
+  conTexto: 1
   activarDesactivarTexto: {fileID: 2087010199}
 --- !u!64 &483198824
 MeshCollider:
@@ -19633,6 +19635,10 @@ PrefabInstance:
       value: CanecasDisparadorPuzzle1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cceb13c86ee55de4b9244a1e1ac4e7f5, type: 3}
       propertyPath: m_TagString
       value: DisparadorPuzzle
       objectReference: {fileID: 0}
@@ -20392,7 +20398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &733501649
 RectTransform:
   m_ObjectHideFlags: 0
