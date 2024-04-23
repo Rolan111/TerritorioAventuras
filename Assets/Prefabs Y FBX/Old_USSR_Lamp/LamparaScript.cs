@@ -24,6 +24,9 @@ public class LamparaScript : MonoBehaviour
                 light.enabled = true;
                 isLamparaActive = true;
                 lamparasActivas++;
+
+                // validar si todo en el lvl 5 esta completo
+                DetectorColisionesPlayer.validarNivel5();
             }
         }
     }

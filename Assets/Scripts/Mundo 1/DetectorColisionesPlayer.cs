@@ -164,9 +164,6 @@ public class DetectorColisionesPlayer : MonoBehaviour
             logicaPuntajes[2].ContadorPuntajes(1);
             Destroy(other.gameObject);
             TurbinaAguaPlayAnim.puntos++;
-
-            //TODO
-            validarNivel5();
         }
 
     }
@@ -182,11 +179,6 @@ public class DetectorColisionesPlayer : MonoBehaviour
         //se llama desde los scripts de lamparas osea las turbinasdeagua estan activas
         //se llama desde los scripts de microondas osea las turbinasdeaire estan activas
         //se llama desde los scripts de pcs osea las panelessolares esten activas
-
-        LamparaScript.lamparasActivas = 10;
-        MicroondasScript.microondasActivas = 10;
-        PcsScript.pcActivas = 10;
-
         if (LamparaScript.lamparasActivas >= 10 && MicroondasScript.microondasActivas >= 10 && PcsScript.pcActivas >= 10)
         {
             //activarlo

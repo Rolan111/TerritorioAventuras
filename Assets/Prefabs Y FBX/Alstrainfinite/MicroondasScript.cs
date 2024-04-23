@@ -24,6 +24,8 @@ public class MicroondasScript : MonoBehaviour
                 light.enabled = true;
                 isMicroActive = true;
                 MicroondasScript.microondasActivas++;
+                // validar si todo en el lvl 5 esta completo
+                DetectorColisionesPlayer.validarNivel5();
             }
         }
     }

@@ -24,6 +24,9 @@ public class PcsScript : MonoBehaviour
                 light.enabled = true;
                 isPCActive = true;
                 pcActivas++;
+
+                // validar si todo en el lvl 5 esta completo
+                DetectorColisionesPlayer.validarNivel5();
             }
         }
     }
