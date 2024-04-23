@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -25,6 +26,11 @@ public class PanelPlayAnim : MonoBehaviour
                 animator.SetTrigger("Run");
                 panelActivas++;
                 isPanelActive = true;
+
+                //eliminar dialogo
+                DialogueManager dialog = GetComponent<DialogueManager>();
+                dialog.StopDialogue();
+                Destroy(dialog);
             }
         }
     }

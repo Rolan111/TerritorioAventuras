@@ -1692,6 +1692,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 81524143}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 81524145}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &63834607 stripped
 GameObject:
@@ -1857,6 +1860,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 229711133}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 229711135}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &71675171
 GameObject:
@@ -2151,6 +2157,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &81524145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81524138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &86594000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2527,6 +2568,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 658375736}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 658375738}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &103053373
 GameObject:
@@ -2541,6 +2585,7 @@ GameObject:
   - component: {fileID: 103053376}
   - component: {fileID: 103053375}
   - component: {fileID: 103053374}
+  - component: {fileID: 103053379}
   m_Layer: 0
   m_Name: Lampara (6)
   m_TagString: Untagged
@@ -2681,6 +2726,41 @@ Transform:
   - {fileID: 1515659362}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: -93.274, z: 0}
+--- !u!114 &103053379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103053373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &107300825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2833,6 +2913,7 @@ GameObject:
   - component: {fileID: 117609033}
   - component: {fileID: 117609032}
   - component: {fileID: 117609031}
+  - component: {fileID: 117609036}
   m_Layer: 0
   m_Name: Lampara (11)
   m_TagString: Untagged
@@ -2973,6 +3054,41 @@ Transform:
   - {fileID: 1257144842}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: -93.274, z: 0}
+--- !u!114 &117609036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117609030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &119723345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3739,7 @@ GameObject:
   - component: {fileID: 128532769}
   - component: {fileID: 128532768}
   - component: {fileID: 128532767}
+  - component: {fileID: 128532772}
   m_Layer: 0
   m_Name: Lampara (8)
   m_TagString: Untagged
@@ -3763,6 +3880,41 @@ Transform:
   - {fileID: 71675172}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: -93.274, z: 0}
+--- !u!114 &128532772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128532766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &129707206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6015,6 +6167,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &229711135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229711128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &238372199 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
@@ -6120,6 +6307,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &238372206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238372199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &241057901
 GameObject:
   m_ObjectHideFlags: 0
@@ -9213,6 +9435,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8137591397461553439, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1161260800}
+    - targetCorrespondingSourceObject: {fileID: 8137591397461553439, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1161260801}
   m_SourcePrefab: {fileID: 100100000, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
 --- !u!1 &378178640
 GameObject:
@@ -10330,6 +10555,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2120034757}
+    - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2120034762}
   m_SourcePrefab: {fileID: 100100000, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
 --- !u!4 &412467874 stripped
 Transform:
@@ -13397,6 +13625,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 645958909}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 645958911}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &484263103
 GameObject:
@@ -13905,6 +14136,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 506732120}
+    - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 506732125}
   m_SourcePrefab: {fileID: 100100000, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
 --- !u!4 &506732109 stripped
 Transform:
@@ -13990,6 +14224,41 @@ CapsuleCollider:
   m_Height: 0
   m_Direction: 2
   m_Center: {x: -2.5, y: 21, z: 0}
+--- !u!114 &506732125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254366384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &507140979
 GameObject:
   m_ObjectHideFlags: 0
@@ -15041,6 +15310,7 @@ GameObject:
   - component: {fileID: 542643503}
   - component: {fileID: 542643502}
   - component: {fileID: 542643501}
+  - component: {fileID: 542643504}
   m_Layer: 0
   m_Name: SolarPanel (23)
   m_TagString: Untagged
@@ -15140,6 +15410,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &542643504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542643498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &547239249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16925,6 +17230,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &624481226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624481219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &626561006
 GameObject:
   m_ObjectHideFlags: 0
@@ -17309,6 +17649,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2069650134}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069650136}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1001 &645572560
 PrefabInstance:
@@ -17477,6 +17820,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &645958911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645958904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &648675460
 GameObject:
   m_ObjectHideFlags: 0
@@ -18002,6 +18380,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &658375738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658375731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &660065017
 GameObject:
   m_ObjectHideFlags: 0
@@ -20513,6 +20926,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8137591397461553439, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 799916769}
+    - targetCorrespondingSourceObject: {fileID: 8137591397461553439, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 799916773}
   m_SourcePrefab: {fileID: 100100000, guid: 5122f4fddd8282e41acc80057505398f, type: 3}
 --- !u!1001 &763119735
 PrefabInstance:
@@ -20631,6 +21047,7 @@ GameObject:
   - component: {fileID: 765509421}
   - component: {fileID: 765509420}
   - component: {fileID: 765509419}
+  - component: {fileID: 765509424}
   m_Layer: 0
   m_Name: Lampara (2)
   m_TagString: Untagged
@@ -20771,6 +21188,41 @@ Transform:
   - {fileID: 1675922589}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: 89.269, z: 0}
+--- !u!114 &765509424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765509418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &765674406
 GameObject:
   m_ObjectHideFlags: 0
@@ -21724,6 +22176,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 624481224}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 624481226}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &793865584
 GameObject:
@@ -22101,6 +22556,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &799916773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799916767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &803294224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
@@ -24710,6 +25200,7 @@ GameObject:
   - component: {fileID: 888097985}
   - component: {fileID: 888097984}
   - component: {fileID: 888097983}
+  - component: {fileID: 888097988}
   m_Layer: 0
   m_Name: Lampara (3)
   m_TagString: Untagged
@@ -24850,6 +25341,41 @@ Transform:
   - {fileID: 24900697}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: 89.269, z: 0}
+--- !u!114 &888097988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888097982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &888399139 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
@@ -25355,43 +25881,43 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 5fc4b4b8dba839f4cbaf9a1256732e88, type: 3}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 128.684
+      value: 164.95813
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.878
+      value: 22.01538
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 116.31033
+      value: 184.60847
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.14752732
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.017590446
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.9817865
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.118412815
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 1.612
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -45.31
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834664, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 2663508884994834665, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_Enabled
@@ -25975,31 +26501,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000008469592
+      value: 0.0000085945785
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0065524243
+      value: 0.0065523884
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00034167327
+      value: -0.00034169375
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9998254
+      value: 0.9998255
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013134107
+      value: -0.013134122
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.0105448635
+      value: -0.010544878
       objectReference: {fileID: 0}
     - target: {fileID: 7328335699495773714, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.008086119
+      value: 0.008086123
       objectReference: {fileID: 0}
     - target: {fileID: 7523159448261258555, guid: 2750284197424c44b8eca8d0f208c52d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26747,6 +27273,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &906094080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 906094073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &908652561
 GameObject:
   m_ObjectHideFlags: 0
@@ -27331,12 +27892,47 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1073836794}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1073836799}
   m_SourcePrefab: {fileID: 100100000, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
 --- !u!4 &926591542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 302916411584112859, guid: fd718da0dd77de24bbde1634c7c75f4f, type: 3}
   m_PrefabInstance: {fileID: 1604204314}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &928118568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928118569}
+  m_Layer: 0
+  m_Name: Dialogos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928118569
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928118568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -208.353, y: -227.62555, z: -15.486092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1292835300}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &936040042
 GameObject:
   m_ObjectHideFlags: 0
@@ -27663,6 +28259,7 @@ GameObject:
   - component: {fileID: 941439583}
   - component: {fileID: 941439582}
   - component: {fileID: 941439581}
+  - component: {fileID: 941439584}
   m_Layer: 0
   m_Name: SolarPanel (29)
   m_TagString: Untagged
@@ -27762,6 +28359,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &941439584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941439578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &944931223
 GameObject:
   m_ObjectHideFlags: 0
@@ -28510,6 +29142,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 241c971d54e477a488bd1f32c764b6aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &956345648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956345639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &958705111
 GameObject:
   m_ObjectHideFlags: 0
@@ -30774,6 +31441,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &1028432669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028432662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1029930380
 GameObject:
   m_ObjectHideFlags: 0
@@ -32029,6 +32731,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1073836799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073836792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1073912859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c533e4a0780e3da44b53824210a8fd99, type: 3}
@@ -34659,6 +35396,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3a1d24d55c7b0d4f8e4a94237607df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1161260801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161260795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1162418736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34736,6 +35508,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 238372204}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 238372206}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &1165520745
 GameObject:
@@ -36728,6 +37503,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1733846315}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1733846317}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1001 &1244884182
 PrefabInstance:
@@ -36835,6 +37613,7 @@ GameObject:
   - component: {fileID: 1247148189}
   - component: {fileID: 1247148188}
   - component: {fileID: 1247148187}
+  - component: {fileID: 1247148192}
   m_Layer: 0
   m_Name: Lampara (7)
   m_TagString: Untagged
@@ -36975,6 +37754,41 @@ Transform:
   - {fileID: 1507246901}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: -93.274, z: 0}
+--- !u!114 &1247148192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247148186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1247757771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37052,6 +37866,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1247757783}
+    - targetCorrespondingSourceObject: {fileID: 6861482875966667061, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1247757788}
   m_SourcePrefab: {fileID: 100100000, guid: b1523165e299c364bb2094b5844ff0ef, type: 3}
 --- !u!4 &1247757772 stripped
 Transform:
@@ -37137,6 +37954,41 @@ CapsuleCollider:
   m_Height: 0
   m_Direction: 2
   m_Center: {x: -2.5, y: 21, z: 0}
+--- !u!114 &1247757788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104387582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1257144841
 GameObject:
   m_ObjectHideFlags: 0
@@ -37233,6 +38085,7 @@ GameObject:
   - component: {fileID: 1260266500}
   - component: {fileID: 1260266499}
   - component: {fileID: 1260266498}
+  - component: {fileID: 1260266501}
   m_Layer: 0
   m_Name: SolarPanel (28)
   m_TagString: Untagged
@@ -37332,6 +38185,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1260266501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260266495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1265403234
 GameObject:
   m_ObjectHideFlags: 0
@@ -37515,6 +38403,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
       insertIndex: -1
       addedObject: {fileID: 956345645}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 956345648}
   m_SourcePrefab: {fileID: 100100000, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
 --- !u!1 &1270001469
 GameObject:
@@ -37882,6 +38773,89 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1290994697}
   m_Mesh: {fileID: 2263991371892522459, guid: c01c7eeb58a30ef43977fe82335cdba6, type: 3}
+--- !u!1 &1292835299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292835300}
+  - component: {fileID: 1292835302}
+  - component: {fileID: 1292835301}
+  m_Layer: 0
+  m_Name: RetoFin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1292835300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292835299}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 928118569}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292835301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292835299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0720db5135989de4baa5801ccf9b423d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjetoConDialogue: {fileID: 1292835299}
+  tiempoParaDesaparecer: 8
+--- !u!114 &1292835302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292835299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: "Felicitaciones cumpliste exitosamente con el reto, Continua la aventura.
+      te esperan mas diversi\xF3n. "
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1293403061
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38889,6 +39863,7 @@ GameObject:
   - component: {fileID: 1319266662}
   - component: {fileID: 1319266661}
   - component: {fileID: 1319266660}
+  - component: {fileID: 1319266663}
   m_Layer: 0
   m_Name: SolarPanel (24)
   m_TagString: Untagged
@@ -38988,6 +39963,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1319266663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319266657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1322165279
 GameObject:
   m_ObjectHideFlags: 0
@@ -44111,6 +45121,7 @@ GameObject:
   - component: {fileID: 1548750834}
   - component: {fileID: 1548750833}
   - component: {fileID: 1548750832}
+  - component: {fileID: 1548750837}
   m_Layer: 0
   m_Name: Lampara (10)
   m_TagString: Untagged
@@ -44251,6 +45262,41 @@ Transform:
   - {fileID: 958705112}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: -93.274, z: 0}
+--- !u!114 &1548750837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548750831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1556843766
 GameObject:
   m_ObjectHideFlags: 0
@@ -46468,6 +47514,7 @@ GameObject:
   - component: {fileID: 1624944503}
   - component: {fileID: 1624944502}
   - component: {fileID: 1624944501}
+  - component: {fileID: 1624944506}
   m_Layer: 0
   m_Name: Lampara (4)
   m_TagString: Untagged
@@ -46608,6 +47655,41 @@ Transform:
   - {fileID: 217787594}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: 89.269, z: 0}
+--- !u!114 &1624944506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624944500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &1628472028
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47058,6 +48140,7 @@ GameObject:
   - component: {fileID: 1639758082}
   - component: {fileID: 1639758081}
   - component: {fileID: 1639758080}
+  - component: {fileID: 1639758083}
   m_Layer: 0
   m_Name: SolarPanel (27)
   m_TagString: Untagged
@@ -47157,6 +48240,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1639758083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639758077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1640454285
 GameObject:
   m_ObjectHideFlags: 0
@@ -48036,6 +49154,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &1663150477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663150470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1664009773
 GameObject:
   m_ObjectHideFlags: 0
@@ -48809,6 +49962,7 @@ GameObject:
   - component: {fileID: 1697175952}
   - component: {fileID: 1697175951}
   - component: {fileID: 1697175950}
+  - component: {fileID: 1697175953}
   m_Layer: 0
   m_Name: SolarPanel (30)
   m_TagString: Untagged
@@ -48908,6 +50062,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5, y: 1.5, z: 2.5}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1697175953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697175947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1697262413
 GameObject:
   m_ObjectHideFlags: 0
@@ -50330,6 +51519,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &1733846317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733846310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1740454450
 GameObject:
   m_ObjectHideFlags: 0
@@ -54994,6 +56218,7 @@ GameObject:
   - component: {fileID: 1903327802}
   - component: {fileID: 1903327801}
   - component: {fileID: 1903327800}
+  - component: {fileID: 1903327805}
   m_Layer: 0
   m_Name: Lampara (1)
   m_TagString: Untagged
@@ -55134,6 +56359,41 @@ Transform:
   - {fileID: 1493418717}
   m_Father: {fileID: 946709590}
   m_LocalEulerAnglesHint: {x: 0, y: 89.269, z: 0}
+--- !u!114 &1903327805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903327799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &1903339512
 GameObject:
   m_ObjectHideFlags: 0
@@ -56150,6 +57410,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1663150475}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1663150477}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!1 &1941243361
 GameObject:
@@ -56788,6 +58051,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
       insertIndex: -1
       addedObject: {fileID: 906094075}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 906094080}
   m_SourcePrefab: {fileID: 100100000, guid: b97bcc6c36157cc44bacc97486cef415, type: 3}
 --- !u!1 &1955792477
 GameObject:
@@ -59534,6 +60800,41 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.5, y: 4, z: 2}
   m_Center: {x: -0.2, y: -1, z: 0}
+--- !u!114 &2069650136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069650129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2072486392
 GameObject:
   m_ObjectHideFlags: 0
@@ -59749,6 +61050,7 @@ GameObject:
   - component: {fileID: 2086643218}
   - component: {fileID: 2086643222}
   - component: {fileID: 2086643221}
+  - component: {fileID: 2086643223}
   m_Layer: 0
   m_Name: Lampara
   m_TagString: Untagged
@@ -59889,6 +61191,41 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2086643223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086643217}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1001 &2088301959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60750,6 +62087,41 @@ CapsuleCollider:
   m_Height: 0
   m_Direction: 2
   m_Center: {x: -2.5, y: 21, z: 0}
+--- !u!114 &2120034762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2120034745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b89b2c8d34df52d4e89cba040401d38b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conBarreras: 0
+  pausarJugador: 0
+  barreraADesactivar: {fileID: 0}
+  barrera2ADesactivar: {fileID: 0}
+  jugadorParaPausar: {fileID: 0}
+  audioSource: {fileID: 0}
+  startDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nextSentenceDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  endDialogueEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  triggerState: 0
+  sentences:
+  - dialogueCharacter: {fileID: 11400000, guid: 622abec4bf208c546be76f0b23d50642, type: 2}
+    sentence: Presiona F para interactuar
+    sentenceSound: {fileID: 0}
+    sentenceEvent:
+      m_PersistentCalls:
+        m_Calls: []
 --- !u!1 &2122785923
 GameObject:
   m_ObjectHideFlags: 0
@@ -61761,6 +63133,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1028432667}
+    - targetCorrespondingSourceObject: {fileID: 6357824875542969613, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1028432669}
   m_SourcePrefab: {fileID: 100100000, guid: 5c8107acbfbe2524faba29a21aff7bdb, type: 3}
 --- !u!4 &2873552813170895839 stripped
 Transform:
@@ -61793,3 +63168,4 @@ SceneRoots:
   - {fileID: 1776934330}
   - {fileID: 1977336281}
   - {fileID: 946709590}
+  - {fileID: 928118569}

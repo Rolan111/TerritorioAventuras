@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,18 @@ public class LamparaScript : MonoBehaviour
                 light.enabled = true;
                 isLamparaActive = true;
                 lamparasActivas++;
+
+                //eliminar dialogo
+                DialogueManager dialog = GetComponent<DialogueManager>();
+                dialog.StopDialogue();
+                Destroy(dialog);
+
+                //cumplir reto 1
+                if (lamparasActivas >= 10)
+                {
+                    //cumplio el reto
+                    GameObject.Find("RetoFin").GetComponent<DisparadorDialogueSimple>().métodoDispararDiálogo();
+                }
 
                 // validar si todo en el lvl 5 esta completo
                 DetectorColisionesPlayer.validarNivel5();

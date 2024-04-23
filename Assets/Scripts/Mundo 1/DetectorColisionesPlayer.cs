@@ -179,7 +179,9 @@ public class DetectorColisionesPlayer : MonoBehaviour
         //se llama desde los scripts de lamparas osea las turbinasdeagua estan activas
         //se llama desde los scripts de microondas osea las turbinasdeaire estan activas
         //se llama desde los scripts de pcs osea las panelessolares esten activas
-        if (LamparaScript.lamparasActivas >= 10 && MicroondasScript.microondasActivas >= 10 && PcsScript.pcActivas >= 10)
+
+        int min = 10;
+        if (LamparaScript.lamparasActivas >= min && MicroondasScript.microondasActivas >= min && PcsScript.pcActivas >= min)
         {
             //activarlo
             PortalCambioScript.portalCambio.SetActive(true);

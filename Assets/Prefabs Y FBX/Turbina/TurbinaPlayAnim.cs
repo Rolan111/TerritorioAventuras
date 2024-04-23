@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,11 @@ public class TurbinaPlayAnim : MonoBehaviour
                     turbinasActivas++;
                     puntos--;
                     isTurbinaActiva = true;
+
+                    //eliminar dialogo
+                    DialogueManager dialog = GetComponent<DialogueManager>();
+                    dialog.StopDialogue();
+                    Destroy(dialog);
                 }
             }
         }

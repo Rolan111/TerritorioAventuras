@@ -1,3 +1,4 @@
+using HeneGames.DialogueSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class TurbinaAguaPlayAnim : MonoBehaviour
 {
     private Animator animator;
-    public static float puntos = 3;
+    public static float puntos = 0;
     public static float turbinaActivas = 0;
     private bool hasPlayer = false;
     private bool isTurbinaActive = false;
@@ -28,6 +29,11 @@ public class TurbinaAguaPlayAnim : MonoBehaviour
                     turbinaActivas++;
                     puntos--;
                     isTurbinaActive = true;
+
+                    //eliminar dialogo
+                    DialogueManager dialog = GetComponent<DialogueManager>();
+                    dialog.StopDialogue();
+                    Destroy(dialog);
                 }
             }
         }
