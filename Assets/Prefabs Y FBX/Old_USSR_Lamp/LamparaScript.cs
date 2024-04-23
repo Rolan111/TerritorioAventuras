@@ -19,8 +19,6 @@ public class LamparaScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            TurbinaAguaPlayAnim.turbinaActivas = 3;
-
             if (light != null && hasPlayer && TurbinaAguaPlayAnim.turbinaActivas >= 3 && !isLamparaActive)
             {
                 light.enabled = true;

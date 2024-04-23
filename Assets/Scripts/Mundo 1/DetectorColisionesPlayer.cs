@@ -121,8 +121,10 @@ public class DetectorColisionesPlayer : MonoBehaviour
         {
             Debug.Log("El jugador ha chocado con el PORTAL DE CAMBIO0.");
             //captura ESCENA ACTUAL
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex);
+            
+            PlayerPrefs.SetInt("VariableUltimaEscena", SceneManager.GetActiveScene().buildIndex);
+            PlayerPrefs.SetString("UltimaEscena", SceneManager.GetActiveScene().name);
+
             //SceneManager.LoadScene("5 MundoFolclor");
             SceneManager.LoadScene("NivelCompleto");
         }
@@ -144,6 +146,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
             TurbinaAguaPlayAnim.turbinaActivas = 0;
 
             PanelPlayAnim.panelActivas = 0;
+
+            MicroondasScript.microondasActivas = 0;
             PcsScript.pcActivas = 0;
             LamparaScript.lamparasActivas = 0;
 
@@ -160,6 +164,9 @@ public class DetectorColisionesPlayer : MonoBehaviour
             logicaPuntajes[2].ContadorPuntajes(1);
             Destroy(other.gameObject);
             TurbinaAguaPlayAnim.puntos++;
+
+            //TODO
+            validarNivel5();
         }
 
     }
@@ -170,4 +177,20 @@ public class DetectorColisionesPlayer : MonoBehaviour
         DestroyImmediate(efectoPinzaActivar);
     }
 
+    public static void validarNivel5()
+    {
+        //se llama desde los scripts de lamparas osea las turbinasdeagua estan activas
+        //se llama desde los scripts de microondas osea las turbinasdeaire estan activas
+        //se llama desde los scripts de pcs osea las panelessolares esten activas
+
+        LamparaScript.lamparasActivas = 10;
+        MicroondasScript.microondasActivas = 10;
+        PcsScript.pcActivas = 10;
+
+        if (LamparaScript.lamparasActivas >= 10 && MicroondasScript.microondasActivas >= 10 && PcsScript.pcActivas >= 10)
+        {
+            //activarlo
+            PortalCambioScript.portalCambio.SetActive(true);
+        }
+    }
 }
