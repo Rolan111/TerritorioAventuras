@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 public static class UserApiLocal
 {
-    public static UserModel UserLogin;
+    public static UserModel UserLogin = new UserModel() { id = 1 };
 
     public static int Save(UserModel userModel)
     {
