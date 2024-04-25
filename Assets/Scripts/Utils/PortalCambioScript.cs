@@ -9,8 +9,12 @@ public class PortalCambioScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        portalCambio = GameObject.FindGameObjectWithTag("PortalCambio");
-        portalCambio.SetActive(false);
+        GameStateModel gameState = GameStateApiLocal.FindActualGameByIdUser(UserApiLocal.UserLogin.id);
+        if (gameState != null)
+        {
+            portalCambio = GameObject.FindGameObjectWithTag("PortalCambio");
+            portalCambio.SetActive(true);
+        }
     }
 
     // Update is called once per frame

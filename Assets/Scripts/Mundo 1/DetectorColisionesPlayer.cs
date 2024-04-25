@@ -53,6 +53,9 @@ public class DetectorColisionesPlayer : MonoBehaviour
             Debug.Log("El jugador ha chocado con una MONEDA.");
             logicaPuntajes[0].ContadorPuntajes(1);
             Destroy(other.gameObject);
+
+            //aumentar monedas
+            ChangeLvLScript.coins++;
         }
 
         //Residuos
@@ -78,39 +81,27 @@ public class DetectorColisionesPlayer : MonoBehaviour
 
         else if (other.CompareTag("DisparadorPuzzle"))//Actualmente activo en el del Bote
         {
-
             Debug.Log("El jugador ha chocado con el DISPARADOR DEL PUZZLE.");
             //desactivarCanvas.DesactivarObjeto();
             activarCanvas2.ActivarObjeto();
             //Time.timeScale = 0f; //Pausar juego
             // Impide que el personaje se desplace con fuerza
 
-
             //Pausar solo el movimeinto del jugador
-
-
             jugadorParaPausar.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
             jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false;
-
 
             //animator.enabled = false;
             StartCoroutine(EsperarYContinuarCoroutine());
 
             IEnumerator EsperarYContinuarCoroutine()
             {
-
                 yield return new WaitForSeconds(2f); // Espera 3 segundos
-
                 //jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
                 jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = true;
                 yield return new WaitForSeconds(2f); // Espera 3 segundos
                 jugadorParaPausar.GetComponent<SUPERCharacterAIO>().enabled = false;
-
             }
-
-
-
 
             //Liberamos el ratón
             Cursor.lockState = CursorLockMode.None;
@@ -119,14 +110,7 @@ public class DetectorColisionesPlayer : MonoBehaviour
 
         else if (other.CompareTag("PortalCambio"))
         {
-            Debug.Log("El jugador ha chocado con el PORTAL DE CAMBIO0.");
-            //captura ESCENA ACTUAL
-            
-            PlayerPrefs.SetInt("VariableUltimaEscena", SceneManager.GetActiveScene().buildIndex);
-            PlayerPrefs.SetString("UltimaEscena", SceneManager.GetActiveScene().name);
-
-            //SceneManager.LoadScene("5 MundoFolclor");
-            SceneManager.LoadScene("NivelCompleto");
+            ChangeLvLScript.FinalizarNivel();
         }
         else if (other.CompareTag("Pinza"))
         {
@@ -136,9 +120,16 @@ public class DetectorColisionesPlayer : MonoBehaviour
             efectoPinzaActivar.SetActive(true);
             pinzaSobreJugador.SetActive(true);
             Invoke("DestruirObjeto", 1.5f);
+
+            //aumentar monedas
+            ChangeLvLScript.tools++;
         }
         else if (other.CompareTag("Agua"))
         {
+            //resetear monedas y aumentar intentos
+            ChangeLvLScript.coins = 0;
+            ChangeLvLScript.attempts ++;
+
             TurbinaPlayAnim.puntos = 0;
             TurbinaPlayAnim.turbinasActivas = 0;
             
@@ -151,7 +142,9 @@ public class DetectorColisionesPlayer : MonoBehaviour
             PcsScript.pcActivas = 0;
             LamparaScript.lamparasActivas = 0;
 
-            SceneManager.LoadScene("5 Mundo 5OrienteTecnología");
+            // Obtiene el índice de la escena actual
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex);
         }
         else if (other.CompareTag("Engranaje"))
         { 

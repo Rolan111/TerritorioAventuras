@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: b466add64aaccad42b254409901a512e
+  - enabled: 1
+    path: Assets/Scenes/TableroSeguimiento.unity
+    guid: 31597d8dc403b8b428d9d9f17475f45c
   m_configObjects: {}

@@ -6,7 +6,7 @@ using UnityEngine;
 public static class AvatarApiLocal
 {
 
-    public static bool Save(AvatarModel avatarModel)
+    public static int Save(AvatarModel avatarModel)
     {
         string sql = "INSERT INTO avatar ('avatar', 'id_gender') VALUES ('" + avatarModel.avatar + "', " + avatarModel.id_gender + ")";
         return DbConnectionLocal.Write(sql);

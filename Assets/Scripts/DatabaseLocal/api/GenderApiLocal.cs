@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public static class GenderApiLocal
 {
 
-    public static bool Save(GenderModel genderModel)
+    public static int Save(GenderModel genderModel)
     {
         string sql = "INSERT INTO gender ('gender') VALUES ('" + genderModel.gender + "')";
         return DbConnectionLocal.Write(sql);

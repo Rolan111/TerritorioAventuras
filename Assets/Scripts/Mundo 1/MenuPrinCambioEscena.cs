@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,6 +28,8 @@ public class MenuPrinCambioEscena : MonoBehaviour
             Destroy(gameObject);
         }
         audioSource = GetComponent<AudioSource>();
+
+        ValidarMenuPrincipal();
     }
 
 
@@ -48,8 +51,9 @@ public class MenuPrinCambioEscena : MonoBehaviour
 
     public void CambiarEscena2()
     {
+        ChangeLvLScript.IniciarConteoTiempo();
+
         int receivedVariableUltimaEscena = PlayerPrefs.GetInt("VariableUltimaEscena");
-        Debug.Log("La última variable recibida es: "+receivedVariableUltimaEscena);
         int siguienteEscena = receivedVariableUltimaEscena + 1;
         SceneManager.LoadScene(siguienteEscena);
     }
@@ -68,39 +72,51 @@ public class MenuPrinCambioEscena : MonoBehaviour
         SceneManager.LoadScene(currentSceneIndex);
     }
 
-  
-    /* ************************************** API Ensayo En envío de datos ***************************************** */
-    public void GurdarGame_State()
+    public void ValidarMenuPrincipal()
     {
-        GameStateDto gameStateDto = new GameStateDto();
-        //llenamos lo que tenga en la base de datos
-        gameStateDto.idAvatar = 2;
-        gameStateDto.idUser = UserApiCloud.getUser().id;
-        gameStateDto.idLevelChallengeDescription = 1;
+        //validar continuar si paso nivel
+        GameObject btn_Continuar = GameObject.Find("Btn_Continuar");
+        if (btn_Continuar != null)
+        {
+            GameStateModel gameState = GameStateApiLocal.FindActualGameByIdUser(UserApiLocal.UserLogin.id);
+            if (gameState == null)
+            {
+                btn_Continuar.SetActive(false);
+            }
+        }
 
-
-
-        GameStateApiCloud.save(gameStateDto);
+        //validar tabler para docente
+        GameObject btn_tablero_seguimiento = GameObject.Find("Btn_TableroSeguimiento");
+        if (btn_tablero_seguimiento != null)
+        {
+            if (UserApiLocal.UserLogin.id_rol == RolApiLocal.ROL_ESTUDIANTE)
+            {
+                btn_tablero_seguimiento.SetActive(false);
+            }
+        }
     }
 
-    public void CrearGenero()
+    public void NuevoJuego()
     {
-        GenderDto genderDto = new GenderDto();
+        ChangeLvLScript.IniciarConteoTiempo();
 
-        genderDto.gender = "Inmobiliario";
-        GenderApiCloud.save(genderDto);
+        //actualizar todos los demas a 0
+        GameStateApiLocal.UpdateActualGameByIdUser(UserApiLocal.UserLogin.id);
+
+        //obtener nivel 1
+        LevelDescriptionModel levelChallenge = LevelDescriptionApiLocal.FindById(1);
+        CambiarEscena(levelChallenge.scene_name);
     }
 
-    public void CrearAvatar()
+    public void ContinuarJuego()
     {
-        AvatarDto avatarDto = new AvatarDto();
+        ChangeLvLScript.IniciarConteoTiempo();
 
-        avatarDto.avatar = "Ang";
-        avatarDto.idGender = 3;
-        AvatarApiCloud.save(avatarDto);
+        //obtener actual game state
+        GameStateModel gameState = GameStateApiLocal.FindActualGameByIdUser(UserApiLocal.UserLogin.id);
+
+        //obtener nombre de la escena actual + 1 para la siguiente
+        LevelDescriptionModel nextLevel = LevelDescriptionApiLocal.FindById(gameState.id_level_description + 1);
+        CambiarEscena(nextLevel.scene_name);
     }
-
-
-    /* Fin Ensayo*/
-
 }

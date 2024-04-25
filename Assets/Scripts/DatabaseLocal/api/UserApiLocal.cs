@@ -4,7 +4,7 @@ public static class UserApiLocal
 {
     public static UserModel UserLogin;
 
-    public static bool Save(UserModel userModel)
+    public static int Save(UserModel userModel)
     {
         string sql = "INSERT INTO user ('name', 'age', 'email', 'school', 'user', 'password', 'id_gender', 'id_rol') VALUES " +
             "('" + userModel.name + "','" + userModel.age + "','" + userModel.email + "','" + userModel.school + "'," +
@@ -22,10 +22,6 @@ public static class UserApiLocal
     {
         string sql = "SELECT * FROM user WHERE user='" + user + "' and password='" + password + "'";
         UserModel userModel = DbConnectionLocal.Find<UserModel>(sql);
-        if (userModel == null)
-        {
-            return new UserModel();
-        }
         return userModel;
     }
 

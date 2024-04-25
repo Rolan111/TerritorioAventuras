@@ -3,7 +3,7 @@ using System.Collections.Generic;
 public static class EmoticonApiLocal
 {
 
-    public static bool Save(EmoticonModel emoticonModel)
+    public static int Save(EmoticonModel emoticonModel)
     {
         string sql = "INSERT INTO emoticon ('emoticon') VALUES ('" + emoticonModel.emoticon + "')";
         return DbConnectionLocal.Write(sql);

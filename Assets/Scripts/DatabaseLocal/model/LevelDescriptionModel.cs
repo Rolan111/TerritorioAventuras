@@ -1,7 +1,7 @@
 ﻿using System;
 
 [Serializable]
-public class LevelChallengeDescriptionModel : BaseModel
+public class LevelDescriptionModel : BaseModel
 {
 
     public string name_level { get; set; }
@@ -10,6 +10,6 @@ public class LevelChallengeDescriptionModel : BaseModel
 
     public string coins { get; set; }
 
-    public int id_emoticon { get; set; }
+    public string scene_name { get; set; }
 
 }

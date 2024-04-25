@@ -71,10 +71,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
                 Time.timeScale = 1f;
                 Debug.Log("El contenedor esta LLENO en 3");
                 contador = 0;
-                //captura ESCENA ACTUAL
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex; 
-                PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex);
-                SceneManager.LoadScene("NivelCompleto");
+                ChangeLvLScript.FinalizarNivel();
             }
             
         }

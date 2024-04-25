@@ -60,16 +60,16 @@ public class FormRegister : MonoBehaviour
             userDto.password = contrasena.text;
             userDto.id_rol = 1;
 
-            if (UserApiLocal.Save(userDto))
+            if (UserApiLocal.Save(userDto) > 0)
             {
                 result.text = "Registro guardado correctamente.";
-                result.color = Color.green;
+                result.color = new Color32(69, 240, 60, 255);
                 clearForm();
             }
             else
             {
                 result.text = "Error al guardar el registro.";
-                result.color = Color.red;
+                result.color = new Color32(204, 80, 80, 255);
             }
         }
     }
