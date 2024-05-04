@@ -1166,7 +1166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2602396173953115529}
   m_Layer: 0
-  m_Name: 4 2DMinijuegoUnirDeportistas
+  m_Name: 4 2D MinijuegoUnirDeportistas
   m_TagString: TagParaEliminarClones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
