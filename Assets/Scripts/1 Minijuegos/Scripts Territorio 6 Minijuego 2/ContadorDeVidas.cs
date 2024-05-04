@@ -26,8 +26,6 @@ public class ContadorDeVidas : MonoBehaviour
         {
             //Time.timeScale = 0;
             mensajeDeJuegoTerminado.SetActive(true);
-            //mensajeDeJuegoTerminado.GetComponent<AudioSource>().Play();
-            //RainController.DestroyAllRainConSuScript();//destruye todos los clones de las hojas
         }
         else
         {
