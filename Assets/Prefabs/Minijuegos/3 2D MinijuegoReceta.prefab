@@ -2480,7 +2480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055393042698692510}
   m_Layer: 0
-  m_Name: 3 2DMinijuegoReceta
+  m_Name: 3 2D MinijuegoReceta
   m_TagString: TagParaEliminarClones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

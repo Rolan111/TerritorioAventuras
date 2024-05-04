@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.54808134, g: 0.85480845, b: 0.92143846, a: 1}
+  m_IndirectSpecularColor: {r: 0.5480811, g: 0.8548065, b: 0.9214373, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -29483,7 +29483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabMinijuego1: {fileID: 2724271442208793660, guid: 9f66cbefb08571e4daf9982b49b0e514, type: 3}
-  prefabMinijuego2: {fileID: 1950230532238304408, guid: bee83f907b245e04c9b248455d660ae6, type: 3}
+  prefabMinijuego2: {fileID: 184195581806000084, guid: 4bd17c28f9fbc4d41a28c8e58ed0d92f, type: 3}
 --- !u!23 &974584544910735098
 MeshRenderer:
   m_ObjectHideFlags: 0
