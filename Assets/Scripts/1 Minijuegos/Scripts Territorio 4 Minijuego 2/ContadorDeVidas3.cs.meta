@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d1f8d07572dc5b640af1c6a09e5e8ad9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - contadorVidastextMeshProUGUI: {fileID: 1011168790781469763, guid: 5c360017cb0f2dc439a485a81385ee01, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
