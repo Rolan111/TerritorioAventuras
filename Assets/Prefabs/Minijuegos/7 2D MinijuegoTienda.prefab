@@ -2768,7 +2768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6114061698289019562}
   m_Layer: 0
-  m_Name: 7 2DMinijuegoTienda
+  m_Name: 7 2D MinijuegoTienda
   m_TagString: TagParaEliminarClones
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

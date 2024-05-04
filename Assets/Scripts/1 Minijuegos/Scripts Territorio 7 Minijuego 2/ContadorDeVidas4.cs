@@ -28,7 +28,7 @@ public class ContadorDeVidas4 : MonoBehaviour
         int numVar = Int32.Parse(contadorVidastextMeshProUGUI.text);
         if (numVar==0)
         {
-            Time.timeScale = 0;
+            //Time.timeScale = 0;
             mensajeDeJuegoTerminado.SetActive(true);
         }
         else
