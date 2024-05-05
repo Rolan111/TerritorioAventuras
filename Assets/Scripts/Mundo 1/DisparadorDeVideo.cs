@@ -10,7 +10,10 @@ public class DisparadorDeVideo : MonoBehaviour
     public VideoPlayer videoPlayer;
     public GameObject personajeAPausar;
     public bool conTexto = true;
+    public bool conObjetoAdicional = false;
+
     public GameObject activarDesactivarTexto;
+    public GameObject objetoAdicional;
 
     //private bool videoReproduciendo = false;
 
@@ -63,7 +66,11 @@ public class DisparadorDeVideo : MonoBehaviour
         {
             activarDesactivarTexto.SetActive(false);
         }
-        
+        if (conObjetoAdicional)
+        {
+            objetoAdicional.SetActive(true);
+        }
+
         //videoReproduciendo = false;
         Destroy(gameObject);
         Destroy(videoPlayer);

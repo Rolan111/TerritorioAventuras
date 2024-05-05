@@ -22,6 +22,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
             item = DragHandler.objBeingDraged;
             if (gameObject.tag == item.tag)//Comprueba que las etiquetas sean iguales para dejar reposar
             {
+                GameObject.Find("ControladorCorrectoIncorrecto").GetComponent<ManejoCorrectoIncorrecto>().Correcto();
                 //detectorCoincidencia = true;
                 item.transform.SetParent(transform);
                 item.transform.position = transform.position;
@@ -60,10 +61,10 @@ public class DropSlot : MonoBehaviour, IDropHandler
                 Debug.Log("El contador esta en: " + contador);
 
             }
-            //else
-            //{
-            //    //contador -= 1;
-            //}
+            else
+            {
+                GameObject.Find("ControladorCorrectoIncorrecto").GetComponent<ManejoCorrectoIncorrecto>().Incorrecto();
+            }
 
 
             if (contador == 7) //Cambiar dependiendo de la cantidad de residuos
