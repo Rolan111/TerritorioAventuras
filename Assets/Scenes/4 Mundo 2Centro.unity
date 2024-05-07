@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1005216375}
-  m_IndirectSpecularColor: {r: 0.54808134, g: 0.85480845, b: 0.92143846, a: 1}
+  m_IndirectSpecularColor: {r: 0.5480811, g: 0.8548065, b: 0.9214373, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13948,7 +13948,9 @@ MonoBehaviour:
   videoPlayer: {fileID: 1148270002}
   personajeAPausar: {fileID: 1959911944}
   conTexto: 1
+  conObjetoAdicional: 0
   activarDesactivarTexto: {fileID: 1554576182}
+  objetoAdicional: {fileID: 0}
 --- !u!4 &1148636978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1025681519537473006, guid: aa99a810914c5b84b9bc5d51f95dd05c, type: 3}
@@ -20774,7 +20776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1821974996
 RectTransform:
   m_ObjectHideFlags: 0
