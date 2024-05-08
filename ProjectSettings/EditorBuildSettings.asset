@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/7 Mundo 7Sur.unity
     guid: 67adac43bcf286444be612074ab04f75
   - enabled: 1
+    path: Assets/Scenes/8 JuegoFinalizado.unity
+    guid: c6d4f75b121dba0468475676ac0b94f3
+  - enabled: 1
     path: Assets/Scenes/NivelCompleto.unity
     guid: 8df29dcfc0c615842a32051de0304e8b
   - enabled: 1

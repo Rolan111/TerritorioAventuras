@@ -44,19 +44,33 @@ public class MenuPrinCambioEscena : MonoBehaviour
         audioSource.PlayOneShot(sonido);
     }
 
-    public void CambiarEscena(string nombreEscena)
+    public void CambiarEscena(string nombreEscena)//Método simple para usar inidiviudalmetne al nombre de la escena que se quiere cambiar
     {
         SceneManager.LoadScene(nombreEscena);
     }
 
-    public void CambiarEscena2()
+    public void CambiarEscena2()//Método para cambiar de escena en base al identificador entero del panel "Build Settings"
     {
         ChangeLvLScript.IniciarConteoTiempo();
 
+        //PRIMER MÉTODO - Capturar el index de la escena mediante PlayerPrefs
         int receivedVariableUltimaEscena = PlayerPrefs.GetInt("VariableUltimaEscena");
         int siguienteEscena = receivedVariableUltimaEscena + 1;
         SceneManager.LoadScene(siguienteEscena);
     }
+
+    //public void CambiarEscena3()
+    //{
+    //    //SEGUNDO MÉTODO - Capturar el index de la escena mediante el Build index del Build Settings
+    //    // Este método puede que no funcione ya que captura la escena actual y se necesita la última escena
+    //    //Ensayar en cada mundo actualizar el player prefs de VariableUltimaEscena
+
+    //    //// Obtener la escena activa actualmente
+    //    //Scene currentScene = SceneManager.GetActiveScene();
+
+    //    //// Obtener el índice de la escena activa
+    //    //int receivedVariableUltimaEscena = currentScene.buildIndex;
+    //}
 
     public void FuncionCerrarJuego()
     {

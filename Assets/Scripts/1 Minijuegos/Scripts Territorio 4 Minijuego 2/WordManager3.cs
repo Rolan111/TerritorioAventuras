@@ -49,8 +49,8 @@ public class WordManager3:MonoBehaviour
             "\r\nTomado de: https://www.parquesnacionales.gov.co/nuestros-parques/pnn-gorgona/\r\n", "ID4" },
 
         { "Lugar ubicado entre los municipios de Belalcázar e Inzá en el departamento del Cauca, " +
-            "está localizada en la vertiente oriental de la Cordillera Central, y pertenece a la hoya" +
-            "hidrográfica del río Magdalena. Se trata de un área con topografía quebrada, con cimas escarpadas" +
+            "está localizada en la vertiente oriental de la Cordillera Central, y pertenece a la hoya " +
+            "hidrográfica del río Magdalena. Se trata de un área con topografía quebrada, con cimas escarpadas " +
             "y profundos cañones que hacen difícil su acceso." +
             "Tomado de: https://www.parquesnacionales.gov.co/nuestros-parques/pnn-gorgona/", "ID5" },
     };
