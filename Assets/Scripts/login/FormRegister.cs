@@ -1,4 +1,6 @@
+using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -65,6 +67,7 @@ public class FormRegister : MonoBehaviour
                 result.text = "Registro guardado correctamente.";
                 result.color = new Color32(69, 240, 60, 255);
                 clearForm();
+                StartCoroutine(CoroutineOcultarFormularioRegistro());
             }
             else
             {
@@ -72,6 +75,13 @@ public class FormRegister : MonoBehaviour
                 result.color = new Color32(204, 80, 80, 255);
             }
         }
+    }
+
+    IEnumerator CoroutineOcultarFormularioRegistro()
+    {
+        yield return new WaitForSeconds(2f);
+        formRegister.SetActive(false);
+        formLogin.SetActive(true);
     }
 
     private void clearForm()
