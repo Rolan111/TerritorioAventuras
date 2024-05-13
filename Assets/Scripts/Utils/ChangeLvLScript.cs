@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -71,9 +72,72 @@ public class ChangeLvLScript : MonoBehaviour
     {
         //captura ESCENA ACTUAL
         var currentSceneIndex = SceneManager.GetActiveScene();
+        GameObject.Find("ControladorPanelesTableroControl").GetComponent<ControladorTableroControl>().mostrarInsigniaYNivel(currentSceneIndex.buildIndex);
+        //ControladorTableroControl.mostrarInsigniaYNivel(currentSceneIndex.buildIndex);
         PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex.buildIndex);
         PlayerPrefs.SetString("UltimaEscena", currentSceneIndex.name);
         SceneManager.LoadScene("NivelCompleto");
+    }
+
+    //OPCION ACTIVANDO padre e hijos, funciona cuando los objetos están activos y visibles dentro de la escena
+        //La otra opción está en ControladorTableroControl
+    public static void GestionTableroControl(int currentScene)//Se procede a mostrar el nivel en el que va y las insignias ganadas
+    {
+        // Buscar el objeto padre por su nombre
+        GameObject objetoPadreInsignias = GameObject.Find("GridCandadosInsignias");
+        GameObject objetoPadreNiveles = GameObject.Find("GridCandadoNiveles");
+
+        //Comprobamos que los objetos SI EXISTAN
+        if (objetoPadreInsignias != null && objetoPadreNiveles != null)
+        {
+
+            // Buscar el hijo por su nombre dentro del objeto padre
+            Transform hijo = objetoPadreInsignias.transform.Find("imgCandado1");
+            
+
+            if (hijo != null)
+            {
+                Debug.Log("Hijo encontrado: " + hijo.name);
+                // Puedes realizar operaciones con el hijo aquí
+                hijo.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("No se encontró el hijo con el nombre especificado.");
+            }
+        }
+        else
+        {
+            Debug.Log("No se encontró el objeto padre con el nombre especificado.");
+        }
+
+        switch (currentScene)
+        {
+            case 3:
+                Console.WriteLine("The number is 1");
+                break;
+            case 4:
+                Console.WriteLine("The number is 2");
+                break;
+            case 5:
+                Console.WriteLine("The number is 1");
+                break;
+            case 6:
+                Console.WriteLine("The number is 1");
+                break;
+            case 7:
+                Console.WriteLine("The number is 1");
+                break;
+            case 8:
+                Console.WriteLine("The number is 1");
+                break;
+            case 9:
+                Console.WriteLine("The number is 1");
+                break;
+            default:
+                Console.WriteLine("The number is neither 1 nor 2");
+                break;
+        }
     }
 
     public static void IniciarConteoTiempo()
