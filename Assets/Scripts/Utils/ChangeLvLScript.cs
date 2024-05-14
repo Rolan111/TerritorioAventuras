@@ -72,7 +72,7 @@ public class ChangeLvLScript : MonoBehaviour
     {
         //captura ESCENA ACTUAL
         var currentSceneIndex = SceneManager.GetActiveScene();
-        GameObject.Find("ControladorPanelesTableroControl").GetComponent<ControladorTableroControl>().mostrarInsigniaYNivel(currentSceneIndex.buildIndex);
+        GameObject.Find("ControladorPanelesTableroControl").GetComponent<ControladorTableroControl>().MostrarInsigniaYNivel(currentSceneIndex.buildIndex);
         //ControladorTableroControl.mostrarInsigniaYNivel(currentSceneIndex.buildIndex);
         PlayerPrefs.SetInt("VariableUltimaEscena", currentSceneIndex.buildIndex);
         PlayerPrefs.SetString("UltimaEscena", currentSceneIndex.name);

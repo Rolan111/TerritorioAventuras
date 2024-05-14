@@ -116,7 +116,8 @@ public class DetectorColisionesPlayer : MonoBehaviour
         {
             // Destruye el objeto con el que chocamos
             Destroy(other.gameObject);
-            //GameObject.FindGameObjectsWithTag("EfectoDesaparecerPinza");
+            //Aparece la pinza en el tablero de control
+            GameObject.Find("ControladorPanelesTableroControl").GetComponent<ControladorTableroControl>().MostarObjetoPorIndexArray(0);//0 corresponde a la pinza
             efectoPinzaActivar.SetActive(true);
             pinzaSobreJugador.SetActive(true);
             Invoke("DestruirObjeto", 1.5f);

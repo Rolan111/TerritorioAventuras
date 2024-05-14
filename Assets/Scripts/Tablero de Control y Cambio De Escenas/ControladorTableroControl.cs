@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ControladorTableroControl : MonoBehaviour
 {
-
+    public GameObject[] objetosHerramientas;
     public GameObject[] objetosInsignias;
     public GameObject[] objetosNiveles;
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class ControladorTableroControl : MonoBehaviour
         
     }
 
-    public void mostrarInsigniaYNivel(int currentScene)
+    public void MostrarInsigniaYNivel(int currentScene)//Se muestran en base al cambio de escenas
     {
         Debug.Log("Se ha entrado a la logica para mostrar insignias");
         switch (currentScene)
@@ -57,5 +57,10 @@ public class ControladorTableroControl : MonoBehaviour
                 Console.WriteLine("The number is neither 1 nor 2");
                 break;
         }
+    }
+
+    public void MostarObjetoPorIndexArray(int index)//Se muestra objeto individual por index del array
+    {
+        objetosHerramientas[index].SetActive(false);
     }
 }
