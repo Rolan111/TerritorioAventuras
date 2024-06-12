@@ -319,8 +319,8 @@ RectTransform:
   m_GameObject: {fileID: 312978711}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 915509341}
   - {fileID: 1053656534}
@@ -333,7 +333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130, y: 174}
+  m_AnchoredPosition: {x: -297, y: 199}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &312978713
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 100, y: 100}
-  m_Spacing: {x: 20, y: 20}
+  m_Spacing: {x: 50, y: 110}
   m_Constraint: 1
   m_ConstraintCount: 4
 --- !u!1001 &558765494
@@ -448,10 +448,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Mar
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_margin.z
+      value: 20.681946
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "5 Mundo 3Pac\xEDficoFolclor"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 55aec6c2d53a7384b96fc686338133d4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -550,10 +574,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: "Mundo Monta\xF1a"
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 7 Mundo 7Sur
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4be51f325e5917548a58dcabfef17635, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -725,10 +769,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Sol
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_margin.z
+      value: 30.030151
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 5 Mundo 4Norte
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 33e6f1bb5893ba04883e8394ee047e18, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -827,10 +895,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Ciudad
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 4 Mundo 2Centro
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd9069bfe7a968f4a8f0c839c8584d23, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1021,10 +1109,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Aire
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_margin.z
+      value: 34.32068
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "5 Mundo 5OrienteTecnolog\xEDa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ab0c5c57656e10e45bbbb5d2358880ba, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1225,10 +1337,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Selva
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name
       value: Ico Mundos (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5048478288884210929, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 6 Mundo 6 - EtniasPiamonte
+      objectReference: {fileID: 0}
+    - target: {fileID: 5684132944511817700, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4391ac11635e95f4a897b2d80de23ff2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1326,6 +1458,22 @@ PrefabInstance:
     - target: {fileID: 134575137715495642, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_text
+      value: Mundo Agua
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_margin.z
+      value: -1.0843506
+      objectReference: {fileID: 0}
+    - target: {fileID: 288181202420271340, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 312228962652758543, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4747768245881045599, guid: 9fbc11c27dcb9d74c962efa49f0d9df9, type: 3}
       propertyPath: m_Name

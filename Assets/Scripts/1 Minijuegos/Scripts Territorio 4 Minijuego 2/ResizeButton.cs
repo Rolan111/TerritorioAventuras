@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//Se ha usado para imágenes y botones
 public class ResizeButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Vector2 originalSize; // Tamaño original del botón
